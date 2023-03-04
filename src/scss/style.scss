@@ -1,9 +1,6 @@
 // Codes By Mahdi Tasha
 
-//@forward "global";
-//@forward "layout";
+// Forwarding All Folders To One Single File Of Scss
+@forward "global";
+@forward "layout";
 @forward "utils";
-
-h6:first-of-type {
-  background-color: purple;
-}
