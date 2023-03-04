@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-// Creating Root With Element With Id Of 'Root' Then Rendering Whole Routes In React Strict Mode
+// Creating Root With Element With Id Of 'root' Then Rendering Whole Routes In React Strict Mode
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode></React.StrictMode>
 );
