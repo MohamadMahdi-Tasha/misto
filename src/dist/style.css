@@ -489,11 +489,15 @@ template {
   transition: 0.3s;
   opacity: 0;
 }
-.header__nav-list-item-link--menu:hover {
+.header__nav-list-item-link--menu:focus {
   font-weight: 600;
 }
-.header__nav-list-item-link--menu:hover:after {
+.header__nav-list-item-link--menu:focus:after {
   opacity: 1;
+}
+.header__nav-list-item-link--menu:focus ~ .header__nav-menu {
+  opacity: 1;
+  pointer-events: visible;
 }
 .header__nav-list-item-btn {
   background-color: transparent;
@@ -567,6 +571,90 @@ template {
 }
 .header__mobile-nav-toggler-icon-rect--right {
   transform: translateY(5px) translateX(-50%);
+}
+.header__nav-menu {
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 84px;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  border-top: 2px solid #121212;
+}
+.header__nav-menu:hover {
+  opacity: 1;
+  pointer-events: visible;
+}
+.header__nav-menu-inner {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 30px;
+  max-width: 1100px;
+  padding: 2rem 0.5rem;
+}
+.header__nav-menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.header__nav-menu-slider-holder {
+  grid-column: span 3;
+  width: 580px;
+}
+.header__nav-menu-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: #121212;
+}
+.header__nav-menu-link {
+  font-weight: 400;
+  font-size: 13px;
+  white-space: nowrap;
+  color: rgba(18, 18, 18, 0.8);
+}
+.header__nav-menu-slider-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.header__nav-menu-slider-top-btns-holder {
+  display: flex;
+  gap: 12px;
+}
+.header__nav-menu-slider-top-btn {
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: none;
+}
+.header__nav-menu-slide-img {
+  width: 160px;
+  height: 199px;
+  object-fit: cover;
+  margin-bottom: 4px;
+}
+.header__nav-menu-slide-title {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 18px;
+  color: rgba(18, 18, 18, 0.6);
+  margin-bottom: 4px;
+}
+.header__nav-menu-slide-price {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 13px;
+  color: #121212;
 }
 
 @media (max-width: 991px) {

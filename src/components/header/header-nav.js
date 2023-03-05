@@ -32,15 +32,15 @@ export default function HeaderNavComponent (props) {
                     </li>
                     <li className='header__nav-list-item'>
                         <a className='header__nav-list-item-link header__nav-list-item-link--menu' href="#">Men</a>
-                        {/*<HeaderNavMenuComponent />*/}
+                        <HeaderNavMenuComponent />
                     </li>
                     <li className='header__nav-list-item'>
                         <a className='header__nav-list-item-link header__nav-list-item-link--menu' href="#">Beauty</a>
-                        {/*<HeaderNavMenuComponent />*/}
+                        <HeaderNavMenuComponent />
                     </li>
                     <li className='header__nav-list-item'>
                         <a className='header__nav-list-item-link header__nav-list-item-link--menu' href="#">Accessories</a>
-                        {/*<HeaderNavMenuComponent />*/}
+                        <HeaderNavMenuComponent />
                     </li>
                     <li className='header__nav-list-item'><a className='header__nav-list-item-link' href="#">Blog</a></li>
                     <li className='header__nav-list-item'><a className='header__nav-list-item-link' href="#">Contact</a></li>

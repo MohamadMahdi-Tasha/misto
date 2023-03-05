@@ -10,7 +10,7 @@ export default function HeaderNavMenuComponent() {
     return (
         <div className='header__nav-menu'>
             <div className='header__nav-menu-inner'>
-                <ul>
+                <ul className='header__nav-menu-list'>
                     <li className='header__nav-menu-title'>TOPS</li>
                     <li><a className='header__nav-menu-link' href="#">Awesome</a></li>
                     <li><a className='header__nav-menu-link' href="#">Beachwear</a></li>
@@ -20,7 +20,7 @@ export default function HeaderNavMenuComponent() {
                     <li><a className='header__nav-menu-link' href="#">Gap</a></li>
                     <li><a className='header__nav-menu-link' href="#">Guess</a></li>
                 </ul>
-                <ul>
+                <ul className='header__nav-menu-list'>
                     <li className='header__nav-menu-title'>BOTTOMS</li>
                     <li><a className='header__nav-menu-link' href="#">Jeans</a></li>
                     <li><a className='header__nav-menu-link' href="#">Lacoste</a></li>
@@ -30,7 +30,7 @@ export default function HeaderNavMenuComponent() {
                     <li><a className='header__nav-menu-link' href="#">Polo</a></li>
                     <li><a className='header__nav-menu-link' href="#">Pullover</a></li>
                 </ul>
-                <ul>
+                <ul className='header__nav-menu-list'>
                     <li className='header__nav-menu-title'>ACCESSORIES</li>
                     <li><a href="#" className='header__nav-menu-link'>Scarf Sale 13%</a></li>
                     <li><a href="#" className='header__nav-menu-link'>Shirt</a></li>
@@ -40,7 +40,7 @@ export default function HeaderNavMenuComponent() {
                     <li><a href="#" className='header__nav-menu-link'>Sunglasses</a></li>
                     <li><a href="#" className='header__nav-menu-link'>Vintage</a></li>
                 </ul>
-                <div>
+                <div className='header__nav-menu-slider-holder'>
                     <div className='header__nav-menu-slider-top'>
                         <h6 className='header__nav-menu-title'>BESTSELLERS</h6>
                         <div className='header__nav-menu-slider-top-btns-holder'>
@@ -48,56 +48,76 @@ export default function HeaderNavMenuComponent() {
                             <button className='header__nav-menu-slider-top-btn'><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.34985 1.1499L5.19985 4.9999L1.34985 8.8499" stroke="#121212" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
                         </div>
                     </div>
-                    <Swiper className="header__nav-menu-swiper">
+                    <Swiper spaceBetween={50} slidesPerView={3} className="header__nav-menu-swiper">
                         <SwiperSlide>
-                            <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
-                            <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
-                            <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            <a href="#">
+                                <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
+                                <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
+                                <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            </a>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
-                            <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
-                            <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            <a href="#">
+                                <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
+                                <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
+                                <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            </a>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
-                            <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
-                            <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            <a href="#">
+                                <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
+                                <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
+                                <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            </a>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
-                            <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
-                            <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            <a href="#">
+                                <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
+                                <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
+                                <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            </a>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
-                            <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
-                            <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            <a href="#">
+                                <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
+                                <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
+                                <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            </a>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
-                            <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
-                            <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            <a href="#">
+                                <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
+                                <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
+                                <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            </a>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
-                            <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
-                            <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            <a href="#">
+                                <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
+                                <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
+                                <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            </a>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
-                            <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
-                            <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            <a href="#">
+                                <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
+                                <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
+                                <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            </a>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
-                            <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
-                            <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            <a href="#">
+                                <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
+                                <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
+                                <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            </a>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
-                            <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
-                            <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            <a href="#">
+                                <img className='header__nav-menu-slide-img' src={sliderImage} alt="Women's tracksuit Q109"/>
+                                <h6 className='header__nav-menu-slide-title'>Women's tracksuit Q109</h6>
+                                <h6 className='header__nav-menu-slide-price'>$28.99</h6>
+                            </a>
                         </SwiperSlide>
                     </Swiper>
                 </div>
