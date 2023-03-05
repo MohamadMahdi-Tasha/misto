@@ -8,7 +8,7 @@ export default function HeaderComponent () {
     return (
         <header className='header'>
             <HeaderTopBarComponent />
-            <HeaderNavComponent />
+            <HeaderNavComponent checkoutCount={2} />
         </header>
     );
 }
