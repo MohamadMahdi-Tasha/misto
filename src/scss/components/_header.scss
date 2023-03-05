@@ -1,3 +1,50 @@
 // Codes By Mahdi Tasha
+// Importing Parts
+@use "../global/colors" as colors;
 
-// Styles
+// Styles Of Header Component
+.header {
+  // Styles Of Top Bar In Header
+  &__top-bar {background-color: colors.$dark;}
+
+  &__top-bar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin-inline: auto;
+    padding: .25rem .5rem;
+  }
+
+  &__top-bar-left-side {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  &__top-bar-txt {
+    color: rgba(255, 255, 255, .8);
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__top-bar-txt-icon {
+    margin-right: 8px;
+  }
+
+  &__top-bar-right-side-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+
+  &__top-bar-right-side-link {
+    display: block;
+    height: 14px;
+  }
+
+  // Styles Of Nav In Header
+}

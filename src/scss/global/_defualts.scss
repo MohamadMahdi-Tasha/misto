@@ -1,0 +1,24 @@
+// Codes By Mahdi Tasha
+// Importing Part
+@use 'colors' as colors;
+@forward "font";
+
+// Defualt Codes
+* {
+  box-sizing: border-box;
+  padding: 0;margin: 0;
+}
+
+button {
+  transition: .3s;
+  cursor: pointer;
+}
+
+img {pointer-events: none;}
+a {text-decoration: none;}
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: colors.$gr-white;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
