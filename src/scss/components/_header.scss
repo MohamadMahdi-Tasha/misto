@@ -34,8 +34,6 @@
     font-weight: 500;
     font-size: 11px;
     line-height: 12px;
-    display: flex;
-    align-items: center;
   }
 
   &__top-bar-txt-icon {
@@ -107,4 +105,42 @@
       }
     }
   }
+
+  &__mobile-nav-toggler {
+    display: none;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid colors.$dark;
+    background-color: white;
+    border-radius: 0;
+    color: colors.$dark;
+
+    &:is(:active, :focus) {
+      background-color: colors.$dark;
+      color: white;
+    }
+  }
 }
+
+
+// Media Querys
+@media (max-width: 991px) {
+  .header {
+    // Media Querys Of Top Side Bar In Header
+    &__top-bar-right-side-list {display: none;}
+    &__top-bar-inner {
+      justify-content: center;
+      padding: .5rem;
+    }
+
+
+    // Media Querys Of Nav In Header
+    &__nav-inner {padding: .5rem;}
+    &__nav-list {display: none;}
+    &__mobile-nav-toggler {display: flex;}
+  }
+}
+
+@media (max-width: 527px) { .header__top-bar {display: none;} }

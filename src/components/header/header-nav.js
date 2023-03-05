@@ -36,6 +36,11 @@ export default function HeaderNavComponent (props) {
                         </button>
                     </li>
                 </ul>
+                <button className='header__mobile-nav-toggler'>
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 13H17M1 1H17H1ZM1 5H17H1ZM1 9H17H1Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
             </div>
         </nav>
     );
