@@ -1,0 +1,8 @@
+// Codes By Mahdi Tasha
+
+// Styles
+@mixin transition {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .5s;
+}

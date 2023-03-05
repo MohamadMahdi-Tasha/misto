@@ -1,5 +1,6 @@
 // Exporting Header Top Bar Component Functional Component As Default
 export default function HeaderTopBarComponent () {
+    // Returning JSX
     return (
         <div className='header__top-bar'>
             <div className='header__top-bar-inner'>

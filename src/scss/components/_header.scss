@@ -1,6 +1,7 @@
 // Codes By Mahdi Tasha
 // Importing Parts
 @use "../global/colors" as colors;
+@use '../global/mixins' as mixins;
 
 // Styles Of Header Component
 .header {
@@ -116,11 +117,34 @@
     background-color: white;
     border-radius: 0;
     color: colors.$dark;
+    position: relative;
+    @include mixins.transition;
 
-    &:is(:active, :focus) {
+    &--focused {
       background-color: colors.$dark;
       color: white;
+
+      .header__mobile-nav-toggler-icon-rect {
+        &--left {transform: translateX(-50%) translateY(-1px) rotate(40deg);}
+        &--right {transform: translateX(-50%) translateY(-1px) rotate(-40deg);}
+        &--mid {opacity: 0;}
+      }
     }
+  }
+
+  &__mobile-nav-toggler-icon-rect {
+    display: block;
+    height: 2px;
+    width: calc(100% - .5rem);
+    position: absolute;
+    background-color: currentColor;
+    top: 50%;
+    left: 50%;
+    @include mixins.transition;
+
+    &--left {transform: translateY(-5px) translateX(-50%);}
+    &--mid {transform: translateX(-50%);}
+    &--right {transform: translateY(5px) translateX(-50%);}
   }
 }
 
@@ -143,4 +167,4 @@
   }
 }
 
-@media (max-width: 527px) { .header__top-bar {display: none;} }
+@media (max-width: 527px) { .header__top-bar {display: flex;} }

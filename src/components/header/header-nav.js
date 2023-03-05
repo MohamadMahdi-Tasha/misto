@@ -1,9 +1,24 @@
 // Codes By Mahdi Tasha
 // Importing Part
+import React from 'react';
 import logoTypo from '../../assets/img/header/img-logo-typo.svg';
 
 // Exporting Header Nav Component Functional Component As Default
 export default function HeaderNavComponent (props) {
+    // Creating A Refrence To Mobile Nav Toggler
+    const refrenceOfMobileNavToggler = React.createRef();
+
+    // A Function To Handle Click Of Mobile Nav Toggler
+    function handleClickOfMobileNavToggler() {
+        const clickedElement = refrenceOfMobileNavToggler.current;
+
+        clickedElement.classList.toggle('header__mobile-nav-toggler--focused');
+        (clickedElement.classList.contains('header__mobile-nav-toggler--focused'))
+            ? document.body.style.overflow = 'hidden'
+            : document.body.removeAttribute('style')
+    }
+
+    // Returning JSX
     return (
         <nav className='header__nav'>
             <div className="header__nav-inner">
@@ -36,10 +51,10 @@ export default function HeaderNavComponent (props) {
                         </button>
                     </li>
                 </ul>
-                <button className='header__mobile-nav-toggler'>
-                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 13H17M1 1H17H1ZM1 5H17H1ZM1 9H17H1Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <button className='header__mobile-nav-toggler' ref={refrenceOfMobileNavToggler} onClick={handleClickOfMobileNavToggler}>
+                    <span className='header__mobile-nav-toggler-icon-rect header__mobile-nav-toggler-icon-rect--left'></span>
+                    <span className='header__mobile-nav-toggler-icon-rect header__mobile-nav-toggler-icon-rect--mid'></span>
+                    <span className='header__mobile-nav-toggler-icon-rect header__mobile-nav-toggler-icon-rect--right'></span>
                 </button>
             </div>
         </nav>
