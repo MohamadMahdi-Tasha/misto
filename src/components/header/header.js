@@ -6,7 +6,7 @@ import HeaderNavComponent from './header-nav';
 // Exporting Header Component Functional Component As Default
 export default function HeaderComponent () {
     return (
-        <header>
+        <header className='header'>
             <HeaderTopBarComponent />
             <HeaderNavComponent />
         </header>
