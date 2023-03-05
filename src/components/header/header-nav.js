@@ -2,6 +2,7 @@
 // Importing Part
 import React from 'react';
 import logoTypo from '../../assets/img/header/img-logo-typo.svg';
+import HeaderNavMenuComponent from "./header-nav-menu";
 
 // Exporting Header Nav Component Functional Component As Default
 export default function HeaderNavComponent (props) {
@@ -25,10 +26,22 @@ export default function HeaderNavComponent (props) {
                 <img className='header__nav-img' src={logoTypo} alt="Misto Logo"/>
                 <ul className='header__nav-list'>
                     <li className='header__nav-list-item'><a className='header__nav-list-item-link' href="#">About Us</a></li>
-                    <li className='header__nav-list-item'><a className='header__nav-list-item-link' href="#">Women</a></li>
-                    <li className='header__nav-list-item'><a className='header__nav-list-item-link' href="#">Men</a></li>
-                    <li className='header__nav-list-item'><a className='header__nav-list-item-link' href="#">Beauty</a></li>
-                    <li className='header__nav-list-item'><a className='header__nav-list-item-link' href="#">Accessories</a></li>
+                    <li className='header__nav-list-item'>
+                        <a className='header__nav-list-item-link header__nav-list-item-link--menu' href="#">Women</a>
+                        <HeaderNavMenuComponent />
+                    </li>
+                    <li className='header__nav-list-item'>
+                        <a className='header__nav-list-item-link header__nav-list-item-link--menu' href="#">Men</a>
+                        <HeaderNavMenuComponent />
+                    </li>
+                    <li className='header__nav-list-item'>
+                        <a className='header__nav-list-item-link header__nav-list-item-link--menu' href="#">Beauty</a>
+                        <HeaderNavMenuComponent />
+                    </li>
+                    <li className='header__nav-list-item'>
+                        <a className='header__nav-list-item-link header__nav-list-item-link--menu' href="#">Accessories</a>
+                        <HeaderNavMenuComponent />
+                    </li>
                     <li className='header__nav-list-item'><a className='header__nav-list-item-link' href="#">Blog</a></li>
                     <li className='header__nav-list-item'><a className='header__nav-list-item-link' href="#">Contact</a></li>
                 </ul>

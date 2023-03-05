@@ -78,6 +78,31 @@
     font-size: 14px;
     line-height: 16px;
     color: colors.$dark;
+    transition: .3s;
+
+    &--menu {
+      position: relative;
+
+      &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid colors.$dark;
+        left: 50%;
+        top: 33px;
+        transform: translateX(-50%);
+        transition: .3s;
+        opacity: 0;
+      }
+
+      &:hover {
+        font-weight: 600;
+        &:after {opacity: 1;}
+      }
+    }
   }
 
   &__nav-list-item-btn {
