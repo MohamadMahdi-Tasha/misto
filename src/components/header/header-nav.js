@@ -3,6 +3,7 @@
 import React from 'react';
 import logoTypo from '../../assets/img/header/img-logo-typo.svg';
 import HeaderNavMenuComponent from "./header-nav-menu";
+import HeaderNavDropdownsComponent from './header-nav-dropdowns';
 
 // Exporting Header Nav Component Functional Component As Default
 export default function HeaderNavComponent (props) {

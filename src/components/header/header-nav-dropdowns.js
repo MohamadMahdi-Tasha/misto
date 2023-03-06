@@ -1,9 +1,9 @@
 // Codes By Mahdi Tasha
 // Importing Part
+import IMG from '../../assets/img/header/img-nav-menu-slider.png';
 
 // Exporting header dropdown Component Functional Component As Default
 export default function HeaderNavDropdownsComponent(props) {
-
     // A Functional Component For TopSide Of Dropdowns
     function HeaderNavDropdownsTopSideComponent() {
         // Returning JSX
@@ -87,8 +87,6 @@ export default function HeaderNavDropdownsComponent(props) {
             </div>
         );
     } else if(props.type === 'search') {
-        import searchImages from '../../assets/img/header/img-nav-menu-slider.png';
-
         return (
             <div>
                 <HeaderNavDropdownsTopSideComponent />
@@ -121,7 +119,7 @@ export default function HeaderNavDropdownsComponent(props) {
                         <ul>
                             <li>
                                 <a href="#">
-                                    <img src={searchImages} alt="Women's tracksuit Q109"/>
+                                    <img src={IMG} alt="Women's tracksuit Q109"/>
                                     <div>
                                         <h6>Women's tracksuit Q109</h6>
                                         <h6>$379.99</h6>
@@ -130,7 +128,7 @@ export default function HeaderNavDropdownsComponent(props) {
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src={searchImages} alt="Women's tracksuit Q109"/>
+                                    <img src={IMG} alt="Women's tracksuit Q109"/>
                                     <div>
                                         <h6>Women's tracksuit Q109</h6>
                                         <h6>$379.99</h6>
@@ -139,7 +137,7 @@ export default function HeaderNavDropdownsComponent(props) {
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src={searchImages} alt="Women's tracksuit Q109"/>
+                                    <img src={IMG} alt="Women's tracksuit Q109"/>
                                     <div>
                                         <h6>Women's tracksuit Q109</h6>
                                         <h6>$379.99</h6>
@@ -148,7 +146,7 @@ export default function HeaderNavDropdownsComponent(props) {
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src={searchImages} alt="Women's tracksuit Q109"/>
+                                    <img src={IMG} alt="Women's tracksuit Q109"/>
                                     <div>
                                         <h6>Women's tracksuit Q109</h6>
                                         <h6>$379.99</h6>
@@ -157,7 +155,7 @@ export default function HeaderNavDropdownsComponent(props) {
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src={searchImages} alt="Women's tracksuit Q109"/>
+                                    <img src={IMG} alt="Women's tracksuit Q109"/>
                                     <div>
                                         <h6>Women's tracksuit Q109</h6>
                                         <h6>$379.99</h6>
@@ -166,7 +164,7 @@ export default function HeaderNavDropdownsComponent(props) {
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src={searchImages} alt="Women's tracksuit Q109"/>
+                                    <img src={IMG} alt="Women's tracksuit Q109"/>
                                     <div>
                                         <h6>Women's tracksuit Q109</h6>
                                         <h6>$379.99</h6>
@@ -175,7 +173,7 @@ export default function HeaderNavDropdownsComponent(props) {
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src={searchImages} alt="Women's tracksuit Q109"/>
+                                    <img src={IMG} alt="Women's tracksuit Q109"/>
                                     <div>
                                         <h6>Women's tracksuit Q109</h6>
                                         <h6>$379.99</h6>
@@ -184,7 +182,7 @@ export default function HeaderNavDropdownsComponent(props) {
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src={searchImages} alt="Women's tracksuit Q109"/>
+                                    <img src={IMG} alt="Women's tracksuit Q109"/>
                                     <div>
                                         <h6>Women's tracksuit Q109</h6>
                                         <h6>$379.99</h6>
@@ -193,7 +191,7 @@ export default function HeaderNavDropdownsComponent(props) {
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src={searchImages} alt="Women's tracksuit Q109"/>
+                                    <img src={IMG} alt="Women's tracksuit Q109"/>
                                     <div>
                                         <h6>Women's tracksuit Q109</h6>
                                         <h6>$379.99</h6>
@@ -202,7 +200,7 @@ export default function HeaderNavDropdownsComponent(props) {
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src={searchImages} alt="Women's tracksuit Q109"/>
+                                    <img src={IMG} alt="Women's tracksuit Q109"/>
                                     <div>
                                         <h6>Women's tracksuit Q109</h6>
                                         <h6>$379.99</h6>
@@ -242,15 +240,13 @@ export default function HeaderNavDropdownsComponent(props) {
             </div>
         );
     } else if (props.type === 'cart') {
-        import items from '../../assets/img/header/img-nav-menu-slider.png';
-
         return (
             <div>
                 <HeaderNavDropdownsTopSideComponent />
                 <div>
                     <ul>
                         <li>
-                            <img src={items} alt="Women's tracksuit Q109"/>
+                            <img src={IMG} alt="Women's tracksuit Q109"/>
                             <div>
                                 <h6>Women's tracksuit Q109</h6>
                                 <h6>Blue, S</h6>
@@ -270,7 +266,7 @@ export default function HeaderNavDropdownsComponent(props) {
                             </div>
                         </li>
                         <li>
-                            <img src={items} alt="Women's tracksuit Q109"/>
+                            <img src={IMG} alt="Women's tracksuit Q109"/>
                             <div>
                                 <h6>Women's tracksuit Q109</h6>
                                 <h6>Blue, S</h6>
