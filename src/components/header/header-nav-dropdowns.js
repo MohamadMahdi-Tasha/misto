@@ -8,9 +8,9 @@ export default function HeaderNavDropdownsComponent(props) {
     function HeaderNavDropdownsTopSideComponent() {
         // Returning JSX
         return (
-            <div>
-                <h6>{props.type.toUpperCase()}</h6>
-                <button>
+            <div className='header__nav-dropdown-top'>
+                <h6 className='header__nav-dropdown-top-title'>{props.type.toUpperCase()}</h6>
+                <button className='header__nav-dropdown-top-close-btn'>
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L13 13M1 13L13 1L1 13Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -22,65 +22,65 @@ export default function HeaderNavDropdownsComponent(props) {
     // Returning JSX
     if (props.type === 'localization') {
         return (
-            <div>
+            <div className='header__nav-dropdown'>
                 <HeaderNavDropdownsTopSideComponent />
-                <div>
-                    <h6>Language</h6>
+                <div className='header__nav-dropdown-content-holder'>
+                    <h6 className='header__nav-dropdown-title'>Language</h6>
                     <form action="#">
-                        <div>
-                            <input id='english' type="radio" checked/>
-                            <label htmlFor="english">English</label>
+                        <div className='header__nav-dropdown-radio-holder'>
+                            <input className='header__nav-dropdown-radio' name='langRadio' id='english' type="radio"/>
+                            <label className='header__nav-dropdown-radio-label' htmlFor="english">English</label>
                         </div>
-                        <div>
-                            <input id='Українська' type="radio"/>
-                            <label htmlFor="Українська">Українська</label>
+                        <div className='header__nav-dropdown-radio-holder'>
+                            <input className='header__nav-dropdown-radio' name='langRadio' id='Українська' type="radio"/>
+                            <label className='header__nav-dropdown-radio-label' htmlFor="Українська">Українська</label>
                         </div>
-                        <div>
-                            <input id='Français' type="radio"/>
-                            <label htmlFor="Français">Français</label>
+                        <div className='header__nav-dropdown-radio-holder'>
+                            <input className='header__nav-dropdown-radio' name='langRadio' id='Français' type="radio"/>
+                            <label className='header__nav-dropdown-radio-label' htmlFor="Français">Français</label>
                         </div>
-                        <div>
-                            <input id='Español' type="radio"/>
-                            <label htmlFor="Español">Español</label>
+                        <div className='header__nav-dropdown-radio-holder'>
+                            <input className='header__nav-dropdown-radio' name='langRadio' id='Español' type="radio"/>
+                            <label className='header__nav-dropdown-radio-label' htmlFor="Español">Español</label>
                         </div>
-                        <div>
-                            <input id='Polskie' type="radio"/>
-                            <label htmlFor="Polskie">Polskie</label>
+                        <div className='header__nav-dropdown-radio-holder'>
+                            <input className='header__nav-dropdown-radio' name='langRadio' id='Polskie' type="radio"/>
+                            <label className='header__nav-dropdown-radio-label' htmlFor="Polskie">Polskie</label>
                         </div>
-                        <div>
-                            <input id='Türkçe' type="radio"/>
-                            <label htmlFor="Türkçe">Türkçe</label>
+                        <div className='header__nav-dropdown-radio-holder'>
+                            <input className='header__nav-dropdown-radio' name='langRadio' id='Türkçe' type="radio"/>
+                            <label className='header__nav-dropdown-radio-label' htmlFor="Türkçe">Türkçe</label>
                         </div>
-                        <div>
-                            <input id='한국어' type="radio"/>
-                            <label htmlFor="한국어">한국어</label>
+                        <div className='header__nav-dropdown-radio-holder'>
+                            <input className='header__nav-dropdown-radio' name='langRadio' id='한국어' type="radio"/>
+                            <label className='header__nav-dropdown-radio-label' htmlFor="한국어">한국어</label>
                         </div>
                     </form>
-                    <h6>Currency</h6>
+                    <h6 className='header__nav-dropdown-title'>Currency</h6>
                     <form action="#">
-                        <div>
-                            <input id='USD' type="radio" checked/>
-                            <label htmlFor="USD">USD ( US Dollar )</label>
+                        <div className='header__nav-dropdown-radio-holder'>
+                            <input className='header__nav-dropdown-radio' name='currencyRadio' id='USD' type="radio"/>
+                            <label className='header__nav-dropdown-radio-label' htmlFor="USD">USD ( US Dollar )</label>
                         </div>
-                        <div>
-                            <input id='UAH' type="radio"/>
-                            <label htmlFor="UAH">UAH ( Ukraine Hryvnia )</label>
+                        <div className='header__nav-dropdown-radio-holder'>
+                            <input className='header__nav-dropdown-radio' name='currencyRadio' id='UAH' type="radio"/>
+                            <label className='header__nav-dropdown-radio-label' htmlFor="UAH">UAH ( Ukraine Hryvnia )</label>
                         </div>
-                        <div>
-                            <input id='EUR' type="radio"/>
-                            <label htmlFor="EUR">EUR ( Euro )</label>
+                        <div className='header__nav-dropdown-radio-holder'>
+                            <input className='header__nav-dropdown-radio' name='currencyRadio' id='EUR' type="radio"/>
+                            <label className='header__nav-dropdown-radio-label' htmlFor="EUR">EUR ( Euro )</label>
                         </div>
-                        <div>
-                            <input id='PLN' type="radio"/>
-                            <label htmlFor="PLN">PLN ( Polish Zloty )</label>
+                        <div className='header__nav-dropdown-radio-holder'>
+                            <input className='header__nav-dropdown-radio' name='currencyRadio' id='PLN' type="radio"/>
+                            <label className='header__nav-dropdown-radio-label' htmlFor="PLN">PLN ( Polish Zloty )</label>
                         </div>
-                        <div>
-                            <input id='TRY' type="radio"/>
-                            <label htmlFor="TRY">TRY ( Turkish Lira )</label>
+                        <div className='header__nav-dropdown-radio-holder'>
+                            <input className='header__nav-dropdown-radio' name='currencyRadio' id='TRY' type="radio"/>
+                            <label className='header__nav-dropdown-radio-label' htmlFor="TRY">TRY ( Turkish Lira )</label>
                         </div>
-                        <div>
-                            <input id='KRW' type="radio"/>
-                            <label htmlFor="KRW">KRW ( Korean Won )</label>
+                        <div className='header__nav-dropdown-radio-holder'>
+                            <input className='header__nav-dropdown-radio' name='currencyRadio' id='KRW' type="radio"/>
+                            <label className='header__nav-dropdown-radio-label' htmlFor="KRW">KRW ( Korean Won )</label>
                         </div>
                     </form>
                 </div>
