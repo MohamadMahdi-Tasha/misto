@@ -9,7 +9,7 @@ export default function HeaderComponent () {
     return (
         <header className='header'>
             <HeaderTopBarComponent />
-            <HeaderNavComponent checkoutCount={2} />
+            <HeaderNavComponent checkoutCount={0} />
         </header>
     );
 }
