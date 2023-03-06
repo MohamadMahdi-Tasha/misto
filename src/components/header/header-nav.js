@@ -26,11 +26,9 @@ export default function HeaderNavComponent (props) {
     // A Function To Handle Click Of Button In Nav Of Header
     function handleClickOfHeaderNavListItemBtn(event) {
         const clickedElementsTextContent = event.target.getAttribute('data-value');
-        console.log(event)
 
         setOpenOrCloseOfDropDown(true);
         setValueDropDown(clickedElementsTextContent);
-        console.log(clickedElementsTextContent)
     }
 
     // Returning JSX
