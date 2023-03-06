@@ -274,6 +274,85 @@
     line-height: 13px;
     color: colors.$dark;
   }
+
+  // Styles Of DropDowns In Header
+  &__nav-dropdown {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 400px;
+    overflow: auto;
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+    background-color: white;
+  }
+
+  &__nav-dropdown-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+  }
+
+  &__nav-dropdown-top {
+    background-color: colors.$dark;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav-dropdown-top-title {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    color: white;
+  }
+
+  &__nav-dropdown-top-close-btn {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__nav-dropdown-content-holder {
+    background-color: #fff;
+    padding: .5rem;
+  }
+
+  &__nav-dropdown-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: colors.$dark;
+    letter-spacing: 0.06em;
+    margin-bottom: 11px;
+    text-transform: uppercase;
+  }
+
+  &__nav-dropdown-radio-holder {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  &__nav-dropdown-radio-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &:first-of-type {margin-bottom: 23px;}
+  }
+
+  &__nav-dropdown-radio {
+    margin-right: 8px;
+    accent-color: colors.$dark;
+  }
 }
 
 
