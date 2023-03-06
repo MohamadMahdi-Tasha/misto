@@ -504,6 +504,9 @@ template {
   border: none;
   height: 20px;
 }
+.header__nav-list-item-btn > svg {
+  pointer-events: none;
+}
 .header__nav-list-item-btn--checkout {
   position: relative;
 }

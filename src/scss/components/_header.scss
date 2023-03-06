@@ -114,6 +114,7 @@
     border: none;
     height: 20px;
 
+    > svg {pointer-events: none;}
     &--checkout {
       position: relative;
 
