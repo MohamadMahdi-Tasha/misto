@@ -115,7 +115,7 @@ export default function HeaderNavDropdownsComponent(props) {
                 <div className='header__nav-dropdown'>
                     <HeaderNavDropdownsTopSideComponent/>
                     <div className='header__nav-dropdown-content-holder'>
-                        <div className='header__nav-dropdown-collapse-holder'>
+                        <div className='header__nav-dropdown-collapse-holder header__nav-dropdown-collapse-holder--opened'>
                             <button className='header__nav-dropdown-collapse-toggler'>
                                 <span>All Categories</span>
                                 <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
