@@ -374,18 +374,18 @@
     width: 100%;
     transition: .3s;
     overflow: hidden;
+    margin-bottom: 24px;
 
-    > .header__nav-dropdown-collapse-toggler > svg {
-      transition: .3s;
-      transform: rotate(0deg);
+    > .header__nav-dropdown-collapse-toggler > svg {transition: .3s;}
+
+    &[data-opened = 'true'] {
+      height: 100px;
+      > .header__nav-dropdown-collapse-toggler > svg {transform: rotate(180deg);}
     }
 
-    &--opened {
-      height: 100px;
-
-      > .header__nav-dropdown-collapse-toggler > svg {
-        transform: rotate(180deg);
-      }
+    &[data-opened = 'false'] {
+      height: 50px;
+      > .header__nav-dropdown-collapse-toggler > svg {transform: rotate(0);}
     }
   }
 
@@ -404,16 +404,97 @@
   }
 
   &__nav-dropdown-collapse {
-    padding: .5rem;
+    padding: 1rem;
+    overflow: auto;
+    height: 50px;
+    list-style: none;
     display: flex;
     flex-direction: column;
-    overflow: auto;
     gap: 20px;
-    height: 50px;
+    @include mixins.scrollbar;
+  }
 
-    &::-webkit-scrollbar {
-      display: none;
+  &__nav-dropdown-collapse-btn {
+    width: 100%;
+    text-align: left;
+    padding: .5rem;
+    border: none;
+    background-color: colors.$dark;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  &__nav-dropdown-input-form {
+    height: 50px;
+    background-color: colors.$gr-white;
+    width: 100%;
+    transition: .3s;
+    display: flex;
+  }
+
+  &__nav-dropdown-input-in-form {
+    width: 100%;
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: colors.$dark;
+
+    &::placeholder {
+      color: rgba(18, 18, 18, .6);
+      font-weight: 500;
+      font-size: 14px;
     }
+  }
+
+  &__nav-dropdown-btn-in-form {
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__nav-dropdown-hr {
+    margin-block: 24px;
+    border-color: colors.$grey;
+  }
+
+  &__nav-dropdown-inspration-holder {
+    height: 320px;
+    overflow: auto;
+    @include mixins.scrollbar;
+  }
+
+  &__nav-dropdown-inspration-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__nav-dropdown-inspration-link {display: flex;}
+  &__nav-dropdown-inspration-img {
+    height: 90px;
+    width: 72px;
+    margin-right: 16px;
+  }
+
+  &__nav-dropdown-inspration-title {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(18, 18, 18, .6);
+    margin-bottom: 8px;
+  }
+
+  &__nav-dropdown-inspration-price {
+    color: colors.$dark;
+    font-weight: 700;
+    font-size: 14px;
   }
 }
 

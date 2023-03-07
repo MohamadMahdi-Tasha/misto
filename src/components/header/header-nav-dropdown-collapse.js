@@ -1,0 +1,38 @@
+// Codes By Mahdi Tasha
+// Importing Part
+import React, { useState } from "react";
+
+// Exporting header dropdown Collapse Component Functional Component As Default
+export default function HeaderNavDropdownCollapseComponent() {
+    // Setting StateS
+    const [isCollapseOpened, setCloseOrOpenOnCollapse] = useState(false);
+    const [timesClickedOnToggler, setTimesClickedOnToggler] = useState(0);
+
+
+    // A Function To Handle Clicks Of Toggler Button
+    function handleTogglerButtonClick() {
+        setTimesClickedOnToggler((prevState) => prevState + 1)
+
+        if (timesClickedOnToggler % 2 === 0) {
+            setCloseOrOpenOnCollapse(true)
+        } else {
+            setCloseOrOpenOnCollapse(false)
+        }
+    }
+
+    // Returning JSX
+    return (
+        <div className='header__nav-dropdown-collapse-holder' data-opened={isCollapseOpened}>
+            <button onClick={handleTogglerButtonClick} className='header__nav-dropdown-collapse-toggler'>
+                <span>All Categories</span>
+                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 1L8 8L1 0.999999" stroke="#121212" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <ul className='header__nav-dropdown-collapse'>
+                <li><button className='header__nav-dropdown-collapse-btn'>1</button></li>
+                <li><button className='header__nav-dropdown-collapse-btn'>2</button></li>
+                <li><button className='header__nav-dropdown-collapse-btn'>3</button></li>
+                <li><button className='header__nav-dropdown-collapse-btn'>4</button></li>
+            </ul>
+        </div>
+    );
+}

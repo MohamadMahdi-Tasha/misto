@@ -1,6 +1,7 @@
 // Codes By Mahdi Tasha
 // Importing Part
 import IMG from '../../assets/img/header/img-nav-menu-slider.png';
+import HeaderNavDropdownCollapseComponent from "./header-nav-dropdown-collapse";
 
 // Exporting header dropdown Component Functional Component As Default
 export default function HeaderNavDropdownsComponent(props) {
@@ -115,24 +116,9 @@ export default function HeaderNavDropdownsComponent(props) {
                 <div className='header__nav-dropdown'>
                     <HeaderNavDropdownsTopSideComponent/>
                     <div className='header__nav-dropdown-content-holder'>
-                        <div className='header__nav-dropdown-collapse-holder header__nav-dropdown-collapse-holder--opened'>
-                            <button className='header__nav-dropdown-collapse-toggler'>
-                                <span>All Categories</span>
-                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15 1L8 8L1 0.999999" stroke="#121212" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <div className='header__nav-dropdown-collapse'>
-                                <button>1</button>
-                                <button>2</button>
-                                <button>3</button>
-                                <button>4</button>
-                            </div>
-                        </div>
+                        <HeaderNavDropdownCollapseComponent />
                         <form className='header__nav-dropdown-input-form' action="#">
-                            <input className='header__nav-dropdown-input-in-form' type="text"/>
+                            <input placeholder='What are you Looking for?' className='header__nav-dropdown-input-in-form' type="text"/>
                             <button className='header__nav-dropdown-btn-in-form' type='submit'>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
