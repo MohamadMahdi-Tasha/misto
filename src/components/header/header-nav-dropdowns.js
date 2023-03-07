@@ -195,7 +195,8 @@ export default function HeaderNavDropdownsComponent(props) {
                     <HeaderNavDropdownsTopSideComponent/>
                     <div className='header__nav-dropdown-content-holder'>
                         <ul className='header__nav-dropdown-cart-list'>
-                            <HeaderNavDropdownCartLiComponent img={IMG} name={"Women's tracksuit Q109"} subname={'Blue, S'} />
+                            <HeaderNavDropdownCartLiComponent img={IMG} name={"Women's tracksuit Q109"} subname={'Blue, S'} price={37999}/>
+                            <HeaderNavDropdownCartLiComponent img={IMG} name={"Women's tracksuit Q109"} subname={'Blue, S'} price={37999}/>
                         </ul>
                         <div className='header__nav-dropdown-cart-total-holder'>
                             <h6 className='header__nav-dropdown-cart-total-txt'>Total</h6>
