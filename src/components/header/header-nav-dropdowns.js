@@ -2,6 +2,7 @@
 // Importing Part
 import IMG from '../../assets/img/header/img-nav-menu-slider.png';
 import HeaderNavDropdownCollapseComponent from "./header-nav-dropdown-collapse";
+import HeaderNavDropdownInsprationItemComponent from "./header-nav-dropdown-inspration-item";
 
 // Exporting header dropdown Component Functional Component As Default
 export default function HeaderNavDropdownsComponent(props) {
@@ -116,7 +117,7 @@ export default function HeaderNavDropdownsComponent(props) {
                 <div className='header__nav-dropdown'>
                     <HeaderNavDropdownsTopSideComponent/>
                     <div className='header__nav-dropdown-content-holder'>
-                        <HeaderNavDropdownCollapseComponent />
+                        <HeaderNavDropdownCollapseComponent list={[1,2,3,4]}/>
                         <form className='header__nav-dropdown-input-form' action="#">
                             <input placeholder='What are you Looking for?' className='header__nav-dropdown-input-in-form' type="text"/>
                             <button className='header__nav-dropdown-btn-in-form' type='submit'>
@@ -132,116 +133,16 @@ export default function HeaderNavDropdownsComponent(props) {
                         <h6 className='header__nav-dropdown-title'>Need some inspiration?</h6>
                         <div className='header__nav-dropdown-inspration-holder'>
                             <ul className='header__nav-dropdown-inspration-list'>
-                                <li className='header__nav-dropdown-inspration'>
-                                    <a className='header__nav-dropdown-inspration-link' href="#">
-                                        <img className='header__nav-dropdown-inspration-img' src={IMG}
-                                             alt="Women's tracksuit Q109"/>
-                                        <div className='header__nav-dropdown-inspration-content'>
-                                            <h6 className='header__nav-dropdown-inspration-title'>Women's tracksuit
-                                                Q109</h6>
-                                            <h6 className='header__nav-dropdown-inspration-price'>$379.99</h6>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li className='header__nav-dropdown-inspration'>
-                                    <a className='header__nav-dropdown-inspration-link' href="#">
-                                        <img className='header__nav-dropdown-inspration-img' src={IMG}
-                                             alt="Women's tracksuit Q109"/>
-                                        <div className='header__nav-dropdown-inspration-content'>
-                                            <h6 className='header__nav-dropdown-inspration-title'>Women's tracksuit
-                                                Q109</h6>
-                                            <h6 className='header__nav-dropdown-inspration-price'>$379.99</h6>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li className='header__nav-dropdown-inspration'>
-                                    <a className='header__nav-dropdown-inspration-link' href="#">
-                                        <img className='header__nav-dropdown-inspration-img' src={IMG}
-                                             alt="Women's tracksuit Q109"/>
-                                        <div className='header__nav-dropdown-inspration-content'>
-                                            <h6 className='header__nav-dropdown-inspration-title'>Women's tracksuit
-                                                Q109</h6>
-                                            <h6 className='header__nav-dropdown-inspration-price'>$379.99</h6>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li className='header__nav-dropdown-inspration'>
-                                    <a className='header__nav-dropdown-inspration-link' href="#">
-                                        <img className='header__nav-dropdown-inspration-img' src={IMG}
-                                             alt="Women's tracksuit Q109"/>
-                                        <div className='header__nav-dropdown-inspration-content'>
-                                            <h6 className='header__nav-dropdown-inspration-title'>Women's tracksuit
-                                                Q109</h6>
-                                            <h6 className='header__nav-dropdown-inspration-price'>$379.99</h6>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li className='header__nav-dropdown-inspration'>
-                                    <a className='header__nav-dropdown-inspration-link' href="#">
-                                        <img className='header__nav-dropdown-inspration-img' src={IMG}
-                                             alt="Women's tracksuit Q109"/>
-                                        <div className='header__nav-dropdown-inspration-content'>
-                                            <h6 className='header__nav-dropdown-inspration-title'>Women's tracksuit
-                                                Q109</h6>
-                                            <h6 className='header__nav-dropdown-inspration-price'>$379.99</h6>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li className='header__nav-dropdown-inspration'>
-                                    <a className='header__nav-dropdown-inspration-link' href="#">
-                                        <img className='header__nav-dropdown-inspration-img' src={IMG}
-                                             alt="Women's tracksuit Q109"/>
-                                        <div className='header__nav-dropdown-inspration-content'>
-                                            <h6 className='header__nav-dropdown-inspration-title'>Women's tracksuit
-                                                Q109</h6>
-                                            <h6 className='header__nav-dropdown-inspration-price'>$379.99</h6>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li className='header__nav-dropdown-inspration'>
-                                    <a className='header__nav-dropdown-inspration-link' href="#">
-                                        <img className='header__nav-dropdown-inspration-img' src={IMG}
-                                             alt="Women's tracksuit Q109"/>
-                                        <div className='header__nav-dropdown-inspration-content'>
-                                            <h6 className='header__nav-dropdown-inspration-title'>Women's tracksuit
-                                                Q109</h6>
-                                            <h6 className='header__nav-dropdown-inspration-price'>$379.99</h6>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li className='header__nav-dropdown-inspration'>
-                                    <a className='header__nav-dropdown-inspration-link' href="#">
-                                        <img className='header__nav-dropdown-inspration-img' src={IMG}
-                                             alt="Women's tracksuit Q109"/>
-                                        <div className='header__nav-dropdown-inspration-content'>
-                                            <h6 className='header__nav-dropdown-inspration-title'>Women's tracksuit
-                                                Q109</h6>
-                                            <h6 className='header__nav-dropdown-inspration-price'>$379.99</h6>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li className='header__nav-dropdown-inspration'>
-                                    <a className='header__nav-dropdown-inspration-link' href="#">
-                                        <img className='header__nav-dropdown-inspration-img' src={IMG}
-                                             alt="Women's tracksuit Q109"/>
-                                        <div className='header__nav-dropdown-inspration-content'>
-                                            <h6 className='header__nav-dropdown-inspration-title'>Women's tracksuit
-                                                Q109</h6>
-                                            <h6 className='header__nav-dropdown-inspration-price'>$379.99</h6>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li className='header__nav-dropdown-inspration'>
-                                    <a className='header__nav-dropdown-inspration-link' href="#">
-                                        <img className='header__nav-dropdown-inspration-img' src={IMG}
-                                             alt="Women's tracksuit Q109"/>
-                                        <div className='header__nav-dropdown-inspration-content'>
-                                            <h6 className='header__nav-dropdown-inspration-title'>Women's tracksuit
-                                                Q109</h6>
-                                            <h6 className='header__nav-dropdown-inspration-price'>$379.99</h6>
-                                        </div>
-                                    </a>
-                                </li>
+                                <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Women's tracksuit Q109"} price={37999}/>
+                                <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Woman's tracksuit Q109"} price={37999}/>
+                                <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Woman's tracksuit Q109"} price={37999}/>
+                                <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Woman's tracksuit Q109"} price={37999}/>
+                                <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Woman's tracksuit Q109"} price={37999}/>
+                                <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Woman's tracksuit Q109"} price={37999}/>
+                                <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Woman's tracksuit Q109"} price={37999}/>
+                                <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Woman's tracksuit Q109"} price={37999}/>
+                                <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Woman's tracksuit Q109"} price={37999}/>
+                                <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Woman's tracksuit Q109"} price={37999}/>
                             </ul>
                         </div>
                     </div>
