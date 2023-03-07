@@ -821,7 +821,6 @@ template {
   padding: 1rem;
   background-color: transparent;
   border: none;
-  outline: none;
   font-weight: 500;
   font-size: 14px;
   color: #121212;
@@ -879,6 +878,123 @@ template {
   color: #121212;
   font-weight: 700;
   font-size: 14px;
+}
+.header__nav-dropdown-login-title {
+  font-weight: 400;
+  font-size: 14px;
+  color: #121212;
+  margin-bottom: 24px;
+}
+.header__nav-dropdown-login-form {
+  margin-bottom: 42px;
+}
+.header__nav-dropdown-login-form-div {
+  margin-bottom: 32px;
+}
+.header__nav-dropdown-login-password-top-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.header__nav-dropdown-login-password-top-side > .header__nav-dropdown-login-label {
+  margin-bottom: 0;
+}
+.header__nav-dropdown-login-label {
+  margin-bottom: 8px;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  font-size: 12px;
+  color: #121212;
+  display: block;
+}
+.header__nav-dropdown-login-input {
+  height: 50px;
+  color: #121212;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 1rem;
+  background-color: #F8F8F8;
+  border: none;
+  display: block;
+  width: 100%;
+}
+.header__nav-dropdown-login-input::placeholder {
+  color: rgba(18, 18, 18, 0.4);
+  font-weight: 500;
+  font-size: 14px;
+}
+.header__nav-dropdown-login-link {
+  color: rgba(18, 18, 18, 0.6);
+  font-weight: 500;
+  font-size: 11px;
+}
+.header__nav-dropdown-submit-btn {
+  background-color: #121212;
+  color: white;
+  letter-spacing: 0.06em;
+  font-size: 13px;
+  line-height: 15px;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+}
+.header__nav-dropdown-or-holder {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.header__nav-dropdown-or-line {
+  border-bottom: 1px solid #E6E6E6;
+  width: 100%;
+}
+.header__nav-dropdown-or-txt {
+  margin-inline: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #121212;
+}
+.header__nav-dropdown-list-of-ways-to-login {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 100px;
+}
+.header__nav-dropdown-list-of-ways-to-login > li {
+  height: 40px;
+  width: 40px;
+}
+.header__nav-dropdown-list-of-ways-to-login > li > a {
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+.header__nav-dropdown-bottom-btns-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.header__nav-dropdown-bgwhite-btn {
+  padding: 1rem;
+  background-color: white;
+  border: none;
+  color: #121212;
+  font-weight: 400;
+  font-size: 14px;
+  width: 100%;
+}
+.header__nav-dropdown-bgrey-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #F8F8F8;
+  border: none;
+  color: #121212;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 @media (max-width: 991px) {
