@@ -14,8 +14,8 @@ export default function HeaderNavDropdownsComponent(props) {
                 <h6 className='header__nav-dropdown-top-title'>{props.type.toUpperCase()}</h6>
                 <button onClick={props.closingFunction} className='header__nav-dropdown-top-close-btn'>
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L13 13M1 13L13 1L1 13Z" stroke="white" stroke-linecap="round"
-                              stroke-linejoin="round"/>
+                        <path d="M1 1L13 13M1 13L13 1L1 13Z" stroke="white" strokeLinecap="round"
+                              strokeLinejoin="round"/>
                     </svg>
                 </button>
             </div>
@@ -125,7 +125,7 @@ export default function HeaderNavDropdownsComponent(props) {
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M19 19L13 13L19 19ZM15 8C15 8.91925 14.8189 9.82951 14.4672 10.6788C14.1154 11.5281 13.5998 12.2997 12.9497 12.9497C12.2997 13.5998 11.5281 14.1154 10.6788 14.4672C9.82951 14.8189 8.91925 15 8 15C7.08075 15 6.1705 14.8189 5.32122 14.4672C4.47194 14.1154 3.70026 13.5998 3.05025 12.9497C2.40024 12.2997 1.88463 11.5281 1.53284 10.6788C1.18106 9.82951 1 8.91925 1 8C1 6.14348 1.7375 4.36301 3.05025 3.05025C4.36301 1.7375 6.14348 1 8 1C9.85652 1 11.637 1.7375 12.9497 3.05025C14.2625 4.36301 15 6.14348 15 8Z"
-                                        stroke="#121212" stroke-linecap="round" stroke-linejoin="round"/>
+                                        stroke="#121212" strokeLinecap="round" strokeLinejoin="round"/>
                                 </svg>
                             </button>
                         </form>
@@ -170,7 +170,7 @@ export default function HeaderNavDropdownsComponent(props) {
                             <button className='header__nav-dropdown-submit-btn'>LOGIN</button>
                         </form>
                         <div className='header__nav-dropdown-or-holder'>
-                            <div className='header__nav-dropdown-or-line'></div>
+                            <div className='header__nav-dropdown-orLine'></div>
                             <span className='header__nav-dropdown-or-txt'>or</span>
                             <div className='header__nav-dropdown-or-holder'></div>
                         </div>
@@ -236,7 +236,7 @@ export default function HeaderNavDropdownsComponent(props) {
                                                  xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M1 5H17M16 5L15.133 17.142C15.0971 17.6466 14.8713 18.1188 14.5011 18.4636C14.1309 18.8083 13.6439 19 13.138 19H4.862C4.35614 19 3.86907 18.8083 3.49889 18.4636C3.1287 18.1188 2.90292 17.6466 2.867 17.142L2 5H16ZM7 9V15V9ZM11 9V15V9ZM12 5V2C12 1.73478 11.8946 1.48043 11.7071 1.29289C11.5196 1.10536 11.2652 1 11 1H7C6.73478 1 6.48043 1.10536 6.29289 1.29289C6.10536 1.48043 6 1.73478 6 2V5H12Z"
-                                                    stroke="#121212" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    stroke="#121212" strokeLinecap="round" strokeLinejoin="round"/>
                                             </svg>
                                         </button>
                                     </div>
@@ -260,7 +260,7 @@ export default function HeaderNavDropdownsComponent(props) {
                                                  xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M1 5H17M16 5L15.133 17.142C15.0971 17.6466 14.8713 18.1188 14.5011 18.4636C14.1309 18.8083 13.6439 19 13.138 19H4.862C4.35614 19 3.86907 18.8083 3.49889 18.4636C3.1287 18.1188 2.90292 17.6466 2.867 17.142L2 5H16ZM7 9V15V9ZM11 9V15V9ZM12 5V2C12 1.73478 11.8946 1.48043 11.7071 1.29289C11.5196 1.10536 11.2652 1 11 1H7C6.73478 1 6.48043 1.10536 6.29289 1.29289C6.10536 1.48043 6 1.73478 6 2V5H12Z"
-                                                    stroke="#121212" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    stroke="#121212" strokeLinecap="round" strokeLinejoin="round"/>
                                             </svg>
                                         </button>
                                     </div>

@@ -49,8 +49,8 @@ export default function HeaderNavMenuComponent() {
                     <div className='header__nav-menu-slider-top'>
                         <h6 className='header__nav-menu-title'>BESTSELLERS</h6>
                         <div className='header__nav-menu-slider-top-btns-holder'>
-                            <button tabIndex='-1' onClick={() => navMenuSlider.slideNext()} className='header__nav-menu-slider-top-btn'><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.6498 8.8499L0.799805 4.9999L4.6498 1.1499" stroke="#121212" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-                            <button tabIndex='-1' onClick={() => navMenuSlider.slidePrev()} className='header__nav-menu-slider-top-btn'><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.34985 1.1499L5.19985 4.9999L1.34985 8.8499" stroke="#121212" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                            <button tabIndex='-1' onClick={() => navMenuSlider.slideNext()} className='header__nav-menu-slider-top-btn'><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.6498 8.8499L0.799805 4.9999L4.6498 1.1499" stroke="#121212" strokeLinecap="round" strokeLinejoin="round"/></svg></button>
+                            <button tabIndex='-1' onClick={() => navMenuSlider.slidePrev()} className='header__nav-menu-slider-top-btn'><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.34985 1.1499L5.19985 4.9999L1.34985 8.8499" stroke="#121212" strokeLinecap="round" strokeLinejoin="round"/></svg></button>
                         </div>
                     </div>
                     <Swiper spaceBetween={50} slidesPerView={3} className="header__nav-menu-swiper">
