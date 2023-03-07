@@ -465,7 +465,29 @@ template {
   align-items: center;
   flex-wrap: wrap;
 }
+.header__nav-list-item--menu-toggler > .header__nav-list-item-link::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #121212;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: 0.3s;
+  opacity: 0;
+}
+.header__nav-list-item--menu-toggler:hover > .header__nav-menu {
+  opacity: 1;
+  pointer-events: visible;
+}
+.header__nav-list-item--menu-toggler:hover > .header__nav-list-item-link::after {
+  opacity: 1;
+}
 .header__nav-list-item-link {
+  position: relative;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -475,16 +497,6 @@ template {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.header__nav-list-item-link--menu {
-  position: relative;
-}
-.header__nav-list-item-link--menu:is(:hover, :focus) {
-  font-weight: 600;
-}
-.header__nav-list-item-link--menu:is(:hover, :focus) ~ .header__nav-menu {
-  opacity: 1;
-  pointer-events: visible;
 }
 .header__nav-list-item-btn {
   background-color: transparent;
@@ -570,7 +582,6 @@ template {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 72px;
   background-color: white;
   width: 100%;
   left: 0;
