@@ -10,7 +10,7 @@ export default function HeaderNavDropdownsComponent(props) {
         return (
             <div className='header__nav-dropdown-top'>
                 <h6 className='header__nav-dropdown-top-title'>{props.type.toUpperCase()}</h6>
-                <button className='header__nav-dropdown-top-close-btn'>
+                <button onClick={props.onClickOfCloseButton} className='header__nav-dropdown-top-close-btn'>
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L13 13M1 13L13 1L1 13Z" stroke="white" stroke-linecap="round"
                               stroke-linejoin="round"/>
@@ -24,7 +24,7 @@ export default function HeaderNavDropdownsComponent(props) {
     if (props.type === 'localization') {
         return (
             <div className='header__nav-dropdown-holder'>
-                <div className='header__nav-dropdown-bg'></div>
+                <div className='header__nav-dropdown-bg' onClick={props.onClickOfCloseButton}></div>
                 <div className='header__nav-dropdown'>
                     <HeaderNavDropdownsTopSideComponent/>
                     <div className='header__nav-dropdown-content-holder'>
@@ -111,7 +111,7 @@ export default function HeaderNavDropdownsComponent(props) {
     } else if (props.type === 'search') {
         return (
             <div className='header__nav-dropdown-holder'>
-                <div className='header__nav-dropdown-bg'></div>
+                <div className='header__nav-dropdown-bg' onClick={props.onClickOfCloseButton}></div>
                 <div className='header__nav-dropdown'>
                     <HeaderNavDropdownsTopSideComponent/>
                     <div className='header__nav-dropdown-content-holder'>
@@ -265,7 +265,7 @@ export default function HeaderNavDropdownsComponent(props) {
     } else if (props.type === 'login') {
         return (
             <div className='header__nav-dropdown-holder'>
-                <div className='header__nav-dropdown-bg'></div>
+                <div className='header__nav-dropdown-bg' onClick={props.onClickOfCloseButton}></div>
                 <div className='header__nav-dropdown'>
                     <HeaderNavDropdownsTopSideComponent/>
                     <div className='header__nav-dropdown-content-holder'>
@@ -326,7 +326,7 @@ export default function HeaderNavDropdownsComponent(props) {
     } else if (props.type === 'cart') {
         return (
             <div className='header__nav-dropdown-holder'>
-                <div className='header__nav-dropdown-bg'></div>
+                <div className='header__nav-dropdown-bg' onClick={props.onClickOfCloseButton}></div>
                 <div className='header__nav-dropdown'>
                     <HeaderNavDropdownsTopSideComponent/>
                     <div className='header__nav-dropdown-holder'>

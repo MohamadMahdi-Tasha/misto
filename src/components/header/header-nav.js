@@ -34,7 +34,7 @@ export default function HeaderNavComponent (props) {
     // Returning JSX
     return (
         <nav className='header__nav'>
-            {(isDropDownOpened) ? <HeaderNavDropdownsComponent type={valueToSetDropDown}/> : false}
+            {(isDropDownOpened) ? <HeaderNavDropdownsComponent type={valueToSetDropDown} onClickOfCloseButton={() => setOpenOrCloseOfDropDown(false)}/> : false}
             <div className="header__nav-inner">
                 <img className='header__nav-img' src={logoTypo} alt="Misto Logo"/>
                 <ul className='header__nav-list'>
