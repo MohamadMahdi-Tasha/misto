@@ -198,7 +198,7 @@
     z-index: 1000;
     border-top: 2px solid colors.$dark;
 
-    &:is(:hover, :focus) {
+    &:hover {
       opacity: 1;
       pointer-events: visible;
     }

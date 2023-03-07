@@ -594,7 +594,7 @@ template {
   z-index: 1000;
   border-top: 2px solid #121212;
 }
-.header__nav-menu:is(:hover, :focus) {
+.header__nav-menu:hover {
   opacity: 1;
   pointer-events: visible;
 }
