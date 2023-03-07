@@ -483,6 +483,9 @@ template {
   opacity: 1;
   pointer-events: visible;
 }
+.header__nav-list-item--menu-toggler:hover > .header__nav-list-item-link {
+  font-weight: 600;
+}
 .header__nav-list-item--menu-toggler:hover > .header__nav-list-item-link::after {
   opacity: 1;
 }

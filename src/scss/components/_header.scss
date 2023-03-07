@@ -91,7 +91,13 @@
 
     &:hover {
       > .header__nav-menu {opacity: 1;pointer-events: visible}
-      > .header__nav-list-item-link::after {opacity: 1;}
+      > .header__nav-list-item-link {
+        font-weight: 600;
+
+        &::after {
+          opacity: 1;
+        }
+      }
     }
   }
 
