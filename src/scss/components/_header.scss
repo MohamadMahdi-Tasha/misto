@@ -60,7 +60,7 @@
     justify-content: space-between;
     max-width: 1100px;
     margin-inline: auto;
-    padding: 1rem .5rem;
+    padding-inline: .5rem;
     flex-wrap: wrap;
     gap: 10px;
   }
@@ -79,6 +79,10 @@
     line-height: 16px;
     color: colors.$dark;
     transition: .3s;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &--menu {
       position: relative;
@@ -92,15 +96,16 @@
         border-right: 5px solid transparent;
         border-bottom: 5px solid colors.$dark;
         left: 50%;
-        top: 33px;
+        bottom: 0;
         transform: translateX(-50%);
         transition: .3s;
         opacity: 0;
       }
 
-      &:focus {
+      &:is(:hover, :focus) {
         font-weight: 600;
         &:after {opacity: 1;}
+
         ~ .header__nav-menu {
           opacity: 1;
           pointer-events: visible;
@@ -186,7 +191,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 84px;
+    top: 72px;
     background-color: white;
     width: 100%;
     left: 0;
