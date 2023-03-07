@@ -281,6 +281,11 @@
   }
 
   // Styles Of DropDowns In Header
+  &__nav-dropdown-holder[data-opened='true'] {
+    .header__nav-dropdown {right: 0;opacity: 1;}
+    .header__nav-dropdown-bg {opacity: 1;pointer-events: visible;}
+  }
+
   &__nav-dropdown {
     position: fixed;
     top: 0;
@@ -289,7 +294,9 @@
     overflow: auto;
     box-shadow: 0 0 30px rgba(0,0,0,.2);
     background-color: white;
-    animation: nav-dropdown .5s cubic-bezier(.4,0,.2,1) forwards;
+    right: -400px;
+    opacity: 0;
+    @include mixins.transition;
   }
 
   &__nav-dropdown-bg {
@@ -299,7 +306,9 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,.2);
-    animation: nav-dropdown-bg .5s cubic-bezier(.4,0,.2,1) forwards;
+    opacity: 0;
+    pointer-events: none;
+    @include mixins.transition;
   }
 
   &__nav-dropdown-top {
@@ -428,7 +437,3 @@
 }
 
 @media (max-width: 527px) { .header__top-bar {display: none;} }
-
-// Animations
-@keyframes nav-dropdown { from {right: -400px;} to {right: 0;} }
-@keyframes nav-dropdown-bg { from {opacity: 0;} to {opacity: 1;} }
