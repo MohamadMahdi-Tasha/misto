@@ -3,6 +3,7 @@
 import IMG from '../../assets/img/header/img-nav-menu-slider.png';
 import HeaderNavDropdownCollapseComponent from "./header-nav-dropdown-collapse";
 import HeaderNavDropdownInsprationItemComponent from "./header-nav-dropdown-inspration-item";
+import HeaderNavDropdownCartLiComponent from "./header-nav-dropdown-cart-li";
 
 // Exporting header dropdown Component Functional Component As Default
 export default function HeaderNavDropdownsComponent(props) {
@@ -194,65 +195,16 @@ export default function HeaderNavDropdownsComponent(props) {
                     <HeaderNavDropdownsTopSideComponent/>
                     <div className='header__nav-dropdown-content-holder'>
                         <ul className='header__nav-dropdown-cart-list'>
-                            <li className='header__nav-dropdown-cart-li'>
-                                <img className='header__nav-dropdown-cart-li-img' src={IMG}
-                                     alt="Women's tracksuit Q109"/>
-                                <div className='header__nav-dropdown-cart-li-content'>
-                                    <h6 className='header__nav-dropdown-cart-li-title'>Women's tracksuit Q109</h6>
-                                    <h6 className='header__nav-dropdown-cart-li-subtitle'>Blue, S</h6>
-                                    <div className='header__nav-dropdown-cart-li-bottom'>
-                                        <div className='header__nav-dropdown-cart-li-dec-inc-holder'>
-                                            <button className='header__nav-dropdown-cart-li-dev-btn'>-</button>
-                                            <span className='header__nav-dropdown-cart-li-dev-inc-number'>1</span>
-                                            <button className='header__nav-dropdown-cart-li-inc-btn'>+</button>
-                                        </div>
-                                        <h6 className='header__nav-dropdown-cart-li-price'>$379.99</h6>
-                                        <button className='header__nav-dropdown-cart-li-deleted-btn'>
-                                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M1 5H17M16 5L15.133 17.142C15.0971 17.6466 14.8713 18.1188 14.5011 18.4636C14.1309 18.8083 13.6439 19 13.138 19H4.862C4.35614 19 3.86907 18.8083 3.49889 18.4636C3.1287 18.1188 2.90292 17.6466 2.867 17.142L2 5H16ZM7 9V15V9ZM11 9V15V9ZM12 5V2C12 1.73478 11.8946 1.48043 11.7071 1.29289C11.5196 1.10536 11.2652 1 11 1H7C6.73478 1 6.48043 1.10536 6.29289 1.29289C6.10536 1.48043 6 1.73478 6 2V5H12Z"
-                                                    stroke="#121212" strokeLinecap="round" strokeLinejoin="round"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </li>
-                            <li className='header__nav-dropdown-cart-li'>
-                                <img className='header__nav-dropdown-cart-li-img' src={IMG}
-                                     alt="Women's tracksuit Q109"/>
-                                <div className='header__nav-dropdown-cart-li-content'>
-                                    <h6 className='header__nav-dropdown-cart-li-title'>Women's tracksuit Q109</h6>
-                                    <h6 className='header__nav-dropdown-cart-li-subtitle'>Blue, S</h6>
-                                    <div className='header__nav-dropdown-cart-li-bottom'>
-                                        <div className='header__nav-dropdown-cart-li-dec-inc-holder'>
-                                            <button className='header__nav-dropdown-cart-li-dev-btn'>-</button>
-                                            <span className='header__nav-dropdown-cart-li-dev-inc-number'>1</span>
-                                            <button className='header__nav-dropdown-cart-li-inc-btn'>+</button>
-                                        </div>
-                                        <h6 className='header__nav-dropdown-cart-li-price'>$379.99</h6>
-                                        <button className='header__nav-dropdown-cart-li-deleted-btn'>
-                                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M1 5H17M16 5L15.133 17.142C15.0971 17.6466 14.8713 18.1188 14.5011 18.4636C14.1309 18.8083 13.6439 19 13.138 19H4.862C4.35614 19 3.86907 18.8083 3.49889 18.4636C3.1287 18.1188 2.90292 17.6466 2.867 17.142L2 5H16ZM7 9V15V9ZM11 9V15V9ZM12 5V2C12 1.73478 11.8946 1.48043 11.7071 1.29289C11.5196 1.10536 11.2652 1 11 1H7C6.73478 1 6.48043 1.10536 6.29289 1.29289C6.10536 1.48043 6 1.73478 6 2V5H12Z"
-                                                    stroke="#121212" strokeLinecap="round" strokeLinejoin="round"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </li>
+                            <HeaderNavDropdownCartLiComponent img={IMG} name={"Women's tracksuit Q109"} subname={'Blue, S'} />
                         </ul>
                         <div className='header__nav-dropdown-cart-total-holder'>
                             <h6 className='header__nav-dropdown-cart-total-txt'>Total</h6>
                             <h6 className='header__nav-dropdown-cart-total-number'>$433.99</h6>
                         </div>
-                        <a href="#">
-                            <button className='header__nav-dropdown-submit-btn'>Check Out</button>
-                        </a>
-                        <a href="#">
-                            <button className='header__nav-dropdown-bggrey-btn'>View Cart</button>
-                        </a>
+                        <div className='header__nav-dropdown-bottom-btns-holder'>
+                            <a href="#"><button tabIndex='-1' className='header__nav-dropdown-submit-btn'>Check Out</button></a>
+                            <a href="#"><button tabIndex='-1' className='header__nav-dropdown-bgrey-btn'>View Cart</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
