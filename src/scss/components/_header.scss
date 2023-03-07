@@ -87,24 +87,8 @@
     &--menu {
       position: relative;
 
-      &:after {
-        content: '';
-        width: 0;
-        height: 0;
-        position: absolute;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-bottom: 5px solid colors.$dark;
-        left: 50%;
-        bottom: 0;
-        transform: translateX(-50%);
-        transition: .3s;
-        opacity: 0;
-      }
-
       &:is(:hover, :focus) {
         font-weight: 600;
-        &:after {opacity: 1;}
 
         ~ .header__nav-menu {
           opacity: 1;
