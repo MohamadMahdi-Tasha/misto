@@ -4,6 +4,7 @@
 
 // Some Public Styles For All Pages
 .page {
+  & section {margin-bottom: 97px;}
   &:first-of-type {margin-top: calc(23px + 50px + 32px);}
   &__inner {
     max-width: 1100px;

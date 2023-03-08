@@ -2,10 +2,10 @@
 // Importing Part
 import AdvantageComponent from "../components/advantage";
 import SecondSectImg from '../assets/img/home-page/img-sect-2.jpg';
-import PageSectionsComponent from "../components/page-sections";
-import PageFilterComponent from "./components/page-filter";
-import PageProductsListComponent from "./components/page-products-list";
-import PageProductsItemComponent from "./components/page-products-item";
+import PageSectionsComponent from "../components/pages/page-sections";
+import PageFilterComponent from "../components/pages/page-filter";
+import PageProductsListComponent from "../components/pages/page-products-list";
+import PageProductsItemComponent from "../components/pages/page-products-item";
 
 // Exporting Home Page Functional Component As Default
 export default function HomePage() {
@@ -32,6 +32,13 @@ export default function HomePage() {
                 <PageSectionsComponent pageName={'home'} sectionNumber={'second'}>
                     <PageFilterComponent title={'WOMEN’S'}/>
                     <PageProductsListComponent>
+                        <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
+                        <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
+                        <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
+                        <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
+                        <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
+                        <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
+                        <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
                         <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
                     </PageProductsListComponent>
                     <a href="#"><button tabIndex='-1' className='page--home__products-see-more-btn'>SEE ALL</button></a>

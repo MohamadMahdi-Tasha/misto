@@ -7,7 +7,7 @@ export default function PageProductsItemComponent(props) {
     // Returning JSX
     return (
         <li className='page--home__products-item'>
-            <a className='page--home__product-link' href="#">
+            <a className='page--home__product-link' href="src/components/pages/page-products-item#">
                 <img className='page--home__product-img' src={props.img} alt={props.name}/>
                 <h6 className='page--home__product-name'>{props.name}</h6>
                 <div className='page--home__product-price-and-score-holder'>

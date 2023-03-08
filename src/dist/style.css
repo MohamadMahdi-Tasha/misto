@@ -235,7 +235,7 @@ a {
 
 body {
   font-family: "League Spartan", sans-serif;
-  background-color: #F8F8F8;
+  background-color: #FEFEFE;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -1145,7 +1145,7 @@ template {
   grid-column: span 2;
   grid-row: span 2;
   padding: 1rem;
-  background-color: #E91E63;
+  background-color: #F8F8F8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1187,7 +1187,7 @@ template {
   grid-column: span 2;
 }
 .page--home__first-sect__women, .page--home__first-sect__men, .page--home__first-sect__accessories {
-  background-color: #E91E63;
+  background-color: #F8F8F8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1207,7 +1207,84 @@ template {
 .page--home__first-sect__women__inner-link:hover, .page--home__first-sect__men__inner-link:hover, .page--home__first-sect__accessories__inner-link:hover {
   outline-color: rgba(255, 255, 255, 0.6);
 }
+.page--home__filter-btns-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.page--home__filter-btns-title {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 22px;
+  color: #121212;
+}
+.page--home__filter-btns-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.page--home__filter-btn {
+  background-color: transparent;
+  border: none;
+  color: rgba(18, 18, 18, 0.6);
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.page--home__filter-btn--active {
+  color: #121212;
+}
+.page--home__products-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  list-style: none;
+  margin-bottom: 48px;
+}
+.page--home__product-link {
+  display: block;
+}
+.page--home__product-img {
+  width: 100%;
+  height: 318px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.page--home__product-name {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(18, 18, 18, 0.6);
+  margin-bottom: 12px;
+}
+.page--home__product-price-and-score-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page--home__product-price {
+  color: #121212;
+  font-weight: 700;
+  font-size: 14px;
+}
+.page--home__products-see-more-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #F8F8F8;
+  border: none;
+  color: rgba(18, 18, 18, 0.8);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 13px;
+}
 
+.page section {
+  margin-bottom: 97px;
+}
 .page:first-of-type {
   margin-top: 105px;
 }
