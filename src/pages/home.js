@@ -1,12 +1,14 @@
 // Codes By Mahdi Tasha
 // Importing Part
 import AdvantageComponent from "../components/advantage";
-import SecondSectImg from '../assets/img/home-page/img-sect-2.jpg';
-import ThirdSectImg from '../assets/img/home-page/img-sect-3.jpg';
 import PageSectionsComponent from "../components/pages/page-sections";
 import PageFilterComponent from "../components/pages/page-filter";
 import PageProductsListComponent from "../components/pages/page-products-list";
 import PageProductsItemComponent from "../components/pages/page-products-item";
+import SecondSectImg from '../assets/img/home-page/img-sect-2.jpg';
+import ThirdSectImg from '../assets/img/home-page/img-sect-3.jpg';
+import FifthSectionImg1 from '../assets/img/home-page/fifth-section/img-1.png';
+import FifthSectionImg2 from '../assets/img/home-page/fifth-section/img-2.png';
 
 // Exporting Home Page Functional Component As Default
 export default function HomePage() {
@@ -72,6 +74,20 @@ export default function HomePage() {
                                 <h4 className='page--home__fourth-sect__banner__inner-link__subtitle'>Get UP to <span className='discount-txt-span'>50% off</span></h4>
                             </a>
                         </div>
+                    </div>
+                </PageSectionsComponent>
+                <PageSectionsComponent pageName={'home'} sectionNumber={'fourth'}>
+                    <div>
+                        <img src={FifthSectionImg1} alt="Image Of Man Standing"/>
+                        <div>
+                            <h3>Special Offer</h3>
+                            <h3>Subscribe <br/> And Get 10% Off</h3>
+                            <form action="#">
+                                <input type="email"/>
+                                <button>Subscribe</button>
+                            </form>
+                        </div>
+                        <img src={FifthSectionImg2} alt="Image Of Woman Standing"/>
                     </div>
                 </PageSectionsComponent>
             </div>
