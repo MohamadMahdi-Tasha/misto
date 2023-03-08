@@ -1,5 +1,6 @@
 // Codes By Mahdi Tasha
 // Importing Part
+import PageComponent from "../components/pages/page";
 import AdvantageComponent from "../components/advantage";
 import PageSectionsComponent from "../components/pages/page-sections";
 import PageFilterComponent from "../components/pages/page-filter";
@@ -19,94 +20,92 @@ import SixthSectionImg3 from '../assets/img/home-page/sixth-section/img-3.jpg';
 export default function HomePage() {
     // Returning JSX
     return (
-        <div className='page page--home'>
-            <div className='page__inner'>
-                <PageSectionsComponent pageName={'home'} sectionNumber={'first'}>
-                    <div className='page--home__first-sect__grid-holder'>
-                        <div className='page--home__first-sect__banner'>
-                            <div className='page--home__first-sect__banner__inner-div'>
-                                <a className='page--home__first-sect__banner__inner-link' href='#'>
-                                    <h6 className='page--home__first-sect__banner__inner-link__title'>Banner</h6>
-                                    <h4 className='page--home__first-sect__banner__inner-link__subtitle'>your Title text</h4>
-                                </a>
-                            </div>
-                        </div>
-                        <div className='page--home__first-sect__women'><a className='page--home__first-sect__women__inner-link' href="#">Women</a></div>
-                        <div className='page--home__first-sect__men'><a className='page--home__first-sect__men__inner-link' href="#">Men</a></div>
-                        <div className='page--home__first-sect__accessories'><a className='page--home__first-sect__accessories__inner-link' href="#">Accsessories</a></div>
-                    </div>
-                    <AdvantageComponent />
-                </PageSectionsComponent>
-                <PageSectionsComponent pageName={'home'} sectionNumber={'second'}>
-                    <PageFilterComponent title={'WOMEN’S'}/>
-                    <PageProductsListComponent>
-                        <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
-                        <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
-                        <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
-                        <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
-                        <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
-                        <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
-                        <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
-                        <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
-                    </PageProductsListComponent>
-                    <a href="#"><button tabIndex='-1' className='page--home__products-see-more-btn'>SEE ALL</button></a>
-                </PageSectionsComponent>
-                <PageSectionsComponent pageName={'home'} sectionNumber={'third'}>
-                    <PageFilterComponent title={'MEN’S'}/>
-                    <PageProductsListComponent>
-                        <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
-                        <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
-                        <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
-                        <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
-                        <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
-                        <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
-                        <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
-                        <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
-                    </PageProductsListComponent>
-                    <a href="#"><button tabIndex='-1' className='page--home__products-see-more-btn'>SEE ALL</button></a>
-                </PageSectionsComponent>
-                <PageSectionsComponent pageName={'home'} sectionNumber={'fourth'}>
-                    <div className='page--home__fourth-sect__banner-holder'>
-                        <div className='page--home__fourth-sect__banner page--home__fourth-sect__banner--1'>
-                            <a className='page--home__fourth-sect__banner__link' href="#">
-                                <h6 className='page--home__fourth-sect__banner__inner-link__title'>New Season</h6>
-                                <h4 className='page--home__fourth-sect__banner__inner-link__subtitle'>lookbook collection</h4>
-                            </a>
-                        </div>
-                        <div className='page--home__fourth-sect__banner page--home__fourth-sect__banner--2'>
-                            <a className='page--home__fourth-sect__banner__link' href="#">
-                                <h6 className='page--home__fourth-sect__banner__inner-link__title'>Sale</h6>
-                                <h4 className='page--home__fourth-sect__banner__inner-link__subtitle'>Get UP to <span className='discount-txt-span'>50% off</span></h4>
+        <PageComponent>
+            <PageSectionsComponent pageName={'home'} sectionNumber={'first'}>
+                <div className='page--home__first-sect__grid-holder'>
+                    <div className='page--home__first-sect__banner'>
+                        <div className='page--home__first-sect__banner__inner-div'>
+                            <a className='page--home__first-sect__banner__inner-link' href='#'>
+                                <h6 className='page--home__first-sect__banner__inner-link__title'>Banner</h6>
+                                <h4 className='page--home__first-sect__banner__inner-link__subtitle'>your Title text</h4>
                             </a>
                         </div>
                     </div>
-                </PageSectionsComponent>
-                <PageSectionsComponent pageName={'home'} sectionNumber={'fifth'}>
-                    <div className='page--home__fifth-sect__inner'>
-                        <img className='page--home__fifth-sect__img-1' src={FifthSectionImg1} alt="Image Of Man Standing"/>
-                        <div className='page--home__fifth-sect__content-holder'>
-                            <h3 className='page--home__fifth-sect__title'>Special Offer</h3>
-                            <h3 className='page--home__fifth-sect__subtitle'>Subscribe <br/> And <span className='discount-txt-span'>Get 10% Off</span></h3>
-                            <form action="#">
-                                <input className='page--home__fifth-sect__input' placeholder='Enter your email' required type="email"/>
-                                <button className='page--home__fifth-sect__btn'>Subscribe</button>
-                            </form>
-                        </div>
-                        <img className='page--home__fifth-sect__img-2' src={FifthSectionImg2} alt="Image Of Woman Standing"/>
+                    <div className='page--home__first-sect__women'><a className='page--home__first-sect__women__inner-link' href="#">Women</a></div>
+                    <div className='page--home__first-sect__men'><a className='page--home__first-sect__men__inner-link' href="#">Men</a></div>
+                    <div className='page--home__first-sect__accessories'><a className='page--home__first-sect__accessories__inner-link' href="#">Accsessories</a></div>
+                </div>
+                <AdvantageComponent />
+            </PageSectionsComponent>
+            <PageSectionsComponent pageName={'home'} sectionNumber={'second'}>
+                <PageFilterComponent title={'WOMEN’S'}/>
+                <PageProductsListComponent>
+                    <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
+                    <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
+                    <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
+                    <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
+                    <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
+                    <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
+                    <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
+                    <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
+                </PageProductsListComponent>
+                <a href="#"><button tabIndex='-1' className='page--home__products-see-more-btn'>SEE ALL</button></a>
+            </PageSectionsComponent>
+            <PageSectionsComponent pageName={'home'} sectionNumber={'third'}>
+                <PageFilterComponent title={'MEN’S'}/>
+                <PageProductsListComponent>
+                    <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
+                    <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
+                    <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
+                    <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
+                    <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
+                    <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
+                    <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
+                    <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
+                </PageProductsListComponent>
+                <a href="#"><button tabIndex='-1' className='page--home__products-see-more-btn'>SEE ALL</button></a>
+            </PageSectionsComponent>
+            <PageSectionsComponent pageName={'home'} sectionNumber={'fourth'}>
+                <div className='page--home__fourth-sect__banner-holder'>
+                    <div className='page--home__fourth-sect__banner page--home__fourth-sect__banner--1'>
+                        <a className='page--home__fourth-sect__banner__link' href="#">
+                            <h6 className='page--home__fourth-sect__banner__inner-link__title'>New Season</h6>
+                            <h4 className='page--home__fourth-sect__banner__inner-link__subtitle'>lookbook collection</h4>
+                        </a>
                     </div>
-                </PageSectionsComponent>
-                <PageSectionsComponent pageName={'home'} sectionNumber={'sixth'}>
-                    <div className='page--home__sixth-sect__top-side'>
-                        <h1 className='page--home__sixth-sect__top-side-title'>LATEST FROM BLOG</h1>
-                        <a className='page--home__sixth-sect__top-side-link' href="#">SEE ALL</a>
+                    <div className='page--home__fourth-sect__banner page--home__fourth-sect__banner--2'>
+                        <a className='page--home__fourth-sect__banner__link' href="#">
+                            <h6 className='page--home__fourth-sect__banner__inner-link__title'>Sale</h6>
+                            <h4 className='page--home__fourth-sect__banner__inner-link__subtitle'>Get UP to <span className='discount-txt-span'>50% off</span></h4>
+                        </a>
                     </div>
-                    <PageBlogPostHolderComponent>
-                        <PageBlogPostComponent img={SixthSectionImg1} name={'The Easiest Way to Break'} pargraph={'But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor'} date={'April 6, 2032'}/>
-                        <PageBlogPostComponent img={SixthSectionImg2} name={'Wedding Season'} pargraph={'But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor'} date={'April 6, 2032'}/>
-                        <PageBlogPostComponent img={SixthSectionImg3} name={'Recent Favorites On Repeat'} pargraph={'But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor'} date={'April 6, 2032'}/>
-                    </PageBlogPostHolderComponent>
-                </PageSectionsComponent>
-            </div>
-        </div>
+                </div>
+            </PageSectionsComponent>
+            <PageSectionsComponent pageName={'home'} sectionNumber={'fifth'}>
+                <div className='page--home__fifth-sect__inner'>
+                    <img className='page--home__fifth-sect__img-1' src={FifthSectionImg1} alt="Image Of Man Standing"/>
+                    <div className='page--home__fifth-sect__content-holder'>
+                        <h3 className='page--home__fifth-sect__title'>Special Offer</h3>
+                        <h3 className='page--home__fifth-sect__subtitle'>Subscribe <br/> And <span className='discount-txt-span'>Get 10% Off</span></h3>
+                        <form action="#">
+                            <input className='page--home__fifth-sect__input' placeholder='Enter your email' required type="email"/>
+                            <button className='page--home__fifth-sect__btn'>Subscribe</button>
+                        </form>
+                    </div>
+                    <img className='page--home__fifth-sect__img-2' src={FifthSectionImg2} alt="Image Of Woman Standing"/>
+                </div>
+            </PageSectionsComponent>
+            <PageSectionsComponent pageName={'home'} sectionNumber={'sixth'}>
+                <div className='page--home__sixth-sect__top-side'>
+                    <h1 className='page--home__sixth-sect__top-side-title'>LATEST FROM BLOG</h1>
+                    <a className='page--home__sixth-sect__top-side-link' href="#">SEE ALL</a>
+                </div>
+                <PageBlogPostHolderComponent>
+                    <PageBlogPostComponent img={SixthSectionImg1} name={'The Easiest Way to Break'} pargraph={'But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor'} date={'April 6, 2032'}/>
+                    <PageBlogPostComponent img={SixthSectionImg2} name={'Wedding Season'} pargraph={'But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor'} date={'April 6, 2032'}/>
+                    <PageBlogPostComponent img={SixthSectionImg3} name={'Recent Favorites On Repeat'} pargraph={'But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor'} date={'April 6, 2032'}/>
+                </PageBlogPostHolderComponent>
+            </PageSectionsComponent>
+        </PageComponent>
     );
 }
