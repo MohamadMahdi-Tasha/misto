@@ -1,6 +1,4 @@
 // Codes By Mahdi Tasha
-// Importing Part
-
 // Exporting Bottom Side Of Footer Functional Component
 export default function TopSideOfFooterComponent() {
     // Returning JSX
