@@ -1148,10 +1148,11 @@ template {
   grid-column: span 2;
   grid-row: span 2;
   padding: 1rem;
-  background-color: #F8F8F8;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("../../src/assets/img/home-page/first-section/img-1.jpg");
+  background-size: cover;
 }
 .page--home__first-sect__banner__inner-div {
   display: flex;
@@ -1189,11 +1190,20 @@ template {
 .page--home__first-sect__accessories {
   grid-column: span 2;
 }
+.page--home__first-sect__women {
+  background-image: url("../../src/assets/img/home-page/first-section/img-2.jpg");
+}
+.page--home__first-sect__men {
+  background-image: url("../../src/assets/img/home-page/first-section/img-3.jpg");
+}
+.page--home__first-sect__accessories {
+  background-image: url("../../src/assets/img/home-page/first-section/img-4.jpg");
+}
 .page--home__first-sect__women, .page--home__first-sect__men, .page--home__first-sect__accessories {
-  background-color: #F8F8F8;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: cover;
 }
 .page--home__first-sect__women__inner-link, .page--home__first-sect__men__inner-link, .page--home__first-sect__accessories__inner-link {
   background-color: white;

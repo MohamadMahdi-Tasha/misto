@@ -22,10 +22,11 @@
       grid-column: span 2;
       grid-row: span 2;
       padding: 1rem;
-      background-color: colors.$gr-white;
       display: flex;
       align-items: center;
       justify-content: center;
+      background-image: url('../../src/assets/img/home-page/first-section/img-1.jpg');
+      background-size: cover;
 
       &__inner-div {
         display: flex;
@@ -64,11 +65,14 @@
     }
 
     &__accessories {grid-column: span 2;}
+    &__women {background-image: url('../../src/assets/img/home-page/first-section/img-2.jpg');}
+    &__men {background-image: url('../../src/assets/img/home-page/first-section/img-3.jpg');}
+    &__accessories {background-image: url('../../src/assets/img/home-page/first-section/img-4.jpg');}
     &__women, &__men, &__accessories {
-      background-color: colors.$gr-white;
       display: flex;
       align-items: center;
       justify-content: center;
+      background-size: cover;
 
       &__inner-link {
         background-color: white;
