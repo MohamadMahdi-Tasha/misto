@@ -1341,6 +1341,77 @@ template {
   color: #121212;
   text-align: center;
 }
+.page--home__fifth-sect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  background: linear-gradient(to bottom, #F8F8F8, rgba(18, 18, 18, 0.3));
+  overflow: hidden;
+}
+.page--home__fifth-sect__inner {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background-color: white;
+  padding: 5rem;
+}
+.page--home__fifth-sect__img-1 {
+  position: absolute;
+  bottom: 0;
+  pointer-events: none;
+  right: -200px;
+  top: 0;
+}
+.page--home__fifth-sect__img-2 {
+  position: absolute;
+  left: -250px;
+  top: 20px;
+  pointer-events: none;
+}
+.page--home__fifth-sect__title {
+  font-weight: 600;
+  font-size: 12px;
+  color: rgba(18, 18, 18, 0.4);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+}
+.page--home__fifth-sect__subtitle {
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+  color: #121212;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.page--home__fifth-sect__input {
+  width: 100%;
+  padding: 1rem;
+  background-color: #F8F8F8;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: #121212;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.page--home__fifth-sect__input::placeholder {
+  color: rgba(18, 18, 18, 0.6);
+  font-weight: 500;
+  font-size: 14px;
+}
+.page--home__fifth-sect__btn {
+  width: 100%;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  background-color: #121212;
+  color: rgba(255, 255, 255, 0.9);
+}
 
 .page section {
   margin-bottom: 97px;

@@ -76,15 +76,15 @@ export default function HomePage() {
                         </div>
                     </div>
                 </PageSectionsComponent>
-                <PageSectionsComponent pageName={'home'} sectionNumber={'fourth'}>
+                <PageSectionsComponent pageName={'home'} sectionNumber={'fifth'}>
                     <div className='page--home__fifth-sect__inner'>
                         <img className='page--home__fifth-sect__img-1' src={FifthSectionImg1} alt="Image Of Man Standing"/>
                         <div className='page--home__fifth-sect__content-holder'>
                             <h3 className='page--home__fifth-sect__title'>Special Offer</h3>
-                            <h3 className='page--home__fifth-sect__subtitle'>Subscribe <br/> And Get 10% Off</h3>
+                            <h3 className='page--home__fifth-sect__subtitle'>Subscribe <br/> And <span className='discount-txt-span'>Get 10% Off</span></h3>
                             <form action="#">
-                                <input className='page--home__fifth-sect__input' type="email"/>
-                                <button className='page--home__fifth-sect__bnt'>Subscribe</button>
+                                <input className='page--home__fifth-sect__input' placeholder='Enter your email' required type="email"/>
+                                <button className='page--home__fifth-sect__btn'>Subscribe</button>
                             </form>
                         </div>
                         <img className='page--home__fifth-sect__img-2' src={FifthSectionImg2} alt="Image Of Woman Standing"/>
