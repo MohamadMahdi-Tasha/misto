@@ -13,17 +13,19 @@ export default function BottomSideOfFooterComponent() {
     // Returning JSX
     return (
         <div className='footer__bottom-side'>
-            <h6 className='footer__bottom-side-title'>Copyright © 2032 all rights reserved</h6>
-            <ul className='footer__logos-list'>
-                <li><img className='footer__logo' src={AmericanExpressLogo} alt="AmericanExpress Logo"/></li>
-                <li><img className='footer__logo' src={DiscoverLogo} alt="Discover Logo"/></li>
-                <li><img className='footer__logo' src={MasterCardLogo} alt="MasterCard Logo"/></li>
-                <li><img className='footer__logo' src={VisaLogo} alt="Visa Logo"/></li>
-                <li><img className='footer__logo' src={PaypalLogo} alt="Paypal Logo"/></li>
-                <li><img className='footer__logo' src={AESLogo} alt="AES Logo"/></li>
-                <li><img className='footer__logo' src={StripeLogo} alt="Stripe Logo"/></li>
-            </ul>
-            <a className='footer__developer-name' href="https://www.github.com/MohamadMahdi-Tasha">Coded by <span>Mohamad Mahdi Tasha</span></a>
+            <div className='footer__inner-wrapper'>
+                <h6 className='footer__bottom-side-title'>Copyright © 2032 all rights reserved</h6>
+                <ul className='footer__logos-list'>
+                    <li><img className='footer__logo' src={AmericanExpressLogo} alt="AmericanExpress Logo"/></li>
+                    <li><img className='footer__logo' src={DiscoverLogo} alt="Discover Logo"/></li>
+                    <li><img className='footer__logo' src={MasterCardLogo} alt="MasterCard Logo"/></li>
+                    <li><img className='footer__logo' src={VisaLogo} alt="Visa Logo"/></li>
+                    <li><img className='footer__logo' src={PaypalLogo} alt="Paypal Logo"/></li>
+                    <li><img className='footer__logo' src={AESLogo} alt="AES Logo"/></li>
+                    <li><img className='footer__logo' src={StripeLogo} alt="Stripe Logo"/></li>
+                </ul>
+                <a className='footer__developer-name' href="https://www.github.com/MohamadMahdi-Tasha">Coded by <span>Mohamad Mahdi Tasha</span></a>
+            </div>
         </div>
     );
 }
