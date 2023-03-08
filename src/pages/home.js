@@ -90,6 +90,27 @@ export default function HomePage() {
                         <img className='page--home__fifth-sect__img-2' src={FifthSectionImg2} alt="Image Of Woman Standing"/>
                     </div>
                 </PageSectionsComponent>
+                <PageSectionsComponent pageName={'home'} sectionNumber={'sixth'}>
+                    <div>
+                        <h1>LATEST FROM BLOG</h1>
+                        <a href="#">SEE ALL</a>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="felan" alt="felan"/>
+                            <div>
+                                <div>
+                                    <h6>The Easiest Way to Break</h6>
+                                    <p>But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor</p>
+                                </div>
+                                <div>
+                                    <h6><time dateTime='6/4/2023'>April 6, 2032</time></h6>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </PageSectionsComponent>
             </div>
         </div>
     );
