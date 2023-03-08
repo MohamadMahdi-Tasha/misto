@@ -96,9 +96,9 @@ export default function HomePage() {
                     </div>
                 </PageSectionsComponent>
                 <PageSectionsComponent pageName={'home'} sectionNumber={'sixth'}>
-                    <div>
-                        <h1>LATEST FROM BLOG</h1>
-                        <a href="#">SEE ALL</a>
+                    <div className='page--home__sixth-sect__top-side'>
+                        <h1 className='page--home__sixth-sect__top-side-title'>LATEST FROM BLOG</h1>
+                        <a className='page--home__sixth-sect__top-side-link' href="#">SEE ALL</a>
                     </div>
                     <PageBlogPostHolderComponent>
                         <PageBlogPostComponent img={SixthSectionImg1} name={'The Easiest Way to Break'} pargraph={'But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor'} date={'April 6, 2032'}/>
