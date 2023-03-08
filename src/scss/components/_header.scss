@@ -9,6 +9,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
 
   // Styles Of Top Bar In Header
   &__top-bar {background-color: colors.$dark;}
@@ -280,7 +281,7 @@
     color: colors.$dark;
   }
 
-  // Styles Of DropDowns In Header
+  // Styles Of Dropdowns In Header
   &__nav-dropdown-holder[data-opened='true'] {
     .header__nav-dropdown {right: 0;opacity: 1;}
     .header__nav-dropdown-bg {opacity: 1;pointer-events: visible;}
