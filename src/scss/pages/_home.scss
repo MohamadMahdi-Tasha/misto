@@ -5,7 +5,7 @@
 // Styles Of Home Page
 .page--home {
   &__first-sect {
-    &__main {
+    &__grid-holder {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr);

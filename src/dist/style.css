@@ -1133,7 +1133,7 @@ template {
   color: rgba(18, 18, 18, 0.9);
 }
 
-.page--home__first-sect__main {
+.page--home__first-sect__grid-holder {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
