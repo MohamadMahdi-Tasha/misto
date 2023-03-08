@@ -641,6 +641,9 @@ template {
   background-color: transparent;
   border: none;
 }
+.header__nav-menu-slide-link {
+  display: block;
+}
 .header__nav-menu-slide-img {
   width: 160px;
   height: 199px;

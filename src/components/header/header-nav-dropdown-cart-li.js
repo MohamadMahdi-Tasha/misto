@@ -1,5 +1,6 @@
 // Codes By Mahdi Tasha
 // Importing Part
+import HeaderNavDropdownCartLiBottomComponent from './header-nav-dropdown-cart-li-bottom';
 
 // Exporting header dropdown Cart List Item Component Functional Component As Default
 export default function HeaderNavDropdownCartLiComponent(props) {
@@ -10,7 +11,7 @@ export default function HeaderNavDropdownCartLiComponent(props) {
             <div className='header__nav-dropdown-cart-li-content'>
                 <h6 className='header__nav-dropdown-cart-li-title'>{props.name}</h6>
                 <h6 className='header__nav-dropdown-cart-li-subtitle'>{props.name}</h6>
-                <HeaderNavDropdownCartLiComponent price={props.price}/>
+                <HeaderNavDropdownCartLiBottomComponent price={props.price}/>
             </div>
         </li>
     );

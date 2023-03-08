@@ -1,6 +1,6 @@
 // Codes By Mahdi Tasha
 // Exporting header dropdown Cart List Item Bottom Side Component Functional Component As Default
-export default function HeaderNavDropdownCartLiComponent(props) {
+export default function HeaderNavDropdownCartLiBottomComponent(props) {
     // Returning JSX
     return (
         <div className='header__nav-dropdown-cart-li-bottom'>

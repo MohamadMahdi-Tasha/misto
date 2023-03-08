@@ -38,7 +38,7 @@ export default function HeaderNavComponent (props) {
                     <HeaderNavDropdownLiComponent type='search'></HeaderNavDropdownLiComponent>
                     <HeaderNavDropdownLiComponent type='localization'></HeaderNavDropdownLiComponent>
                     <HeaderNavDropdownLiComponent type='login'></HeaderNavDropdownLiComponent>
-                    <HeaderNavDropdownLiComponent checkoutCount={props.checkoutCount} type='cart'></HeaderNavDropdownLiComponent>
+                    <HeaderNavDropdownLiComponent type='cart' checkoutCount={props.checkoutCount}></HeaderNavDropdownLiComponent>
                 </ul>
                 <button className='header__mobile-nav-toggler' ref={refrenceOfMobileNavToggler} onClick={handleClickOfMobileNavToggler}>
                     <span className='header__mobile-nav-toggler-icon-rect header__mobile-nav-toggler-icon-rect--left'></span>
