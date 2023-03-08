@@ -1412,6 +1412,86 @@ template {
   background-color: #121212;
   color: rgba(255, 255, 255, 0.9);
 }
+.page--home__sixth-sect__blogs-holder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  list-style: none;
+}
+.page--home__sixth-sect__top-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.page--home__sixth-sect__top-side-title {
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #121212;
+  margin: 0 !important;
+}
+.page--home__sixth-sect__top-side-link {
+  color: rgba(18, 18, 18, 0.6);
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
+.page--home__sixth-sect__blog-post-li {
+  position: relative;
+}
+.page--home__sixth-sect__blog-post-inner-link {
+  display: block;
+}
+.page--home__sixth-sect__blog-post-inner-link:hover > .page--home__sixth-sect__blog-post-content-holder {
+  height: 150px;
+}
+.page--home__sixth-sect__blog-post-content-holder {
+  width: 85%;
+  background-color: white;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.5s;
+  padding: 1rem;
+  overflow: hidden;
+}
+.page--home__sixth-sect__blog-post-name {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #121212;
+  margin-bottom: 12px;
+}
+.page--home__sixth-sect__blog-post-top-side-paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(18, 18, 18, 0.6);
+}
+.page--home__sixth-sect__blog-post-bottom-side-content {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page--home__sixth-sect__blog-post-bottom-side-date {
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(18, 18, 18, 0.6);
+}
+.page--home__sixth-sect__blog-post-bottom-side-link {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #121212;
+}
 
 .page section {
   margin-bottom: 97px;
