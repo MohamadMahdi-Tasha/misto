@@ -20,7 +20,7 @@ import SixthSectionImg3 from '../assets/img/home-page/sixth-section/img-3.jpg';
 export default function HomePage() {
     // Returning JSX
     return (
-        <PageComponent>
+        <PageComponent pageName={'home'}>
             <PageSectionsComponent pageName={'home'} sectionNumber={'first'}>
                 <div className='page--home__first-sect__grid-holder'>
                     <div className='page--home__first-sect__banner'>

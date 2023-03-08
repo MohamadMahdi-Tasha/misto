@@ -10,6 +10,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
+  &--opened {animation: header-animation .5s forwards;}
 
   // Styles Of Top Bar In Header
   &__top-bar {background-color: colors.$dark;}
@@ -203,7 +204,7 @@
       pointer-events: visible;
     }
   }
-  
+
   &__nav-menu-inner {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -733,3 +734,16 @@
 }
 
 @media (max-width: 527px) { .header__top-bar {display: none;} }
+
+// Animation
+@keyframes header-animation {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -409,6 +409,9 @@ template {
   right: 0;
   z-index: 1000;
 }
+.header--opened {
+  animation: header-animation 0.5s forwards;
+}
 .header__top-bar {
   background-color: #121212;
 }
@@ -1105,6 +1108,16 @@ template {
 @media (max-width: 527px) {
   .header__top-bar {
     display: none;
+  }
+}
+@keyframes header-animation {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .advantage {
