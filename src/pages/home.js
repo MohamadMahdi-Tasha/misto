@@ -5,10 +5,15 @@ import PageSectionsComponent from "../components/pages/page-sections";
 import PageFilterComponent from "../components/pages/page-filter";
 import PageProductsListComponent from "../components/pages/page-products-list";
 import PageProductsItemComponent from "../components/pages/page-products-item";
+import PageBlogPostComponent from "../components/pages/blog-post";
+import PageBlogPostHolderComponent from "../components/pages/blog-post-holder";
 import SecondSectImg from '../assets/img/home-page/img-sect-2.jpg';
 import ThirdSectImg from '../assets/img/home-page/img-sect-3.jpg';
 import FifthSectionImg1 from '../assets/img/home-page/fifth-section/img-1.png';
 import FifthSectionImg2 from '../assets/img/home-page/fifth-section/img-2.png';
+import SixthSectionImg1 from '../assets/img/home-page/sixth-section/img-1.png';
+import SixthSectionImg2 from '../assets/img/home-page/sixth-section/img-2.jpg';
+import SixthSectionImg3 from '../assets/img/home-page/sixth-section/img-3.jpg';
 
 // Exporting Home Page Functional Component As Default
 export default function HomePage() {
@@ -95,21 +100,11 @@ export default function HomePage() {
                         <h1>LATEST FROM BLOG</h1>
                         <a href="#">SEE ALL</a>
                     </div>
-                    <div>
-                        <div>
-                            <img src="felan" alt="felan"/>
-                            <div>
-                                <div>
-                                    <h6>The Easiest Way to Break</h6>
-                                    <p>But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor</p>
-                                </div>
-                                <div>
-                                    <h6><time dateTime='6/4/2023'>April 6, 2032</time></h6>
-                                    <a href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <PageBlogPostHolderComponent>
+                        <PageBlogPostComponent img={SixthSectionImg1} name={'The Easiest Way to Break'} pargraph={'But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor'} date={'April 6, 2032'}/>
+                        <PageBlogPostComponent img={SixthSectionImg2} name={'Wedding Season'} pargraph={'But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor'} date={'April 6, 2032'}/>
+                        <PageBlogPostComponent img={SixthSectionImg3} name={'Recent Favorites On Repeat'} pargraph={'But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor'} date={'April 6, 2032'}/>
+                    </PageBlogPostHolderComponent>
                 </PageSectionsComponent>
             </div>
         </div>
