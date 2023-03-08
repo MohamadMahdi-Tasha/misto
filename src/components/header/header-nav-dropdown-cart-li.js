@@ -10,7 +10,7 @@ export default function HeaderNavDropdownCartLiComponent(props) {
             <img className='header__nav-dropdown-cart-li-img' src={props.img} alt={props.name}/>
             <div className='header__nav-dropdown-cart-li-content'>
                 <h6 className='header__nav-dropdown-cart-li-title'>{props.name}</h6>
-                <h6 className='header__nav-dropdown-cart-li-subtitle'>{props.name}</h6>
+                <h6 className='header__nav-dropdown-cart-li-subtitle'>{props.subname}</h6>
                 <HeaderNavDropdownCartLiBottomComponent price={props.price}/>
             </div>
         </li>

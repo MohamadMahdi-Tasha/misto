@@ -194,10 +194,12 @@ export default function HeaderNavDropdownsComponent(props) {
                 <div className='header__nav-dropdown'>
                     <HeaderNavDropdownsTopSideComponent/>
                     <div className='header__nav-dropdown-content-holder'>
-                        <ul className='header__nav-dropdown-cart-list'>
-                            <HeaderNavDropdownCartLiComponent img={IMG} name={"Women's tracksuit Q109"} subname={'Blue, S'} price={37999}/>
-                            <HeaderNavDropdownCartLiComponent img={IMG} name={"Women's tracksuit Q109"} subname={'Blue, S'} price={37999}/>
-                        </ul>
+                        <div className='header__nav-dropdown-cart-list-holder'>
+                            <ul className='header__nav-dropdown-cart-list'>
+                                <HeaderNavDropdownCartLiComponent img={IMG} name={"Women's tracksuit Q109"} subname={'Blue, S'} price={37999}/>
+                                <HeaderNavDropdownCartLiComponent img={IMG} name={"Women's tracksuit Q109"} subname={'Blue, S'} price={37999}/>
+                            </ul>
+                        </div>
                         <div className='header__nav-dropdown-cart-total-holder'>
                             <h6 className='header__nav-dropdown-cart-total-txt'>Total</h6>
                             <h6 className='header__nav-dropdown-cart-total-number'>$433.99</h6>
