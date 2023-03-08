@@ -2,6 +2,7 @@
 // Importing Part
 import AdvantageComponent from "../components/advantage";
 import SecondSectImg from '../assets/img/home-page/img-sect-2.jpg';
+import ThirdSectImg from '../assets/img/home-page/img-sect-3.jpg';
 import PageSectionsComponent from "../components/pages/page-sections";
 import PageFilterComponent from "../components/pages/page-filter";
 import PageProductsListComponent from "../components/pages/page-products-list";
@@ -40,6 +41,20 @@ export default function HomePage() {
                         <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
                         <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
                         <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
+                    </PageProductsListComponent>
+                    <a href="#"><button tabIndex='-1' className='page--home__products-see-more-btn'>SEE ALL</button></a>
+                </PageSectionsComponent>
+                <PageSectionsComponent pageName={'home'} sectionNumber={'third'}>
+                    <PageFilterComponent title={'MEN’S'}/>
+                    <PageProductsListComponent>
+                        <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
+                        <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
+                        <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
+                        <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
+                        <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
+                        <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
+                        <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
+                        <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
                     </PageProductsListComponent>
                     <a href="#"><button tabIndex='-1' className='page--home__products-see-more-btn'>SEE ALL</button></a>
                 </PageSectionsComponent>
