@@ -60,16 +60,16 @@ export default function HomePage() {
                 </PageSectionsComponent>
                 <PageSectionsComponent pageName={'home'} sectionNumber={'fourth'}>
                     <div className='page--home__fourth-sect__banner-holder'>
-                        <div className='page--home__fourth-sect__banner page--home__fourth-sect__banner-1'>
+                        <div className='page--home__fourth-sect__banner page--home__fourth-sect__banner--1'>
                             <a className='page--home__fourth-sect__banner__link' href="#">
                                 <h6 className='page--home__fourth-sect__banner__inner-link__title'>New Season</h6>
                                 <h4 className='page--home__fourth-sect__banner__inner-link__subtitle'>lookbook collection</h4>
                             </a>
                         </div>
-                        <div className='page--home__fourth-sect__banner page--home__fourth-sect__banner-2'>
+                        <div className='page--home__fourth-sect__banner page--home__fourth-sect__banner--2'>
                             <a className='page--home__fourth-sect__banner__link' href="#">
                                 <h6 className='page--home__fourth-sect__banner__inner-link__title'>Sale</h6>
-                                <h4 className='page--home__fourth-sect__banner__inner-link__subtitle'>Get UP to 50% off</h4>
+                                <h4 className='page--home__fourth-sect__banner__inner-link__subtitle'>Get UP to <span className='discount-txt-span'>50% off</span></h4>
                             </a>
                         </div>
                     </div>
