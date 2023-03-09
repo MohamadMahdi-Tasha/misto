@@ -448,13 +448,18 @@
   .page--home {
     &__filter-btns-holder, &__sixth-sect__top-side{margin-bottom: 10px;}
     &__sixth-sect__blog-post-img {
-      width: 300px;
+      width: calc(100vw - .5rem);
+      height: 170px;
+    }
+
+    &__sixth-sect__blog-post-inner-link:hover > .page--home__sixth-sect__blog-post-content-holder,
+    &__sixth-sect__blog-post-content-holder {
       height: auto;
     }
 
     &__sixth-sect__blog-post-li {
       height: 200px;
-      width: 300px;
+      width: calc(100vw - .5rem);
     }
 
     &__products-list, &__sixth-sect__blogs-holder {

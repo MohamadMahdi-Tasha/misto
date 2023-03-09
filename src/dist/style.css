@@ -1823,12 +1823,15 @@ template {
     margin-bottom: 10px;
   }
   .page--home__sixth-sect__blog-post-img {
-    width: 300px;
+    width: calc(100vw - 0.5rem);
+    height: 170px;
+  }
+  .page--home__sixth-sect__blog-post-inner-link:hover > .page--home__sixth-sect__blog-post-content-holder, .page--home__sixth-sect__blog-post-content-holder {
     height: auto;
   }
   .page--home__sixth-sect__blog-post-li {
     height: 200px;
-    width: 300px;
+    width: calc(100vw - 0.5rem);
   }
   .page--home__products-list, .page--home__sixth-sect__blogs-holder {
     display: flex;
