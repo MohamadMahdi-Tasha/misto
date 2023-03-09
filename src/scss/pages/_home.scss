@@ -399,6 +399,9 @@
 // Media Querys
 @media (max-width: 991px) {
   .page--home {
+    &__filter-btns-list {display: none;}
+    &__products-list {grid-template-columns: repeat(2, 1fr);}
+    &__fourth-sect__banner-holder {grid-template-columns: repeat(1, 1fr);}
     &__fifth-sect {
       &__img-1,&__img-2 {display: none;}
       &__inner {
@@ -410,9 +413,7 @@
         justify-content: center;
       }
     }
-    &__filter-btns-list {display: none;}
-    &__products-list {grid-template-columns: repeat(2, 1fr);}
-    &__fourth-sect__banner-holder {grid-template-columns: repeat(1, 1fr);}
+
     &__first-sect {
       &__grid-holder {
         grid-template-columns: repeat(2, 1fr);
@@ -445,11 +446,10 @@
 
 @media (max-width: 527px) {
   .page--home {
+    &__products-list {grid-template-columns: repeat(1, 1fr);}
     &__first-sect__grid-holder {
       grid-template-columns: auto;
       grid-template-rows: auto;
     }
-
-    &__products-list {grid-template-columns: repeat(1, 1fr);}
   }
 }
