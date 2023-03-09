@@ -1822,16 +1822,25 @@ template {
   .page--home__filter-btns-holder, .page--home__sixth-sect__top-side {
     margin-bottom: 10px;
   }
-  .page--home__products-list {
-    display: flex;
-    overflow: auto;
+  .page--home__sixth-sect__blog-post-img {
+    width: 300px;
+    height: auto;
   }
-  .page--home__products-list::-webkit-scrollbar {
+  .page--home__sixth-sect__blog-post-li {
+    height: 200px;
+    width: 300px;
+  }
+  .page--home__products-list, .page--home__sixth-sect__blogs-holder {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .page--home__products-list::-webkit-scrollbar, .page--home__sixth-sect__blogs-holder::-webkit-scrollbar {
     width: 3px;
     height: 3px;
     background-color: #E6E6E6;
   }
-  .page--home__products-list::-webkit-scrollbar-thumb {
+  .page--home__products-list::-webkit-scrollbar-thumb, .page--home__sixth-sect__blogs-holder::-webkit-scrollbar-thumb {
     width: 3px;
     height: 3px;
     background-color: #8D8B8B;
@@ -1875,7 +1884,7 @@ template {
 }
 @media (max-width: 991px) {
   .page section {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 527px) {

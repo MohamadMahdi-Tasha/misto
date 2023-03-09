@@ -447,10 +447,20 @@
 @media (max-width: 527px) {
   .page--home {
     &__filter-btns-holder, &__sixth-sect__top-side{margin-bottom: 10px;}
+    &__sixth-sect__blog-post-img {
+      width: 300px;
+      height: auto;
+    }
 
-    &__products-list {
+    &__sixth-sect__blog-post-li {
+      height: 200px;
+      width: 300px;
+    }
+
+    &__products-list, &__sixth-sect__blogs-holder {
       display: flex;
-      overflow: auto;
+      overflow-x: auto;
+      overflow-y: hidden;
       @include mixins.scrollbar;
     }
 
