@@ -826,10 +826,12 @@ template {
 }
 .header__nav-dropdown-collapse::-webkit-scrollbar {
   width: 3px;
+  height: 3px;
   background-color: #E6E6E6;
 }
 .header__nav-dropdown-collapse::-webkit-scrollbar-thumb {
   width: 3px;
+  height: 3px;
   background-color: #8D8B8B;
 }
 .header__nav-dropdown-collapse-btn {
@@ -881,10 +883,12 @@ template {
 }
 .header__nav-dropdown-inspration-holder::-webkit-scrollbar {
   width: 3px;
+  height: 3px;
   background-color: #E6E6E6;
 }
 .header__nav-dropdown-inspration-holder::-webkit-scrollbar-thumb {
   width: 3px;
+  height: 3px;
   background-color: #8D8B8B;
 }
 .header__nav-dropdown-inspration-list {
@@ -1035,10 +1039,12 @@ template {
 }
 .header__nav-dropdown-cart-list-holder::-webkit-scrollbar {
   width: 3px;
+  height: 3px;
   background-color: #E6E6E6;
 }
 .header__nav-dropdown-cart-list-holder::-webkit-scrollbar-thumb {
   width: 3px;
+  height: 3px;
   background-color: #8D8B8B;
 }
 .header__nav-dropdown-cart-list {
@@ -1813,8 +1819,29 @@ template {
   }
 }
 @media (max-width: 527px) {
+  .page--home__filter-btns-holder, .page--home__sixth-sect__top-side {
+    margin-bottom: 10px;
+  }
   .page--home__products-list {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    overflow: auto;
+  }
+  .page--home__products-list::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    background-color: #E6E6E6;
+  }
+  .page--home__products-list::-webkit-scrollbar-thumb {
+    width: 3px;
+    height: 3px;
+    background-color: #8D8B8B;
+  }
+  .page--home__product-img {
+    height: 200px;
+    width: 200px;
+  }
+  .page--home__products-item {
+    width: 200px;
   }
   .page--home__first-sect__grid-holder {
     grid-template-columns: auto;
@@ -1824,8 +1851,10 @@ template {
 .page {
   margin-top: 105px;
 }
-.page--opened section {
+.page section {
   margin-bottom: 97px;
+}
+.page--opened section {
   animation: page-animations cubic-bezier(0.4, 0, 0.2, 1) 3s forwards;
 }
 .page__inner {
@@ -1842,6 +1871,11 @@ template {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@media (max-width: 991px) {
+  .page section {
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 527px) {

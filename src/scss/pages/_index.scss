@@ -6,10 +6,8 @@
 .page {
   margin-top: calc(23px + 50px + 32px);
 
-  &--opened section {
-    margin-bottom: 97px;
-    animation: page-animations cubic-bezier(.4,0,.2,1) 3s forwards;
-  }
+  section {margin-bottom: 97px;}
+  &--opened section {animation: page-animations cubic-bezier(.4,0,.2,1) 3s forwards;}
 
   &__inner {
     max-width: 1100px;
@@ -32,8 +30,5 @@
 }
 
 // Media Querys
-@media (max-width: 527px) {
-  .page {
-    margin-top: calc(23px + 32px);
-  }
-}
+@media (max-width: 991px) { .page section {margin-bottom: 10px;} }
+@media (max-width: 527px) { .page {margin-top: calc(23px + 32px);} }

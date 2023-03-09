@@ -446,7 +446,23 @@
 
 @media (max-width: 527px) {
   .page--home {
-    &__products-list {grid-template-columns: repeat(1, 1fr);}
+    &__filter-btns-holder, &__sixth-sect__top-side{margin-bottom: 10px;}
+
+    &__products-list {
+      display: flex;
+      overflow: auto;
+      @include mixins.scrollbar;
+    }
+
+    &__product-img {
+      height: 200px;
+      width: 200px;
+    }
+
+    &__products-item {
+      width: 200px;
+    }
+
     &__first-sect__grid-holder {
       grid-template-columns: auto;
       grid-template-rows: auto;
