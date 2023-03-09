@@ -55,7 +55,11 @@
   }
 
   // Styles Of Nav In Header
-  &__nav {background-color: white;}
+  &__nav {
+    background-color: white;
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+  }
+
   &__nav-inner {
     display: flex;
     align-items: center;
