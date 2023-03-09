@@ -76,6 +76,44 @@
   }
 
   // Styles Of Middle Side Of Footer
+  &__middle-side {
+    background-color: white;
+
+    > .footer__inner-wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding-block: 2rem;
+      gap: 30px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__list-heading {
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: colors.$dark;
+    white-space: nowrap;
+  }
+
+  &__list-item, &__list-item > a {
+    color: rgba(18, 18, 18, .8);
+    font-weight: 400;
+    font-size: 12px;
+    white-space: nowrap;
+    height: 12px;
+  }
+
+  &__list-item svg {
+    margin-right: 11px;
+  }
 
   // Styles Of Bottom Side Of Footer
 }
