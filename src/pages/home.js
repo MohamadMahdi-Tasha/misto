@@ -38,7 +38,7 @@ export default function HomePage() {
                 <AdvantageComponent />
             </PageSectionsComponent>
             <PageSectionsComponent pageName={'home'} sectionNumber={'second'}>
-                <PageFilterComponent title={'WOMEN’S'}/>
+                <PageFilterComponent btnItems={['SPECIALS', 'BESTSELLERS', 'MOST VIEWED', 'FEATURED PRODUCTS']} selectedItemIndex={0} title={'WOMEN’S'}/>
                 <PageProductsListComponent>
                     <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
                     <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
@@ -52,7 +52,7 @@ export default function HomePage() {
                 <a href="#"><button tabIndex='-1' className='page--home__products-see-more-btn'>SEE ALL</button></a>
             </PageSectionsComponent>
             <PageSectionsComponent pageName={'home'} sectionNumber={'third'}>
-                <PageFilterComponent title={'MEN’S'}/>
+                <PageFilterComponent btnItems={['SPECIALS', 'BESTSELLERS', 'MOST VIEWED', 'FEATURED PRODUCTS']} selectedItemIndex={0} title={'MEN’S'}/>
                 <PageProductsListComponent>
                     <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
                     <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>

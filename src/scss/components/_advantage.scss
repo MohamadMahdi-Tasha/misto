@@ -29,3 +29,11 @@
     color: rgba(18, 18, 18, .9);
   }
 }
+
+// Media Querys
+@media (max-width: 527px) {
+  .advantage {
+    flex-direction: column;
+    align-items: start;
+  }
+}

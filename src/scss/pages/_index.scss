@@ -4,13 +4,11 @@
 
 // Some Public Styles For All Pages
 .page {
+  margin-top: calc(23px + 50px + 32px);
+
   &--opened section {
     margin-bottom: 97px;
     animation: page-animations cubic-bezier(.4,0,.2,1) 3s forwards;
-  }
-
-  &:first-of-type {
-    margin-top: calc(23px + 50px + 32px);
   }
 
   &__inner {
@@ -30,5 +28,12 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+// Media Querys
+@media (max-width: 527px) {
+  .page {
+    margin-top: calc(23px + 32px);
   }
 }
