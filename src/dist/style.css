@@ -1267,6 +1267,39 @@ template {
 .footer__list-item svg {
   margin-right: 11px;
 }
+.footer__bottom-side {
+  background-color: #F8F8F8;
+}
+.footer__bottom-side > .footer__inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 62px;
+}
+.footer__bottom-side-title {
+  color: rgba(18, 18, 18, 0.8);
+  font-weight: 500;
+  font-size: 11px;
+}
+.footer__logos-list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+}
+.footer__logo {
+  width: 43px;
+  height: 16px;
+}
+.footer__developer-name {
+  color: rgba(18, 18, 18, 0.8);
+  font-weight: 500;
+  font-size: 11px;
+}
+.footer__developer-name > span {
+  color: #121212;
+  font-weight: 700;
+}
 
 .page--home .discount-txt-span {
   color: #E91E63;

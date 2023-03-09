@@ -116,4 +116,43 @@
   }
 
   // Styles Of Bottom Side Of Footer
+  &__bottom-side {
+    background-color: colors.$gr-white;
+
+    > .footer__inner-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 62px;
+    }
+  }
+
+  &__bottom-side-title {
+    color: rgba(18, 18, 18, .8);
+    font-weight: 500;
+    font-size: 11px;
+  }
+
+  &__logos-list {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+  }
+
+  &__logo {
+    width: 43px;
+    height: 16px;
+  }
+
+  &__developer-name {
+    color: rgba(18, 18, 18, .8);
+    font-weight: 500;
+    font-size: 11px;
+
+    > span {
+      color: colors.$dark;
+      font-weight: 700;
+    }
+  }
 }
