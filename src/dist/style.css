@@ -1307,6 +1307,39 @@ template {
   font-weight: 700;
 }
 
+@media (max-width: 991px) {
+  .footer__top-side > .footer__inner-wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer__form {
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+  }
+  .footer__btn {
+    width: 100%;
+  }
+  .footer__input {
+    width: 100%;
+    text-align: center;
+  }
+  .footer__middle-side > .footer__inner-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer__list {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__bottom-side > .footer__inner-wrapper {
+    flex-direction: column;
+  }
+  .footer__logos-list {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .dropdown {
   position: absolute;
   right: 0;
