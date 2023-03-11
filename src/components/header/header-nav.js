@@ -28,7 +28,7 @@ export default function HeaderNavComponent (props) {
                     <HeaderNavDropdownLiComponent type='login'></HeaderNavDropdownLiComponent>
                     <HeaderNavDropdownLiComponent type='cart' checkoutCount={props.checkoutCount}></HeaderNavDropdownLiComponent>
                 </ul>
-                <HeaderNavMobileTogglerComponent />
+                <HeaderNavMobileTogglerComponent checkoutCount={props.checkoutCount}/>
             </div>
         </nav>
     );

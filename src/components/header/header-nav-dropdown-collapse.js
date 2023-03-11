@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 
 // Exporting header dropdown Collapse Component Functional Component As Default
-export default function HeaderNavDropdownCollapseComponent(props) {
+export default function HeaderNavDropdownCollapseComponent({children}) {
     // Setting StateS
     const [isCollapseOpened, setCloseOrOpenOnCollapse] = useState(false);
     const [timesClickedOnToggler, setTimesClickedOnToggler] = useState(0);
@@ -28,7 +28,7 @@ export default function HeaderNavDropdownCollapseComponent(props) {
                 <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 1L8 8L1 0.999999" stroke="#121212" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </button>
             <ul className='header__nav-dropdown-collapse'>
-                {props.list.map(item => <li key={props.list.indexOf(item)}><button onClick={() => setCloseOrOpenOnCollapse(false)} tabIndex='-1' className='header__nav-dropdown-collapse-btn'>{item}</button></li>)}
+                {children}
             </ul>
         </div>
     );
