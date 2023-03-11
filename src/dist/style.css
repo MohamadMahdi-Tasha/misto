@@ -1346,73 +1346,6 @@ template {
     justify-content: center;
   }
 }
-.dropdown {
-  position: absolute;
-  right: 0;
-  top: 40px;
-  background-color: #121212;
-  transform-origin: right top;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 0.5s;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-}
-.dropdown__holder {
-  display: none;
-  position: relative;
-}
-.dropdown__holder[data-opened] .dropdown {
-  transform: scale(1);
-  opacity: 1;
-}
-.dropdown__holder[data-opened] .dropdown__toggler {
-  background-color: #121212;
-  color: white;
-}
-.dropdown__holder:not([data-opened]) .dropdown {
-  transform: scale(0);
-  opacity: 0;
-}
-.dropdown__holder:not([data-opened]) .dropdown__toggler {
-  background-color: transparent;
-  color: #121212;
-}
-.dropdown__list {
-  list-style: none;
-}
-.dropdown__toggler {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #121212;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 0.5s;
-}
-.dropdown__btn {
-  width: 100%;
-  text-align: right;
-  padding: 1rem;
-  font-weight: 500;
-  font-size: 12px;
-  color: white;
-  border: none;
-  white-space: nowrap;
-}
-.dropdown__btn[data-selected=true] {
-  background-color: #E91E63;
-}
-.dropdown__btn[data-selected=false] {
-  background-color: #121212;
-}
-
-@media (max-width: 991px) {
-  .dropdown__holder {
-    display: block;
-  }
-}
 .page--home .discount-txt-span {
   color: #E91E63;
 }
@@ -1777,7 +1710,7 @@ template {
 
 @media (max-width: 991px) {
   .page--home__filter-btns-list {
-    display: none;
+    background-color: red;
   }
   .page--home__products-list {
     grid-template-columns: repeat(2, 1fr);

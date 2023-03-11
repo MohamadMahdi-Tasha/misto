@@ -1,7 +1,6 @@
 // Codes By Mahdi Tasha
 // Importing Part
-import React, { useState } from "react";
-import DropDownComponent from '../dropdown';
+import React, { useState, useEffect } from "react";
 
 // Exporting Page Filter Functional Component As Default
 export default function PageFilterComponent({title, selectedItemIndex, btnItems}) {
@@ -9,13 +8,13 @@ export default function PageFilterComponent({title, selectedItemIndex, btnItems}
     const [numberOfSelectedDropDown, setNumberOfSelectedDropDown] =  useState(selectedItemIndex);
 
     // Creating Refrence To Buttos Holder
-    const refreneOfButtonsHolder = React.createRef();
+    const refrenceOfButtonsHolder = React.createRef();
 
     // Returning JSX
     return (
         <div className='page--home__filter-btns-holder'>
             <h1 className='page--home__filter-btns-title'>{title}</h1>
-            <ul className='page--home__filter-btns-list' ref={refreneOfButtonsHolder}>
+            <ul className='page--home__filter-btns-list' ref={refrenceOfButtonsHolder}>
                 {
                     btnItems.map((item) =>
                         <li key={btnItems.indexOf(item)}>
@@ -24,7 +23,7 @@ export default function PageFilterComponent({title, selectedItemIndex, btnItems}
                                 className='page--home__filter-btn'
                                 onClick={() => {
                                     const IndexOfBtn = btnItems.indexOf(item);
-                                    const currentElementOfRef = refreneOfButtonsHolder.current;
+                                    const currentElementOfRef = refrenceOfButtonsHolder.current;
                                     const selectedFilterBtn = currentElementOfRef.querySelector('.page--home__filter-btn[data-selected="true"]');
                                     const buttonToSelect = currentElementOfRef.children[IndexOfBtn].firstElementChild;
 
@@ -37,7 +36,6 @@ export default function PageFilterComponent({title, selectedItemIndex, btnItems}
                     )
                 }
             </ul>
-            <DropDownComponent btnItems={btnItems} selectedItemIndex={numberOfSelectedDropDown}/>
         </div>
     );
 }

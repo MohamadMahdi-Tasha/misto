@@ -399,7 +399,9 @@
 // Media Querys
 @media (max-width: 991px) {
   .page--home {
-    &__filter-btns-list {display: none;}
+    &__filter-btns-list {
+      background-color: red;
+    }
     &__products-list {grid-template-columns: repeat(2, 1fr);}
     &__fourth-sect__banner-holder {grid-template-columns: repeat(1, 1fr);}
     &__fifth-sect {
