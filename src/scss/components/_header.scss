@@ -149,8 +149,8 @@
     }
   }
 
+  &__mobile-nav-toggler-holder {display: none;}
   &__mobile-nav-toggler {
-    display: none;
     height: 30px;
     width: 30px;
     align-items: center;
@@ -160,9 +160,10 @@
     border-radius: 0;
     color: colors.$dark;
     position: relative;
+    display: flex;
     @include mixins.transition;
 
-    &--focused {
+    &[data-opened = 'true'] {
       background-color: colors.$dark;
       color: white;
 
@@ -750,7 +751,7 @@
     // Media Querys Of Nav In Header
     &__nav-inner {padding: .5rem;}
     &__nav-list {display: none;}
-    &__mobile-nav-toggler {display: flex;}
+    &__mobile-nav-toggler-holder {display: flex;}
   }
 }
 

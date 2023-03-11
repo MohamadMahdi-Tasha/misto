@@ -212,5 +212,17 @@ export default function HeaderNavDropdownsComponent(props) {
                 </div>
             </div>
         );
+    } else if (props.type === 'mobile-menu') {
+        return (
+            <div className='header__nav-dropdown-holder header__nav-dropdown-holder--mobile-nav' data-opened={props.isOpened}>
+                <div className='header__nav-dropdown-bg' onClick={props.closingFunction}></div>
+                <div className='header__nav-dropdown'>
+                    <HeaderNavDropdownsTopSideComponent />
+                    <div className='header__nav-dropdown-content-holder'>
+                        <h1>Header Mobile</h1>
+                    </div>
+                </div>
+            </div>
+        );
     }
 }

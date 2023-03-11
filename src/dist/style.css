@@ -538,8 +538,10 @@ template {
   top: -5px;
   right: -4px;
 }
-.header__mobile-nav-toggler {
+.header__mobile-nav-toggler-holder {
   display: none;
+}
+.header__mobile-nav-toggler {
   height: 30px;
   width: 30px;
   align-items: center;
@@ -549,21 +551,22 @@ template {
   border-radius: 0;
   color: #121212;
   position: relative;
+  display: flex;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 0.5s;
 }
-.header__mobile-nav-toggler--focused {
+.header__mobile-nav-toggler[data-opened=true] {
   background-color: #121212;
   color: white;
 }
-.header__mobile-nav-toggler--focused .header__mobile-nav-toggler-icon-rect--left {
+.header__mobile-nav-toggler[data-opened=true] .header__mobile-nav-toggler-icon-rect--left {
   transform: translateX(-50%) translateY(-1px) rotate(40deg);
 }
-.header__mobile-nav-toggler--focused .header__mobile-nav-toggler-icon-rect--right {
+.header__mobile-nav-toggler[data-opened=true] .header__mobile-nav-toggler-icon-rect--right {
   transform: translateX(-50%) translateY(-1px) rotate(-40deg);
 }
-.header__mobile-nav-toggler--focused .header__mobile-nav-toggler-icon-rect--mid {
+.header__mobile-nav-toggler[data-opened=true] .header__mobile-nav-toggler-icon-rect--mid {
   opacity: 0;
 }
 .header__mobile-nav-toggler-icon-rect {
@@ -1133,7 +1136,7 @@ template {
   .header__nav-list {
     display: none;
   }
-  .header__mobile-nav-toggler {
+  .header__mobile-nav-toggler-holder {
     display: flex;
   }
 }
