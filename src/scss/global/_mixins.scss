@@ -21,3 +21,30 @@
     background-color: #8D8B8B;
   }
 }
+
+@mixin loader-styles {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 400px;
+    top: 0;
+    background-color: colors.$gr-white;
+    filter: blur(5px);
+    transform: rotate(10deg) translateY(-20px);
+    animation-name: loader-animation;
+    animation-timing-function: cubic-bezier(.4,0,.2,1);
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 1s;
+  }
+}
+
+// Animations
+@keyframes loader-animation {
+  from {left: -50%;}
+  to {left: 150%;}
+}

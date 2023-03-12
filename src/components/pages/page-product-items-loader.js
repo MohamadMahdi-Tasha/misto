@@ -3,12 +3,12 @@
 export default function PageProductItemsLoaderComponent() {
     // Returning JSX
     return(
-        <li className='page__products-item-loader'>
-            <div className='page__products-item-loader__img'></div>
-            <div className='page__products-item-loader__title'></div>
-            <div className='page__products-item-loader__bottom-holder'>
-                <div className='page__products-item-loader__price'></div>
-                <div className='page__products-item-loader__score'></div>
+        <li className='page--home__products-item-loader'>
+            <div className='page--home__products-item-loader__img'></div>
+            <div className='page--home__products-item-loader__title'></div>
+            <div className='page--home__products-item-loader__bottom-holder'>
+                <div className='page--home__products-item-loader__price'></div>
+                <div className='page--home__products-item-loader__score'></div>
             </div>
         </li>
     );

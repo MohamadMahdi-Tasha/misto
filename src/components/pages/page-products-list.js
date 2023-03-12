@@ -35,6 +35,7 @@ export default function PageProductsListComponent({fetchType}) {
     // Returning JSX
     return (
         <ul className='page--home__products-list'>
+            <PageProductItemsLoaderComponent></PageProductItemsLoaderComponent>
             {
                 (isLoaded)
                     ? fetchedItems.map(item => <PageProductsItemComponent key={fetchedItems.indexOf(item)} img={item.image} score={Math.round(item.rating.rate)} name={item.title.slice(0, 36)} price={item.price}/>)
