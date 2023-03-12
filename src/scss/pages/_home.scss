@@ -541,7 +541,7 @@
       @include mixins.scrollbar;
     }
 
-    &__product-img {
+    &__product-img, &__products-item-loader__img {
       height: 200px;
       width: 200px;
     }
