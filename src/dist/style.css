@@ -2029,7 +2029,6 @@ template {
     background-color: #8D8B8B;
   }
   .page--home__product-img, .page--home__products-item-loader__img {
-    height: 200px;
     width: 200px;
   }
   .page--home__products-item {
