@@ -12,7 +12,7 @@ export default function PageProductsItemComponent(props) {
                 <h6 className='page--home__product-name'>{props.name}</h6>
                 <div className='page--home__product-price-and-score-holder'>
                     <h6 className='page--home__product-price'>${props.price.toLocaleString()}</h6>
-                    <PageProductsItemScoreComponent score={4} />
+                    <PageProductsItemScoreComponent score={props.score} />
                 </div>
             </a>
         </li>

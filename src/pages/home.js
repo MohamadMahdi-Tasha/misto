@@ -5,11 +5,8 @@ import AdvantageComponent from "../components/advantage";
 import PageSectionsComponent from "../components/pages/page-sections";
 import PageFilterComponent from "../components/pages/page-filter";
 import PageProductsListComponent from "../components/pages/page-products-list";
-import PageProductsItemComponent from "../components/pages/page-products-item";
 import PageBlogPostComponent from "../components/pages/blog-post";
 import PageBlogPostHolderComponent from "../components/pages/blog-post-holder";
-import SecondSectImg from '../assets/img/home-page/img-sect-2.jpg';
-import ThirdSectImg from '../assets/img/home-page/img-sect-3.jpg';
 import FifthSectionImg1 from '../assets/img/home-page/fifth-section/img-1.png';
 import FifthSectionImg2 from '../assets/img/home-page/fifth-section/img-2.png';
 import SixthSectionImg1 from '../assets/img/home-page/sixth-section/img-1.png';
@@ -39,30 +36,12 @@ export default function HomePage() {
             </PageSectionsComponent>
             <PageSectionsComponent pageName={'home'} sectionNumber={'second'}>
                 <PageFilterComponent btnItems={['SPECIALS', 'BESTSELLERS', 'MOST VIEWED', 'FEATURED PRODUCTS']} selectedItemIndex={0} title={'WOMEN’S'}/>
-                <PageProductsListComponent>
-                    <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
-                    <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
-                    <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
-                    <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
-                    <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
-                    <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
-                    <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
-                    <PageProductsItemComponent img={SecondSectImg} name={"Women's tracksuit Q109"} price={3800}/>
-                </PageProductsListComponent>
+                <PageProductsListComponent fetchType={'women'}/>
                 <a href="#"><button tabIndex='-1' className='page--home__products-see-more-btn'>SEE ALL</button></a>
             </PageSectionsComponent>
             <PageSectionsComponent pageName={'home'} sectionNumber={'third'}>
                 <PageFilterComponent btnItems={['SPECIALS', 'BESTSELLERS', 'MOST VIEWED', 'FEATURED PRODUCTS']} selectedItemIndex={0} title={'MEN’S'}/>
-                <PageProductsListComponent>
-                    <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
-                    <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
-                    <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
-                    <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
-                    <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
-                    <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
-                    <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
-                    <PageProductsItemComponent img={ThirdSectImg} name={"Striped Sweatshirt"} price={3800}/>
-                </PageProductsListComponent>
+                <PageProductsListComponent fetchType={'men'}/>
                 <a href="#"><button tabIndex='-1' className='page--home__products-see-more-btn'>SEE ALL</button></a>
             </PageSectionsComponent>
             <PageSectionsComponent pageName={'home'} sectionNumber={'fourth'}>
