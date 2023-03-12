@@ -1,7 +1,7 @@
 // Codes By Mahdi Tasha
 // Importing Part
-import HeaderNavDropdownCollapseComponent from "./header-nav-dropdown-collapse";
 import HeaderNavDropdownContentsComponent from './header-nav-dropdown-contents';
+import HeaderNavDropdownLiComponent from "./header-nav-dropdown-li";
 
 // Exporting header dropdown Component Functional Component As Default
 export default function HeaderNavDropdownsComponent(props) {
@@ -77,10 +77,10 @@ export default function HeaderNavDropdownsComponent(props) {
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
-                        <HeaderNavDropdownContentsComponent type={'localization'}/>
-                        <HeaderNavDropdownContentsComponent type={'search'}/>
-                        <HeaderNavDropdownContentsComponent type={'login'}/>
-                        <HeaderNavDropdownContentsComponent type={'cart'}/>
+                        <HeaderNavDropdownLiComponent type='search' />
+                        <HeaderNavDropdownLiComponent type='localization' />
+                        <HeaderNavDropdownLiComponent type='login' />
+                        <HeaderNavDropdownLiComponent type='cart' checkoutCount={props.checkoutCount} />
                     </div>
                 </div>
             </div>
