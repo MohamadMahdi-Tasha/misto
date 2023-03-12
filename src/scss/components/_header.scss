@@ -723,6 +723,31 @@
     text-transform: uppercase;
     color: colors.$dark;
   }
+
+  &__nav-dropdown-mobile-menu-top-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  &__nav-dropdown-mobile-menu-top-item {
+    padding-block: .5rem;
+    display: block;
+    text-align: left;
+    color: colors.$dark;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  &__nav-dropdown-mobile-menu-bottom-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
 }
 
 

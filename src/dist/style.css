@@ -1112,6 +1112,28 @@ template {
   text-transform: uppercase;
   color: #121212;
 }
+.header__nav-dropdown-mobile-menu-top-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.header__nav-dropdown-mobile-menu-top-item {
+  padding-block: 0.5rem;
+  display: block;
+  text-align: left;
+  color: #121212;
+  font-size: 13px;
+  font-weight: 500;
+}
+.header__nav-dropdown-mobile-menu-bottom-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 
 @media (max-width: 991px) {
   .header__top-bar-right-side-list {
