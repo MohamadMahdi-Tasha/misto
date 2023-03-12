@@ -13,17 +13,17 @@ import './dist/style.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
     // Returning JSX
     <React.StrictMode>
-        <HeaderComponent />
         <BrowserRouter>
+            <HeaderComponent />
             <Routes>
-                <Route path='/' element={ <HomePage /> } />
+                <Route exact path='/' element={ <HomePage /> } />
                 <Route path='/categories'>
                     <Route path='men' element={ <MenPage /> } />
                     {/*<Route path='women' element={  } />*/}
                 </Route>
                 {/*<Route path='/product' element={  } />*/}
             </Routes>
+            <FooterComponent />
         </BrowserRouter>
-        <FooterComponent />
     </React.StrictMode>
 );

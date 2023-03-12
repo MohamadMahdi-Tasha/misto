@@ -5,6 +5,7 @@ import logoTypo from '../../assets/img/header/img-logo-typo.svg';
 import HeaderNavMenuComponent from "./header-nav-menu";
 import HeaderNavDropdownLiComponent from "./header-nav-dropdown-li";
 import HeaderNavMobileTogglerComponent from './header-nav-mobile-toggler';
+import { Link } from "react-router-dom";
 
 // Exporting Header Nav Component Functional Component As Default
 export default function HeaderNavComponent (props) {
@@ -12,7 +13,7 @@ export default function HeaderNavComponent (props) {
     return (
         <nav className='header__nav'>
             <div className="header__nav-inner">
-                <img className='header__nav-img' src={logoTypo} alt="Misto Logo"/>
+                <Link to="/"><img className='header__nav-img' src={logoTypo} alt="Misto Logo"/></Link>
                 <ul className='header__nav-list'>
                     <li className='header__nav-list-item'><a className='header__nav-list-item-link' href="#">About Us</a></li>
                     <li className='header__nav-list-item header__nav-list-item--menu-toggler'><a className='header__nav-list-item-link' href="#">Women</a><HeaderNavMenuComponent /></li>
