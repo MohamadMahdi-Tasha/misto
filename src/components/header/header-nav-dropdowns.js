@@ -68,19 +68,21 @@ export default function HeaderNavDropdownsComponent(props) {
                 <div className='header__nav-dropdown'>
                     <HeaderNavDropdownsTopSideComponent />
                     <div className='header__nav-dropdown-content-holder'>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Women</a></li>
-                            <li><a href="#">Men</a></li>
-                            <li><a href="#">Beauty</a></li>
-                            <li><a href="#">Accessories</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
+                        <ul className={'header__nav-dropdown-mobile-menu-top-list'}>
+                            <li><a className={'header__nav-dropdown-mobile-menu-top-item'} href="#">About Us</a></li>
+                            <li><a className={'header__nav-dropdown-mobile-menu-top-item'} href="#">Women</a></li>
+                            <li><a className={'header__nav-dropdown-mobile-menu-top-item'} href="#">Men</a></li>
+                            <li><a className={'header__nav-dropdown-mobile-menu-top-item'} href="#">Beauty</a></li>
+                            <li><a className={'header__nav-dropdown-mobile-menu-top-item'} href="#">Accessories</a></li>
+                            <li><a className={'header__nav-dropdown-mobile-menu-top-item'} href="#">Blog</a></li>
+                            <li><a className={'header__nav-dropdown-mobile-menu-top-item'} href="#">Contact</a></li>
                         </ul>
-                        <HeaderNavDropdownLiComponent type='search' />
-                        <HeaderNavDropdownLiComponent type='localization' />
-                        <HeaderNavDropdownLiComponent type='login' />
-                        <HeaderNavDropdownLiComponent type='cart' checkoutCount={props.checkoutCount} />
+                        <ul className={'header__nav-dropdown-mobile-menu-bottom-list'}>
+                            <HeaderNavDropdownLiComponent type='search' />
+                            <HeaderNavDropdownLiComponent type='localization' />
+                            <HeaderNavDropdownLiComponent type='login' />
+                            <HeaderNavDropdownLiComponent type='cart' checkoutCount={props.checkoutCount} />
+                        </ul>
                     </div>
                 </div>
             </div>
