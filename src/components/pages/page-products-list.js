@@ -37,7 +37,7 @@ export default function PageProductsListComponent({fetchType}) {
         <ul className='page--home__products-list'>
             {
                 (isLoaded)
-                    ? fetchedItems.map(item => <PageProductsItemComponent key={fetchedItems.indexOf(item)} img={item.image} score={Math.round(item.rating.rate)} name={item.title.slice(0, 36)} price={item.price}/>)
+                    ? fetchedItems.map(item => <PageProductsItemComponent key={fetchedItems.indexOf(item)} img={item.image} score={Math.round(item.rating.rate)} name={item.title} price={item.price}/>)
                     : <PageProductItemsLoadersHolderComponent />
             }
         </ul>

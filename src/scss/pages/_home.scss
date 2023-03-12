@@ -148,12 +148,23 @@
     margin-bottom: 48px;
   }
 
-  &__product-link {display: block;}
+  &__product-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 318px;
+
+    &:hover >.page--home__products-content-holder {
+      top: 70%;
+      height: 30%;
+      overflow: auto;
+    }
+  }
+
   &__product-img {
     width: 100%;
     height: 318px;
     object-fit: cover;
-    margin-bottom: 16px;
   }
 
   &__product-name {
@@ -161,12 +172,17 @@
     font-size: 14px;
     color: rgba(18, 18, 18, .6);
     margin-bottom: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
   }
 
   &__product-price-and-score-holder {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 16px;
   }
 
   &__product-price {
@@ -185,6 +201,68 @@
     text-transform: uppercase;
     font-weight: 500;
     font-size: 13px;
+  }
+
+  &__products-content-holder {
+    position: absolute;
+    top: 84%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    transition: .3s;
+    @include mixins.scrollbar;
+    padding: .5rem;
+  }
+
+  &__products-other-images-holder,
+  &__products-sizes-holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4px;
+    list-style: none;
+    margin-bottom: 16px;
+  }
+
+  &__products-other-image,
+  &__products-size {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__products-size {
+    background-color: colors.$gr-white;
+    font-weight: 600;
+    font-size: 10px;
+    color: rgba(18,18,18,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__products-bottom-btns-holder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  &__products-add-to-cart {
+    color: rgba(256,256,256,.8);
+    width: 140px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 13px;
+    background-color: colors.$dark;
+    border: none;
+  }
+
+  &__products-other-btns {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 100%;
   }
 
   // Styles Of Fourth Section
