@@ -1,0 +1,23 @@
+// Codes By Mahdi Tasha
+// Importing Part
+@use "../global/colors" as colors;
+
+// Styles
+.breadcrumb {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+
+  &__item {
+    font-size: 14px;
+    font-weight: 500;
+    color: colors.$dark;
+
+    &:not(:last-of-type) {
+      color: rgba(18,18,18,.6);
+      &:after {content: '   >';}
+    }
+
+    &:not(:first-of-type) {color: colors.$dark;}
+  }
+}

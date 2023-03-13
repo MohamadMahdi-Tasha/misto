@@ -1389,6 +1389,26 @@ template {
     justify-content: center;
   }
 }
+.breadcrumb {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.breadcrumb__item {
+  font-size: 14px;
+  font-weight: 500;
+  color: #121212;
+}
+.breadcrumb__item:not(:last-of-type) {
+  color: rgba(18, 18, 18, 0.6);
+}
+.breadcrumb__item:not(:last-of-type):after {
+  content: "   >";
+}
+.breadcrumb__item:not(:first-of-type) {
+  color: #121212;
+}
+
 .page--home .discount-txt-span {
   color: #E91E63;
 }
