@@ -1,5 +1,6 @@
 // Codes By Mahdi Tasha
 // Importing Part
+import { Link } from 'react-router-dom';
 import PageComponent from "../components/pages/page";
 import AdvantageComponent from "../components/advantage";
 import PageSectionsComponent from "../components/pages/page-sections";
@@ -28,8 +29,8 @@ export default function HomePage() {
                             </a>
                         </div>
                     </div>
-                    <div className='page--home__first-sect__women'><a className='page--home__first-sect__women__inner-link' href="#">Women</a></div>
-                    <div className='page--home__first-sect__men'><a className='page--home__first-sect__men__inner-link' href="#">Men</a></div>
+                    <div className='page--home__first-sect__women'><Link to={'/categories/women'} className='page--home__first-sect__women__inner-link'>Women</Link></div>
+                    <div className='page--home__first-sect__men'><Link to={'/categories/men'} className='page--home__first-sect__men__inner-link'>Men</Link></div>
                     <div className='page--home__first-sect__accessories'><a className='page--home__first-sect__accessories__inner-link' href="#">Accsessories</a></div>
                 </div>
                 <AdvantageComponent />
