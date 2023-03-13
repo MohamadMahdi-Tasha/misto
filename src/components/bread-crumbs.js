@@ -1,5 +1,6 @@
 // Codes By Mahdi Tasha
 // Importing Parts
+import React from "react";
 import { useLocation } from "react-router-dom";
 
 // Exporting Page Categories BreadCrumb Component As Functional Component
@@ -13,8 +14,8 @@ export default function PageCategoriesBreadCrumbComponent() {
     // Returning JSX
     return (
         <div className='breadcrumb'>
-            <a href='#' className='breadcrumb__item'>Home</a>
-            {arrayOfPathes.map(item => <a href='#' className='breadcrumb__item'>{item}</a>)}
+            <h6 className='breadcrumb__item'>Home</h6>
+            {arrayOfPathes.map(item => <h6 className='breadcrumb__item'>{item}</h6>)}
         </div>
     );
 }
