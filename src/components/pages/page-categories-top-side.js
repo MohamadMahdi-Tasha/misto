@@ -1,6 +1,6 @@
 // Codes By Mahdi Tasha
 // Importing Part
-import PageCategoriesBreadCrumbComponent from "./page-categories-breadCrumb";
+import PageCategoriesBreadCrumbComponent from "../bread-crumbs";
 
 // Exporting Page Categories Top Side As Functional Component
 export default function PageCategoriesTopSide({pageName}) {

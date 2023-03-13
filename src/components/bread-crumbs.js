@@ -12,9 +12,9 @@ export default function PageCategoriesBreadCrumbComponent() {
 
     // Returning JSX
     return (
-        <div>
-            <h6 className='page__breadcrumb-item'>Home</h6>
-            {arrayOfPathes.map(item => <h6 className='page__breadcrumb-item'>{item}</h6>)}
+        <div className='breadcrumb'>
+            <h6 className='breadcrumb-item'>Home</h6>
+            {arrayOfPathes.map(item => <h6 className='breadcrumb-item'>{item}</h6>)}
         </div>
     );
 }
