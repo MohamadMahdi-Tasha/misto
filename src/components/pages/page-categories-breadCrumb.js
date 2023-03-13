@@ -10,25 +10,11 @@ export default function PageCategoriesBreadCrumbComponent() {
     const pathNameWithoutFistSlash = pathNameOfUrl.slice(1, pathNameOfUrl.length);
     const arrayOfPathes = pathNameWithoutFistSlash.split('/');
 
-    // A Little Component For Name And Icon Of BreaCrumbs
-    function BreadCrumbInnerNameComponent({name}) {
-        // Returning JSX
-        return (
-            <>
-                {
-                    (name === undefined)
-                        ? <h6>Home</h6>
-                        : <h6>{name}</h6>
-                }
-            </>
-        );
-    }
-
     // Returning JSX
     return (
         <div>
-            <BreadCrumbInnerNameComponent/>
-            {arrayOfPathes.map(item => <BreadCrumbInnerNameComponent name={item}/>)}
+            <h6 className='page__breadcrumb-item'>Home</h6>
+            {arrayOfPathes.map(item => <h6 className='page__breadcrumb-item'>{item}</h6>)}
         </div>
     );
 }
