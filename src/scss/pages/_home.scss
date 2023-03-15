@@ -693,6 +693,15 @@
       height: 170px;
     }
 
+    &__products-list--grid-col {
+      .page--home__product-link {
+        display: block;
+        width: calc(100vw - 1.5rem);
+      }
+      .page--home__products-other-images-holder, .page--home__products-sizes-holder{justify-content: start;}
+      .page--home__product-name {width: 100%;}
+    }
+
     &__sixth-sect__blog-post-inner-link:hover > .page--home__sixth-sect__blog-post-content-holder,
     &__sixth-sect__blog-post-content-holder {
       height: auto;
