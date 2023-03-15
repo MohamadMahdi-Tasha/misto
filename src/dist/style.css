@@ -1405,7 +1405,8 @@ template {
   color: rgba(18, 18, 18, 0.6);
 }
 .breadcrumb__item:not(:last-of-type):after {
-  content: "   >";
+  content: ">";
+  margin-left: 10px;
 }
 
 .page--home .discount-txt-span {
