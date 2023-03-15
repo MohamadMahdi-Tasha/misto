@@ -1,6 +1,17 @@
 // Codes By Mahdi Tasha
 // Exporting Page Categories Filter Component As Functional Component
 export default function PageCategoriesFilterComponent(props){
+    // A Little Component Of Colors
+    function ColorListItemComponent({color}) {
+        // Returning JSX
+        return(
+            <li className='page__categories-filter-side-color-li'>
+                <span style={{backgroundColor: color}}></span>
+                {color}
+            </li>
+        );
+    }
+
     // Returning JSX
     return (
         <div className='page__categories-filter-bottom-side' data-opened={'true'}>
@@ -8,17 +19,17 @@ export default function PageCategoriesFilterComponent(props){
                 <h6 className='page__categories-filter-side-title'>Colors</h6>
                 <div className='page__categories-filter-side-scroll-holder'>
                     <ul className='page__categories-filter-side-list'>
-                        <li className='page__categories-filter-side-color-li'><span></span>Black</li>
-                        <li className='page__categories-filter-side-color-li'><span></span>Cyan</li>
-                        <li className='page__categories-filter-side-color-li'><span></span>Green</li>
-                        <li className='page__categories-filter-side-color-li'><span></span>Grey</li>
-                        <li className='page__categories-filter-side-color-li'><span></span>Pink</li>
-                        <li className='page__categories-filter-side-color-li'><span></span>White</li>
-                        <li className='page__categories-filter-side-color-li'><span></span>Blue</li>
-                        <li className='page__categories-filter-side-color-li'><span></span>Orange</li>
-                        <li className='page__categories-filter-side-color-li'><span></span>Violet</li>
-                        <li className='page__categories-filter-side-color-li'><span></span>Sale</li>
-                        <li className='page__categories-filter-side-color-li'><span></span>Purple</li>
+                        <ColorListItemComponent color={'Black'} />
+                        <ColorListItemComponent color={'Cyan'} />
+                        <ColorListItemComponent color={'Green'} />
+                        <ColorListItemComponent color={'Grey'} />
+                        <ColorListItemComponent color={'Pink'} />
+                        <ColorListItemComponent color={'White'} />
+                        <ColorListItemComponent color={'Blue'} />
+                        <ColorListItemComponent color={'Orange'} />
+                        <ColorListItemComponent color={'Violet'} />
+                        <ColorListItemComponent color={'Sale'} />
+                        <ColorListItemComponent color={'Purple'} />
                     </ul>
                 </div>
             </div>
