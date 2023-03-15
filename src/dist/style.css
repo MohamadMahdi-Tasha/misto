@@ -2179,6 +2179,13 @@ template {
   background-color: #121212;
 }
 
+@media (max-width: 991px) {
+  .page__categories-top-side, .page__categories-filter-top-side {
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+  }
+}
 .page {
   margin-top: 105px;
 }

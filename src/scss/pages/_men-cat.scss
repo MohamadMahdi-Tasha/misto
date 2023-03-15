@@ -118,3 +118,14 @@
     }
   }
 }
+
+// Media Querys
+@media (max-width: 991px) {
+  .page {
+    &__categories-top-side,&__categories-filter-top-side {
+      flex-direction: column;
+      align-items: start;
+      gap: 16px;
+    }
+  }
+}

@@ -11,7 +11,7 @@ export default function MenPage() {
     // Returning JSX
     return (
         <PageComponent pageName={'men-cat'}>
-            <PageSectionsComponent>
+            <PageSectionsComponent pageName={'men-cat'} sectionNumber={'first'}>
                 <PageCategoriesTopSideComponent pageName={'men'}/>
                 <PageCategoriesFilterComponent />
                 <PageProductsListComponent fetchType={'men'}/>
