@@ -640,7 +640,7 @@
       &[data-selected="false"] {background-color: transparent;color: white;}
     }
 
-    &__products-list:not(.page--home__products-list) {grid-template-columns: repeat(2, 1fr);}
+    &__products-list:not(.page--home__products-list--grid-col) {grid-template-columns: repeat(2, 1fr);}
     &__fourth-sect__banner-holder {grid-template-columns: repeat(1, 1fr);}
     &__fifth-sect {
       &__img-1,&__img-2 {display: none;}
@@ -702,7 +702,7 @@
       width: calc(100vw - .5rem);
     }
 
-    &__products-list:not(.page--home__products-list), &__sixth-sect__blogs-holder {
+    &__products-list:not(.page--home__products-list--grid-col), &__sixth-sect__blogs-holder {
       display: flex;
       overflow-x: auto;
       overflow-y: hidden;

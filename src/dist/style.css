@@ -2061,7 +2061,7 @@ template {
     background-color: transparent;
     color: white;
   }
-  .page--home__products-list:not(.page--home__products-list) {
+  .page--home__products-list:not(.page--home__products-list--grid-col) {
     grid-template-columns: repeat(2, 1fr);
   }
   .page--home__fourth-sect__banner-holder {
@@ -2115,26 +2115,26 @@ template {
     height: 200px;
     width: calc(100vw - 0.5rem);
   }
-  .page--home__products-list:not(.page--home__products-list), .page--home__sixth-sect__blogs-holder {
+  .page--home__products-list:not(.page--home__products-list--grid-col), .page--home__sixth-sect__blogs-holder {
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
     padding-bottom: 1rem;
   }
-  .page--home__products-list:not(.page--home__products-list)::-webkit-scrollbar, .page--home__sixth-sect__blogs-holder::-webkit-scrollbar {
+  .page--home__products-list:not(.page--home__products-list--grid-col)::-webkit-scrollbar, .page--home__sixth-sect__blogs-holder::-webkit-scrollbar {
     width: 3px;
     height: 3px;
     background-color: #E6E6E6;
   }
-  .page--home__products-list:not(.page--home__products-list)::-webkit-scrollbar-thumb, .page--home__sixth-sect__blogs-holder::-webkit-scrollbar-thumb {
+  .page--home__products-list:not(.page--home__products-list--grid-col)::-webkit-scrollbar-thumb, .page--home__sixth-sect__blogs-holder::-webkit-scrollbar-thumb {
     width: 3px;
     height: 3px;
     background-color: #8D8B8B;
   }
-  .page--home__products-list:not(.page--home__products-list) .page--home__product-img, .page--home__products-list:not(.page--home__products-list) .page--home__products-item-loader__img, .page--home__sixth-sect__blogs-holder .page--home__product-img, .page--home__sixth-sect__blogs-holder .page--home__products-item-loader__img {
+  .page--home__products-list:not(.page--home__products-list--grid-col) .page--home__product-img, .page--home__products-list:not(.page--home__products-list--grid-col) .page--home__products-item-loader__img, .page--home__sixth-sect__blogs-holder .page--home__product-img, .page--home__sixth-sect__blogs-holder .page--home__products-item-loader__img {
     width: 200px;
   }
-  .page--home__products-list:not(.page--home__products-list) .page--home__products-item, .page--home__sixth-sect__blogs-holder .page--home__products-item {
+  .page--home__products-list:not(.page--home__products-list--grid-col) .page--home__products-item, .page--home__sixth-sect__blogs-holder .page--home__products-item {
     width: 200px;
   }
   .page--home__first-sect__grid-holder {
