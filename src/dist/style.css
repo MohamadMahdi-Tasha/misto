@@ -1460,6 +1460,31 @@ template {
   font-size: 13px;
   color: rgba(18, 18, 18, 0.8);
 }
+.page__categories-filter-side-color-li > span {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-right: 5px;
+  display: inline-block;
+}
+.page__categories-filter-side-chckbox-li {
+  font-weight: 400;
+  font-size: 13px;
+  color: rgba(18, 18, 18, 0.8);
+}
+.page__categories-filter-side-chckbox-li label {
+  display: flex;
+  align-items: center;
+}
+.page__categories-filter-side-chckbox-li input {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 0;
+  border: rgba(18, 18, 18, 0.8);
+  accent-color: #121212;
+  margin-right: 8px;
+}
 
 .page--home .discount-txt-span {
   color: #E91E63;

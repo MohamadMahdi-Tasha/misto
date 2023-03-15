@@ -28,7 +28,7 @@ export default function PageCategoriesFilterComponent(props){
                         <ColorListItemComponent color={'Blue'} />
                         <ColorListItemComponent color={'Orange'} />
                         <ColorListItemComponent color={'Violet'} />
-                        <ColorListItemComponent color={'Sale'} />
+                        <ColorListItemComponent color={'chartreuse'} />
                         <ColorListItemComponent color={'Purple'} />
                     </ul>
                 </div>
