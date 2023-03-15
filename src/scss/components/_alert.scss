@@ -14,15 +14,16 @@
   background-color: white;
   padding: 1rem;
   box-shadow: 0 0 30px rgba(0,0,0,.2);
+  @include mixins.transition;
 
-  &--closed {
+  &[data-opened="false"] {
     opacity: 0;
     transform: scale(.9);
-    @include mixins.transition;
   }
 
-  &:not(.alert--closed) {
-    animation: alert-animations cubic-bezier(.4,0,.2,1) forwards .5s;
+  &[data-opened="true"] {
+    opacity: 1;
+    transform: scale(1);
   }
 
   &__title {
@@ -44,19 +45,6 @@
     border: none;
     background-color: colors.$dark;
     color: white;
-  }
-}
-
-// Animations
-@keyframes alert-animations {
-  from {
-    opacity: 0;
-    transform: scale(.9);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
   }
 }
 
