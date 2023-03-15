@@ -4,3 +4,33 @@
 @use "../global/mixins" as mixins;
 
 // Styles
+.page {
+  &--men-cat {}
+  &__categories-top-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  &__categories-top-side-share-btn {
+    background-color: transparent;
+    border: none;
+    color: rgba(18,18,18,.6);
+    font-weight: 500;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+
+    > svg {margin-right: 8px;}
+  }
+
+  &__categories-top-side-title {
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: colors.$dark;
+    font-weight: 600;
+    font-size: 26px;
+  }
+}

@@ -10,7 +10,7 @@ import PageCategoriesFilterComponent from "../../components/pages/page-categorie
 export default function MenPage() {
     // Returning JSX
     return (
-        <PageComponent pageName={'men'}>
+        <PageComponent pageName={'men-cat'}>
             <PageSectionsComponent>
                 <PageCategoriesTopSideComponent pageName={'men'}/>
                 <PageCategoriesFilterComponent />
