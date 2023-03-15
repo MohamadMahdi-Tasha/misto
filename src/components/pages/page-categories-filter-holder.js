@@ -1,5 +1,6 @@
 // Codes By Mahdi Tasha
 // Importing Part
+import PageCategoriesDropdownComponenet from "./page-categories-dropdown";
 
 // Exporting Page Categories Filter Component As Functional Component
 export default function PageCategoriesFilterHolderComponent(props) {
@@ -28,20 +29,7 @@ export default function PageCategoriesFilterHolderComponent(props) {
                         </svg>
                     </button>
                 </div>
-                <div className='page__categories-filter-dropdown-holder' data-opened='false'>
-                    <button className='page__categories-filter-dropdown-btn'>
-                        <span>BESTSELLERS</span>
-                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.08325 1.25L4.99992 5.33333L0.916587 1.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <ul className="page__categories-filter-dropdown">
-                        <li><button data-selected='true'>BESTSELLERS</button></li>
-                        <li><button data-selected='false'>SPECIALS</button></li>
-                        <li><button data-selected='false'>MOST VIEWED</button></li>
-                        <li><button data-selected='false'>FEATURED PRODUCTS</button></li>
-                    </ul>
-                </div>
+                <PageCategoriesDropdownComponenet list={['BESTSELLERS', 'SPECIALS', 'MOST VIEWED', 'FEATURED PRODUCTS']} activeIndex={0}/>
             </div>
         </div>
     );

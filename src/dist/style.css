@@ -2109,15 +2109,15 @@ template {
     width: calc(100vw - 0.5rem);
     height: 170px;
   }
-  .page--home__products-list--grid-col .page--home__product-link {
-    display: block;
-    width: calc(100vw - 1.5rem);
-  }
   .page--home__products-list--grid-col .page--home__products-other-images-holder, .page--home__products-list--grid-col .page--home__products-sizes-holder {
     justify-content: start;
   }
   .page--home__products-list--grid-col .page--home__product-name {
     width: 100%;
+  }
+  .page--home__products-list--grid-col .page--home__product-link {
+    display: block;
+    width: calc(100vw - 1.5rem);
   }
   .page--home__sixth-sect__blog-post-inner-link:hover > .page--home__sixth-sect__blog-post-content-holder, .page--home__sixth-sect__blog-post-content-holder {
     height: auto;
