@@ -1,6 +1,6 @@
 // Codes By Mahdi Tasha
 // Exporting Page Categories Filter Component As Functional Component
-export default function PageCategoriesFilterComponent(props){
+export default function PageCategoriesFilterComponent({isOpened}){
     // A Little Component Of Colors
     function ColorListItemComponent({color}) {
         // Returning JSX
@@ -14,7 +14,7 @@ export default function PageCategoriesFilterComponent(props){
 
     // Returning JSX
     return (
-        <div className='page__categories-filter-bottom-side' data-opened={'true'}>
+        <div className='page__categories-filter-bottom-side' data-opened={isOpened}>
             <div className='page__categories-filter-side-item'>
                 <h6 className='page__categories-filter-side-title'>Colors</h6>
                 <div className='page__categories-filter-side-scroll-holder'>

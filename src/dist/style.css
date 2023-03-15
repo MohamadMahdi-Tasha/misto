@@ -1423,9 +1423,11 @@ template {
 }
 .page__categories-filter-bottom-side[data-opened=true] {
   height: 300px;
+  padding: 1rem 2rem;
 }
 .page__categories-filter-bottom-side[data-opened=false] {
   height: 0;
+  padding: 0;
 }
 .page__categories-filter-side-title {
   font-weight: 600;
@@ -2281,13 +2283,18 @@ template {
 .page__categories-filter-btn {
   border: none;
   background-color: transparent;
-  color: rgba(18, 18, 18, 0.6);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 13px;
   display: flex;
   align-items: center;
+}
+.page__categories-filter-btn[data-opened=true] {
+  color: #121212;
+}
+.page__categories-filter-btn[data-opened=false] {
+  color: rgba(18, 18, 18, 0.6);
 }
 .page__categories-filter-btn > svg {
   margin-right: 17px;

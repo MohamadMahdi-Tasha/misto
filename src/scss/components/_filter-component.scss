@@ -15,8 +15,15 @@
     margin-bottom: 32px;
     @include mixins.transition;
 
-    &[data-opened='true'] {height: 300px;}
-    &[data-opened='false'] {height: 0;}
+    &[data-opened='true'] {
+      height: 300px;
+      padding: 1rem 2rem;
+    }
+
+    &[data-opened='false'] {
+      height: 0;
+      padding: 0;
+    }
   }
 
   &__categories-filter-side-title {

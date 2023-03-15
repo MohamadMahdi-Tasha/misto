@@ -43,7 +43,6 @@
   &__categories-filter-btn {
     border: none;
     background-color: transparent;
-    color: rgba(18,18,18,.6);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     font-weight: 500;
@@ -51,6 +50,8 @@
     display: flex;
     align-items: center;
 
+    &[data-opened='true'] {color: colors.$dark;}
+    &[data-opened='false'] {color: rgba(18,18,18,.6);}
     > svg {margin-right: 17px;}
   }
 
