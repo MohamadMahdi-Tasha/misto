@@ -1514,6 +1514,7 @@ template {
   display: flex;
   align-items: center;
   gap: 32px;
+  z-index: 1000;
 }
 .page--home__filter-btn {
   background-color: transparent;
