@@ -1409,6 +1409,58 @@ template {
   margin-left: 10px;
 }
 
+.page__categories-filter-bottom-side {
+  background-color: #F8F8F8;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 1rem 2rem;
+  margin-bottom: 32px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.5s;
+}
+.page__categories-filter-bottom-side[data-opened=true] {
+  height: 300px;
+}
+.page__categories-filter-bottom-side[data-opened=false] {
+  height: 0;
+}
+.page__categories-filter-side-title {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #121212;
+  margin-bottom: 12px;
+}
+.page__categories-filter-side-scroll-holder {
+  overflow: auto;
+  height: 230px;
+}
+.page__categories-filter-side-scroll-holder::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  background-color: #E6E6E6;
+}
+.page__categories-filter-side-scroll-holder::-webkit-scrollbar-thumb {
+  width: 3px;
+  height: 3px;
+  background-color: #8D8B8B;
+}
+.page__categories-filter-side-list {
+  list-style: none;
+}
+.page__categories-filter-side-list > li {
+  margin-bottom: 16px;
+}
+.page__categories-filter-side-color-li {
+  font-weight: 400;
+  font-size: 13px;
+  color: rgba(18, 18, 18, 0.8);
+}
+
 .page--home .discount-txt-span {
   color: #E91E63;
 }

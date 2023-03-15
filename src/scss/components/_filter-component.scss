@@ -1,0 +1,48 @@
+// Codes By Mahdi Tasha
+// Importing Parts
+@use "../global/colors" as colors;
+@use "../global/mixins" as mixins;
+
+// Styles
+.page {
+  &__categories-filter-bottom-side {
+    background-color: colors.$gr-white;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 1rem 2rem;
+    margin-bottom: 32px;
+    @include mixins.transition;
+
+    &[data-opened='true'] {height: 300px;}
+    &[data-opened='false'] {height: 0;}
+  }
+
+  &__categories-filter-side-title {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: colors.$dark;
+    margin-bottom: 12px;
+  }
+
+  &__categories-filter-side-scroll-holder {
+    overflow: auto;
+    height: 230px;
+    @include mixins.scrollbar;
+  }
+
+  &__categories-filter-side-list {
+    list-style: none;
+
+    > li {margin-bottom: 16px;}
+  }
+
+  &__categories-filter-side-color-li {
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(18,18,18,.8);
+  }
+}

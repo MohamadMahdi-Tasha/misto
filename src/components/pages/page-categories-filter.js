@@ -3,7 +3,7 @@
 export default function PageCategoriesFilterComponent(props){
     // Returning JSX
     return (
-        <div className='page__categories-filter-bottom-side' data-opened={props.isOpened}>
+        <div className='page__categories-filter-bottom-side' data-opened={'true'}>
             <div className='page__categories-filter-side-item'>
                 <h6 className='page__categories-filter-side-title'>Colors</h6>
                 <div className='page__categories-filter-side-scroll-holder'>
