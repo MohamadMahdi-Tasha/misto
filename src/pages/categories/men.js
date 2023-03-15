@@ -6,11 +6,14 @@ import PageSectionsComponent from "../../components/pages/page-sections";
 import PageProductsListComponent from "../../components/pages/page-products-list";
 import PageCategoriesTopSideComponent from "../../components/pages/page-categories-top-side";
 import PageCategoriesFilterComponent from "../../components/pages/page-categories-filter-holder";
+import {logDOM} from "@testing-library/react";
+import AlertComponent from "../../components/alert";
 
 // Exporting Men Categories Page As Functional Component
 export default function MenPage() {
-    // Setting State
+    // Setting States
     const [gridType, setGridType] = useState('row');
+    const [isShareBtnClicked, setShareBtnClicked] = useState(false);
 
     // Creating Refs
     const refrenceOfColGridBtn = React.createRef();
@@ -29,11 +32,21 @@ export default function MenPage() {
         refrenceOfRowGridBtn.current.setAttribute('data-selected', 'true');
     }
 
+    function handleClickOfShareBtn() {
+        setShareBtnClicked(true);
+        navigator.clipboard.writeText(document.documentURI)
+    }
+
     // Returning JSX
     return (
-        <PageComponent pageName={'men-cat'}>
+        <PageComponent isShareBtnClicked={isShareBtnClicked} pageName={'men-cat'}>
+            {
+                (isShareBtnClicked)
+                    ? <AlertComponent title='Payment successful'>Your payment has been successfully submitted. <br/>We’ve sent you an email with all of the details of your order.</AlertComponent>
+                    : false
+            }
             <PageSectionsComponent pageName={'men-cat'} sectionNumber={'first'}>
-                <PageCategoriesTopSideComponent pageName={'men'}/>
+                <PageCategoriesTopSideComponent onClickOfShareBtn={handleClickOfShareBtn} pageName={'men'}/>
                 <PageCategoriesFilterComponent
                     refOfGridColBtn={refrenceOfColGridBtn}
                     refOfGridRowBtn={refrenceOfRowGridBtn}
