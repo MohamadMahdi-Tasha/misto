@@ -38,12 +38,12 @@ export default function HomePage() {
             <PageSectionsComponent pageName={'home'} sectionNumber={'second'}>
                 <PageFilterComponent btnItems={['SPECIALS', 'BESTSELLERS', 'MOST VIEWED', 'FEATURED PRODUCTS']} selectedItemIndex={0} title={'WOMEN’S'}/>
                 <PageProductsListComponent fetchType={'women'}/>
-                <a href="#"><button tabIndex='-1' className='page--home__products-see-more-btn'>SEE ALL</button></a>
+                <Link to="/categories/women"><button tabIndex='-1' className='page--home__products-see-more-btn'>SEE ALL</button></Link>
             </PageSectionsComponent>
             <PageSectionsComponent pageName={'home'} sectionNumber={'third'}>
                 <PageFilterComponent btnItems={['SPECIALS', 'BESTSELLERS', 'MOST VIEWED', 'FEATURED PRODUCTS']} selectedItemIndex={0} title={'MEN’S'}/>
                 <PageProductsListComponent fetchType={'men'}/>
-                <a href="#"><button tabIndex='-1' className='page--home__products-see-more-btn'>SEE ALL</button></a>
+                <Link to="/categories/men"><button tabIndex='-1' className='page--home__products-see-more-btn'>SEE ALL</button></Link>
             </PageSectionsComponent>
             <PageSectionsComponent pageName={'home'} sectionNumber={'fourth'}>
                 <div className='page--home__fourth-sect__banner-holder'>
