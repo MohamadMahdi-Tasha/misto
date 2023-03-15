@@ -1654,6 +1654,14 @@ template {
 .page--home__products-list--grid-col {
   grid-template-columns: repeat(1, 1fr);
 }
+.page--home__products-list--grid-col .page--home__products-item-loader__img {
+  width: 100%;
+  height: 300px;
+  margin-right: 16px;
+}
+.page--home__products-list--grid-col .page--home__products-item-loader > :not(.page--home__products-item-loader__img) {
+  display: none;
+}
 .page--home__products-list--grid-col .page--home__product-link {
   display: flex;
 }
