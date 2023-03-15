@@ -1966,7 +1966,7 @@ template {
     color: white;
     width: 100%;
     font-style: normal;
-    text-align: right;
+    text-align: left;
     padding: 1rem 0.5rem;
     white-space: nowrap;
   }
@@ -2083,6 +2083,98 @@ template {
   color: #121212;
   font-weight: 600;
   font-size: 26px;
+}
+.page__categories-filter-top-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.page__categories-filter-btn {
+  border: none;
+  background-color: transparent;
+  color: rgba(18, 18, 18, 0.6);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+.page__categories-filter-btn > svg {
+  margin-right: 17px;
+}
+.page__categories-filter-grid-btns-holder {
+  display: flex;
+  gap: 20px;
+}
+.page__categories-filter-grid-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+}
+.page__categories-filter-grid-btns[data-selected=true] {
+  color: #121212;
+}
+.page__categories-filter-grid-btns[data-selected=false] {
+  color: rgba(18, 18, 18, 0.6);
+}
+.page__categories-filter-dropdown-holder {
+  position: relative;
+}
+.page__categories-filter-dropdown-holder[data-opened=false] .page__categories-filter-dropdown {
+  transform: scale(0);
+  opacity: 0;
+}
+.page__categories-filter-dropdown-holder[data-opened=true] .page__categories-filter-dropdown {
+  transform: scale(1);
+  opacity: 1;
+}
+.page__categories-filter-dropdown-btn {
+  color: rgba(18, 18, 18, 0.6);
+  border: none;
+  background-color: transparent;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.page__categories-filter-dropdown-btn > svg {
+  margin-left: 6px;
+}
+.page__categories-filter-dropdown {
+  transform-origin: right top;
+  right: 0;
+  top: 40px;
+  position: absolute;
+  list-style: none;
+  z-index: 1000;
+  width: 200px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.5s;
+}
+.page__categories-filter-dropdown button {
+  width: 100%;
+  color: white;
+  font-style: normal;
+  text-align: left;
+  padding: 1rem 0.5rem;
+  white-space: nowrap;
+  border: none;
+}
+.page__categories-filter-dropdown button[data-selected=true] {
+  background-color: #E91E63;
+}
+.page__categories-filter-dropdown button[data-selected=false] {
+  background-color: #121212;
 }
 
 .page {

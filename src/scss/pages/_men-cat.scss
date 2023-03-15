@@ -32,4 +32,89 @@
     font-weight: 600;
     font-size: 26px;
   }
+
+  &__categories-filter-top-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  &__categories-filter-btn {
+    border: none;
+    background-color: transparent;
+    color: rgba(18,18,18,.6);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+
+    > svg {margin-right: 17px;}
+  }
+
+  &__categories-filter-grid-btns-holder {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__categories-filter-grid-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+
+    &[data-selected='true'] {color: colors.$dark;}
+    &[data-selected='false'] {color: rgba(18,18,18,.6);}
+  }
+
+  &__categories-filter-dropdown-holder {
+    position: relative;
+
+    &[data-opened='false'] .page__categories-filter-dropdown{transform: scale(0);opacity: 0;}
+    &[data-opened='true'] .page__categories-filter-dropdown{transform: scale(1);opacity: 1;}
+  }
+
+  &__categories-filter-dropdown-btn {
+    color: rgba(18,18,18,.6);
+    border: none;
+    background-color: transparent;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    > svg {margin-left: 6px;}
+  }
+
+  &__categories-filter-dropdown {
+    transform-origin: right top;
+    right: 0;
+    top: 40px;
+    position: absolute;
+    list-style: none;
+    z-index: 1000;
+    width: 200px;
+    @include mixins.transition;
+
+    & button {
+      width: 100%;
+      color: white;
+      font-style: normal;
+      text-align: left;
+      padding: 1rem .5rem;
+      white-space: nowrap;
+      border: none;
+
+      &[data-selected='true'] {background-color: colors.$sale;}
+      &[data-selected='false'] {background-color: colors.$dark;}
+    }
+  }
 }
