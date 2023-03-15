@@ -13,6 +13,7 @@ import FifthSectionImg2 from '../assets/img/home-page/fifth-section/img-2.png';
 import SixthSectionImg1 from '../assets/img/home-page/sixth-section/img-1.png';
 import SixthSectionImg2 from '../assets/img/home-page/sixth-section/img-2.jpg';
 import SixthSectionImg3 from '../assets/img/home-page/sixth-section/img-3.jpg';
+import AlertComponent from "../components/alert";
 
 // Exporting Home Page Functional Component As Default
 export default function HomePage() {
@@ -86,6 +87,10 @@ export default function HomePage() {
                     <PageBlogPostComponent img={SixthSectionImg3} name={'Recent Favorites On Repeat'} pargraph={'But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor'} date={'April 6, 2032'}/>
                 </PageBlogPostHolderComponent>
             </PageSectionsComponent>
+            <AlertComponent title='Payment successful'>
+                Your payment has been successfully submitted. <br/>
+                We’ve sent you an email with all of the details of your order.
+            </AlertComponent>
         </PageComponent>
     );
 }
