@@ -1486,6 +1486,22 @@ template {
   margin-right: 8px;
 }
 
+@media (max-width: 991px) {
+  .page__categories-filter-bottom-side[data-opened=true] {
+    height: 600px;
+  }
+  .page__categories-filter-bottom-side {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 991px) {
+  .page__categories-filter-bottom-side[data-opened=true] {
+    height: 1200px;
+  }
+  .page__categories-filter-bottom-side {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .page--home .discount-txt-span {
   color: #E91E63;
 }
