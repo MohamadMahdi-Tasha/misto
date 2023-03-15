@@ -1553,6 +1553,11 @@ template {
     transform: scale(1);
   }
 }
+@media (max-width: 991px) {
+  .alert {
+    right: 0.5rem;
+  }
+}
 .page--home .discount-txt-span {
   color: #E91E63;
 }

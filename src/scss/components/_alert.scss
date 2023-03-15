@@ -58,3 +58,6 @@
     transform: scale(1);
   }
 }
+
+// Media Querys
+@media (max-width: 991px) { .alert {right: .5rem;} }
