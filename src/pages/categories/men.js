@@ -39,7 +39,10 @@ export default function MenPage() {
     // Returning JSX
     return (
         <PageComponent pageName={'men-cat'}>
-            <AlertComponent onClickOfCloseBtn={() => setShareBtnClicked(false)} isOpenedProp={isShareBtnClicked} title='Payment successful'>
+            <AlertComponent
+                onClickOfCloseBtn={() => setShareBtnClicked(false)}
+                isOpenedProp={isShareBtnClicked}
+                title='Payment successful'>
                 Your payment has been successfully submitted. <br/>
                 We’ve sent you an email with all of the details of your order.
             </AlertComponent>
