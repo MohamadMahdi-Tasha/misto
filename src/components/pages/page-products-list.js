@@ -47,7 +47,7 @@ export default function PageProductsListComponent({fetchType,gridType}) {
                             score={Math.round(item.rating.rate)}
                             name={item.title}
                             id={item.id}
-                            price={item.price}/>
+                            price={Math.round(item.price)}/>
                     )
                     : <PageProductItemsLoadersHolderComponent />
             }
