@@ -10,8 +10,10 @@ export default function Page404(){
     return(
         <PageComponent pageName={'404'}>
             <PageSectionsComponent pageName={'404'} sectionNumber={'first'}>
-                <h1>Sorry <br/> But Nothing Find With This Title</h1>
-                <Link to={'/'}><button>To Home</button></Link>
+                <h1 className='page--404__txt'>Sorry <br/> But Nothing Find With This Title</h1>
+                <div className='page--404__btn-holder'>
+                    <Link to={'/'}><button className='page--404__btn'>To Home</button></Link>
+                </div>
             </PageSectionsComponent>
         </PageComponent>
     );
