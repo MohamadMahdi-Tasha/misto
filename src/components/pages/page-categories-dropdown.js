@@ -6,7 +6,7 @@ import React, { useState } from "react";
 export default function PageCategoriesDropdownComponenet({list, activeIndex}) {
     // Creating State For Component
     const [isOpened, setOpenedOrClosed] = useState(false);
-    const [timesClickedOnToggler, setTimesClickedOnToggler] = useState(0);
+    const [timesClickedOnToggler, setTimesClickedOnToggler] = useState(1);
     const [selectedElement, setSelectedItem] = useState(list[activeIndex]);
 
     // Creating Refs

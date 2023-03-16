@@ -8,7 +8,7 @@ import PageCategoriesFilterComponent from "./page-categories-filter";
 export default function PageCategoriesFilterHolderComponent(props) {
     // Creating States
     const [isFilterOpened, setFilterOpenedOrClosed] = useState(false);
-    const [timesClickedOnFilterToggler, setTimesClickedOnFilterToggler] = useState(0);
+    const [timesClickedOnFilterToggler, setTimesClickedOnFilterToggler] = useState(1);
 
     // Handling Click Of Filter Toggler
     function handleClickOfFilterToggleBtn() {
@@ -44,7 +44,9 @@ export default function PageCategoriesFilterHolderComponent(props) {
                         </svg>
                     </button>
                 </div>
-                <PageCategoriesDropdownComponenet list={['BESTSELLERS', 'SPECIALS', 'MOST VIEWED', 'FEATURED PRODUCTS']} activeIndex={0}/>
+                <PageCategoriesDropdownComponenet
+                    list={['BESTSELLERS', 'SPECIALS', 'MOST VIEWED', 'FEATURED PRODUCTS']}
+                    activeIndex={0}/>
             </div>
             <PageCategoriesFilterComponent isOpened={isFilterOpened}/>
         </div>

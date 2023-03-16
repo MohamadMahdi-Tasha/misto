@@ -6,7 +6,7 @@ import React, { useState } from "react";
 export default function PageFilterComponent({title, selectedItemIndex, btnItems}) {
     // Initializing States
     const [isDropDownOpened, setOpenOrCloseOfDropDown] = useState('false');
-    const [dropDownTogglerClicks, setDropDownTogglerClicks] = useState(0);
+    const [dropDownTogglerClicks, setDropDownTogglerClicks] = useState(1);
     const [selectedIndex, setSelectedIndex] = useState(selectedItemIndex);
 
     // Handling Click Of Mobile DropDown Toggler
