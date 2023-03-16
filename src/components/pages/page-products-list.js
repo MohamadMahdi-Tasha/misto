@@ -40,7 +40,15 @@ export default function PageProductsListComponent({fetchType,gridType}) {
         }>
             {
                 (isLoaded)
-                    ? fetchedItems.map(item => <PageProductsItemComponent key={fetchedItems.indexOf(item)} img={item.image} score={Math.round(item.rating.rate)} name={item.title} price={item.price}/>)
+                    ? fetchedItems.map(item =>
+                        <PageProductsItemComponent
+                            key={fetchedItems.indexOf(item)}
+                            img={item.image}
+                            score={Math.round(item.rating.rate)}
+                            name={item.title}
+                            id={item.id}
+                            price={item.price}/>
+                    )
                     : <PageProductItemsLoadersHolderComponent />
             }
         </ul>

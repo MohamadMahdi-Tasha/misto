@@ -1,5 +1,6 @@
 // Codes By Mahdi Tasha
 // Importing Part
+import { Link } from "react-router-dom";
 import PageProductsItemScoreComponent from './page-products-item-score';
 import BottomImage1 from '../../assets/img/home-page/second-section/img-1.jpg';
 import BottomImage2 from '../../assets/img/home-page/second-section/img-2.jpg';
@@ -11,7 +12,7 @@ export default function PageProductsItemComponent(props) {
     // Returning JSX
     return (
         <li className='page--home__products-item'>
-            <a className='page--home__product-link' href="src/components/pages/page-products-item#">
+            <Link className='page--home__product-link' to={`/product/${props.id}`}>
                 <img className='page--home__product-img' src={props.img} alt={props.name}/>
                 <div className='page--home__products-content-holder'>
                     <h6 className='page--home__product-name'>{props.name}</h6>
@@ -45,7 +46,7 @@ export default function PageProductsItemComponent(props) {
                         </button>
                     </div>
                 </div>
-            </a>
+            </Link>
         </li>
     );
 }

@@ -24,7 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                     <Route path='men' element={ <MenPage /> } />
                     <Route path='women' element={ <WomenPage /> } />
                 </Route>
-                <Route path='/product' element={ <ProductPage /> } />
+                <Route path='/product/:id' element={ <ProductPage /> } />
                 <Route path='*' element={ <Page404 /> } />
             </Routes>
             <FooterComponent />
