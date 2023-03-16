@@ -6,7 +6,7 @@ import HeaderNavDropdownsComponent from './header-nav-dropdowns';
 // Exporting Header Nav Mobile Toggler Component Functional Component As Default
 export default function HeaderNavMobileTogglerComponent(props) {
     // Creating States
-    const [clicksOfToggler, setClicksOfToggler] = useState(0);
+    const [clicksOfToggler, setClicksOfToggler] = useState(1);
     const [isOpened, setOpenedOrClosed] = useState('false');
 
     // A Function To Handle Click Of Mobile Nav Toggler
