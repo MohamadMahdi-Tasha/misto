@@ -7,6 +7,8 @@ import HeaderNavDropdownInsprationItemComponent from "./header-nav-dropdown-insp
 
 // Exporting Contents Of Each dropdown Component as Functional Component As Default
 export default function HeaderNavDropdownContentsComponent(props) {
+    const insprationsInLocalStoarge = localStorage.getItem('insprations');
+
     if (props.type === 'localization') {
         return (
             <>
@@ -109,21 +111,24 @@ export default function HeaderNavDropdownContentsComponent(props) {
                     </button>
                 </form>
                 <hr className='header__nav-dropdown-hr'/>
-                <h6 className='header__nav-dropdown-title'>Need some inspiration?</h6>
-                <div className='header__nav-dropdown-inspration-holder'>
-                    <ul className='header__nav-dropdown-inspration-list'>
-                        <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Women's tracksuit Q109"} price={37999}/>
-                        <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Woman's tracksuit Q109"} price={37999}/>
-                        <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Woman's tracksuit Q109"} price={37999}/>
-                        <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Woman's tracksuit Q109"} price={37999}/>
-                        <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Woman's tracksuit Q109"} price={37999}/>
-                        <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Woman's tracksuit Q109"} price={37999}/>
-                        <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Woman's tracksuit Q109"} price={37999}/>
-                        <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Woman's tracksuit Q109"} price={37999}/>
-                        <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Woman's tracksuit Q109"} price={37999}/>
-                        <HeaderNavDropdownInsprationItemComponent img={IMG} name={"Woman's tracksuit Q109"} price={37999}/>
-                    </ul>
-                </div>
+                {
+                    (insprationsInLocalStoarge !== null)
+                        ?  (<div>
+                                <h6 className='header__nav-dropdown-title'>Need some inspiration?</h6>
+                                <div className='header__nav-dropdown-inspration-holder'>
+                                    <ul className='header__nav-dropdown-inspration-list'>
+                                        {
+                                            insprationsInLocalStoarge.map(inspration =>  <HeaderNavDropdownInsprationItemComponent
+                                                id={inspration.id}
+                                                img={inspration.img}
+                                                name={inspration.name}
+                                                price={inspration.price}/>)
+                                        }
+                                    </ul>
+                                </div>
+                            </div>)
+                        : false
+                }
             </>
         );
     } else if (props.type === 'login') {
