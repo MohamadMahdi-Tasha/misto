@@ -22,6 +22,7 @@ export default function ProductPage() {
     const [isLoaded, setLoadedOrNot] = useState(false);
     const [info, setInfo] = useState({});
     const [isShareButtonClicked, setClickedOfShareBtn] = useState(false);
+    const [productTypesToFetch, setProductTypesToFetch] = useState('');
 
     // Using 'useParams' Hook To Get Id Of Product From URL
     const { id } = useParams();
@@ -31,8 +32,16 @@ export default function ProductPage() {
         fetch(`https://fakestoreapi.com/products/${id}`)
             .then(data => data.json())
             .then(data => {
+                const slicedCategoryType = data.category[0].slice(0,2);
+                let productTypesToFetch;
+
+                (slicedCategoryType === 'men')
+                    ? productTypesToFetch = 'men'
+                    : productTypesToFetch = 'women'
+
                 setInfo(data);
-                setInterval(() => setLoadedOrNot(true), 5000)
+                setProductTypesToFetch(productTypesToFetch);
+                setInterval(() => setLoadedOrNot(true), 5000);
             })
     }, [])
 
@@ -83,7 +92,6 @@ export default function ProductPage() {
                         : <div className='page--product__product-img-loader'></div>
                 }
                 <div className='page--product__product-content'>
-                    <h6 className='page--product__product-color'>COLOR:<span>Blue</span></h6>
                     <div className='page--product__product-price-holder'>
                         {
                             (isLoaded)
@@ -192,7 +200,7 @@ export default function ProductPage() {
             </PageSectionsComponent>
             <PageSectionsComponent pageName={'product'} sectionNumber={'third'}>
                 <h6 className='page--product__related-txt'>RELATED PRODUCTS</h6>
-                <PageProductsListComponent fetchType={'men'} gridType={'row'}/>
+                <PageProductsListComponent fetchType={productTypesToFetch} gridType={'row'}/>
             </PageSectionsComponent>
         </PageComponent>
     );

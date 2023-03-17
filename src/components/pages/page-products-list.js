@@ -16,7 +16,7 @@ export default function PageProductsListComponent({fetchType,gridType}) {
             .then(data => data.json())
             .then(data => {
                 setFetchedItems(data);
-                setLoaded(true);
+                setInterval(() => setLoaded(true), 2000)
             })
     })
 

@@ -2476,12 +2476,12 @@ template {
 .page--product__product-id > span {
   color: #121212;
 }
-.page--product__product-ava, .page--product__product-color {
+.page--product__product-ava {
   font-weight: 500;
   font-size: 11px;
   color: rgba(18, 18, 18, 0.6);
 }
-.page--product__product-ava > span, .page--product__product-color > span {
+.page--product__product-ava > span {
   color: #121212;
 }
 .page--product__second-sect__main {
