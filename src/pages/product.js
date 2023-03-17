@@ -15,6 +15,7 @@ import AESLogo from "../assets/img/footer/img-AES256.png";
 import StripeLogo from "../assets/img/footer/img-stripe.png";
 import PageProductsListComponent from "../components/pages/page-products-list";
 import AlertComponent from "../components/alert";
+import ReviewsComponent from "../components/pages/reviews";
 
 // Exporting Functional Component Of Products Page As Default
 export default function ProductPage() {
@@ -154,46 +155,12 @@ export default function ProductPage() {
                             </button>
                         </div>
                         <ul className='page--product__product-reviews-list'>
-                            <li className='page--product__product-reviews-item'>
-                                <div className='page--product__product-review__top'>
-                                    <h6 className='page--product__product-review__name'>Oleh Chabanov</h6>
-                                    <div className='page--product__product-review__info'>
-                                        <h6 className='page--product__product-review__time'><span>3</span>Month Ago</h6>
-                                        <PageProductsItemScoreComponent score={5}/>
-                                    </div>
-                                </div>
-                                <p className='page--product__product-review__txt'>On the other hand, we denounce with righteous indignation and like men who are so beguiled and demoralized by the charms of pleasure of the moment</p>
-                            </li>
-                            <li className='page--product__product-reviews-item'>
-                                <div className='page--product__product-review__top'>
-                                    <h6 className='page--product__product-review__name'>Oleh Chabanov</h6>
-                                    <div className='page--product__product-review__info'>
-                                        <h6 className='page--product__product-review__time'><span>3</span>Month Ago</h6>
-                                        <PageProductsItemScoreComponent score={5}/>
-                                    </div>
-                                </div>
-                                <p className='page--product__product-review__txt'>On the other hand, we denounce with righteous indignation and like men who are so beguiled and demoralized by the charms of pleasure of the moment</p>
-                            </li>
-                            <li className='page--product__product-reviews-item'>
-                                <div className='page--product__product-review__top'>
-                                    <h6 className='page--product__product-review__name'>Oleh Chabanov</h6>
-                                    <div className='page--product__product-review__info'>
-                                        <h6 className='page--product__product-review__time'><span>3</span>Month Ago</h6>
-                                        <PageProductsItemScoreComponent score={5}/>
-                                    </div>
-                                </div>
-                                <p className='page--product__product-review__txt'>On the other hand, we denounce with righteous indignation and like men who are so beguiled and demoralized by the charms of pleasure of the moment</p>
-                            </li>
-                            <li className='page--product__product-reviews-item'>
-                                <div className='page--product__product-review__top'>
-                                    <h6 className='page--product__product-review__name'>Oleh Chabanov</h6>
-                                    <div className='page--product__product-review__info'>
-                                        <h6 className='page--product__product-review__time'><span>3</span>Month Ago</h6>
-                                        <PageProductsItemScoreComponent score={5}/>
-                                    </div>
-                                </div>
-                                <p className='page--product__product-review__txt'>On the other hand, we denounce with righteous indignation and like men who are so beguiled and demoralized by the charms of pleasure of the moment</p>
-                            </li>
+                            <ReviewsComponent author={'Oleh Chabanov'} time={3} score={5} txt={'On the other hand, we denounce with righteous indignation and like men who are so beguiled and demoralized by the charms of pleasure of the moment'} />
+                            <ReviewsComponent author={'Oleh Chabanov'} time={3} score={5} txt={'On the other hand, we denounce with righteous indignation and like men who are so beguiled and demoralized by the charms of pleasure of the moment'} />
+                            <ReviewsComponent author={'Oleh Chabanov'} time={3} score={5} txt={'On the other hand, we denounce with righteous indignation and like men who are so beguiled and demoralized by the charms of pleasure of the moment'} />
+                            <ReviewsComponent author={'Oleh Chabanov'} time={3} score={5} txt={'On the other hand, we denounce with righteous indignation and like men who are so beguiled and demoralized by the charms of pleasure of the moment'} />
+                            <ReviewsComponent author={'Oleh Chabanov'} time={3} score={5} txt={'On the other hand, we denounce with righteous indignation and like men who are so beguiled and demoralized by the charms of pleasure of the moment'} />
+                            <ReviewsComponent author={'Oleh Chabanov'} time={3} score={5} txt={'On the other hand, we denounce with righteous indignation and like men who are so beguiled and demoralized by the charms of pleasure of the moment'} />
                         </ul>
                     </div>
                 </div>
