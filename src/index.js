@@ -6,8 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HeaderComponent from './components/header/header';
 import FooterComponent from './components/footer/footer';
 import HomePage from './pages/home';
-import MenPage from "./pages/categories/men";
-import WomenPage from "./pages/categories/women";
+import CategoriesPage from "./pages/categories";
 import ProductPage from "./pages/product";
 import Page404 from "./pages/404";
 import './dist/style.css';
@@ -20,10 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <HeaderComponent />
             <Routes>
                 <Route exact path='/' element={ <HomePage /> } />
-                <Route path='/categories'>
-                    <Route path='men' element={ <MenPage /> } />
-                    <Route path='women' element={ <WomenPage /> } />
-                </Route>
+                <Route path='/categories/:type' element={ <CategoriesPage/> }/>
                 <Route path='/product/:id' element={ <ProductPage /> } />
                 <Route path='*' element={ <Page404 /> } />
             </Routes>

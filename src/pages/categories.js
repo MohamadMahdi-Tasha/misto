@@ -1,15 +1,19 @@
 // Codes By Mahdi Tasha
 // Importing Part
-import React, {useEffect, useState} from 'react';
-import PageComponent from "../../components/pages/page";
-import PageSectionsComponent from "../../components/pages/page-sections";
-import PageProductsListComponent from "../../components/pages/page-products-list";
-import PageCategoriesTopSideComponent from "../../components/pages/page-categories-top-side";
-import PageCategoriesFilterComponent from "../../components/pages/page-categories-filter-holder";
-import AlertComponent from "../../components/alert";
+import React, { useState } from 'react';
+import {useParams} from "react-router-dom";
+import PageComponent from "../components/pages/page";
+import PageSectionsComponent from "../components/pages/page-sections";
+import PageProductsListComponent from "../components/pages/page-products-list";
+import PageCategoriesTopSideComponent from "../components/pages/page-categories-top-side";
+import PageCategoriesFilterComponent from "../components/pages/page-categories-filter-holder";
+import AlertComponent from "../components/alert";
 
 // Exporting Men Categories Page As Functional Component
-export default function MenPage() {
+export default function CategoriesPage() {
+    // Using 'useParams' Custom Hook To Get Parameters Of URL
+    const { type } = useParams();
+
     // Setting States
     const [gridType, setGridType] = useState('row');
     const [isShareBtnClicked, setShareBtnClicked] = useState(false);
@@ -38,7 +42,7 @@ export default function MenPage() {
 
     // Returning JSX
     return (
-        <PageComponent pageName={'men-cat'}>
+        <PageComponent pageName={`${type}-cat`}>
             <AlertComponent
                 onClickOfCloseBtn={() => setShareBtnClicked(false)}
                 isOpenedProp={isShareBtnClicked}
@@ -46,15 +50,15 @@ export default function MenPage() {
                 The Url Is Copied To Your Clipboard <br/>
                 You Can Now Share This With Whoever You Want :)
             </AlertComponent>
-            <PageSectionsComponent pageName={'men-cat'} sectionNumber={'first'}>
-                <PageCategoriesTopSideComponent onClickOfShareBtn={handleClickOfShareBtn} pageName={'men'}/>
+            <PageSectionsComponent pageName={`${type}-cat`} sectionNumber={'first'}>
+                <PageCategoriesTopSideComponent onClickOfShareBtn={handleClickOfShareBtn} pageName={type}/>
                 <PageCategoriesFilterComponent
                     refOfGridColBtn={refrenceOfColGridBtn}
                     refOfGridRowBtn={refrenceOfRowGridBtn}
                     onClickOfGridColBtn={handleClickOfColGridBtn}
                     onClickOfGridRowBtn={handleClickOfRowGridBtn}
                 />
-                <PageProductsListComponent gridType={gridType} fetchType={'men'}/>
+                <PageProductsListComponent gridType={gridType} fetchType={type}/>
             </PageSectionsComponent>
         </PageComponent>
     );
