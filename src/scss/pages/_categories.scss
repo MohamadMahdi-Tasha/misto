@@ -128,5 +128,10 @@
       align-items: start;
       gap: 16px;
     }
+
+    &__categories-filter-dropdown {
+      left: 0;
+      right: auto;
+    }
   }
 }

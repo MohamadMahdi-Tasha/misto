@@ -19,11 +19,13 @@
   &[data-opened="false"] {
     opacity: 0;
     transform: scale(.9);
+    pointer-events: none;
   }
 
   &[data-opened="true"] {
     opacity: 1;
     transform: scale(1);
+    pointer-events: visible;
   }
 
   &__title {
