@@ -164,6 +164,8 @@
     align-items: center;
     justify-content: space-between;
     list-style: none;
+    flex-wrap: wrap;
+    gap: 16px;
   }
 
   &__additional-info,
@@ -318,9 +320,28 @@
 
 // Media Querys
 @media (max-width: 991px) {
-  
+  .page--product {
+    &__product-name {text-align: left;}
+    &__second-sect__main {flex-direction: column;}
+    &__product-img {
+      position: static;
+      align-self: center;
+    }
+
+    &__product-content {
+      width: 100%;
+    }
+  }
 }
 
-@media (max-width: 571px) {
-  
+@media (max-width: 527px) {
+  .page--product {
+    &__product-img,&__product-add-btn {width: 100%;}
+    &__product-advantage,
+    &__product-reviews-score-holder,
+    &__product-review__top{
+      flex-direction: column;
+      align-items: start;
+    }
+  }
 }

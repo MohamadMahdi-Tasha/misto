@@ -2575,6 +2575,8 @@ template {
   align-items: center;
   justify-content: space-between;
   list-style: none;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 .page--product__additional-info, .page--product__product-reviews {
   letter-spacing: 0.06em;
@@ -2790,6 +2792,30 @@ template {
   animation-delay: 1s;
 }
 
+@media (max-width: 991px) {
+  .page--product__product-name {
+    text-align: left;
+  }
+  .page--product__second-sect__main {
+    flex-direction: column;
+  }
+  .page--product__product-img {
+    position: static;
+    align-self: center;
+  }
+  .page--product__product-content {
+    width: 100%;
+  }
+}
+@media (max-width: 527px) {
+  .page--product__product-img, .page--product__product-add-btn {
+    width: 100%;
+  }
+  .page--product__product-advantage, .page--product__product-reviews-score-holder, .page--product__product-review__top {
+    flex-direction: column;
+    align-items: start;
+  }
+}
 .page--404__txt {
   text-align: center;
   font-size: 30px;
