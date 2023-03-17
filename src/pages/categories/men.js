@@ -42,9 +42,9 @@ export default function MenPage() {
             <AlertComponent
                 onClickOfCloseBtn={() => setShareBtnClicked(false)}
                 isOpenedProp={isShareBtnClicked}
-                title='Payment successful'>
-                Your payment has been successfully submitted. <br/>
-                We’ve sent you an email with all of the details of your order.
+                title='The Url Is Copied Tou Your Clipboard!'>
+                The Url Is Copied To Your Clipboard <br/>
+                You Can Now Share This With Whoever You Want :)
             </AlertComponent>
             <PageSectionsComponent pageName={'men-cat'} sectionNumber={'first'}>
                 <PageCategoriesTopSideComponent onClickOfShareBtn={handleClickOfShareBtn} pageName={'men'}/>
