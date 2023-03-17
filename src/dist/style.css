@@ -683,14 +683,12 @@ template {
 .header__nav-menu-slide-title {
   font-weight: 500;
   font-size: 11px;
-  line-height: 18px;
   color: rgba(18, 18, 18, 0.6);
   margin-bottom: 4px;
 }
 .header__nav-menu-slide-price {
   font-weight: 700;
   font-size: 12px;
-  line-height: 13px;
   color: #121212;
 }
 .header__nav-dropdown-holder[data-opened=true] .header__nav-dropdown {
@@ -1141,6 +1139,74 @@ template {
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+.header__nav-menu-slide-loader-img {
+  width: 160px;
+  height: 199px;
+  margin-bottom: 4px;
+  background-color: #E6E6E6;
+  position: relative;
+  overflow: hidden;
+}
+.header__nav-menu-slide-loader-img::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 400px;
+  top: 0;
+  background-color: #F8F8F8;
+  filter: blur(5px);
+  transform: rotate(10deg) translateY(-20px);
+  animation-name: loader-animation;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+.header__nav-menu-slide-loader-title {
+  height: 11px;
+  width: 160px;
+  margin-bottom: 4px;
+  background-color: #E6E6E6;
+  position: relative;
+  overflow: hidden;
+}
+.header__nav-menu-slide-loader-title::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 400px;
+  top: 0;
+  background-color: #F8F8F8;
+  filter: blur(5px);
+  transform: rotate(10deg) translateY(-20px);
+  animation-name: loader-animation;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+.header__nav-menu-slide-loader-price {
+  width: 160px;
+  height: 12px;
+  background-color: #E6E6E6;
+  position: relative;
+  overflow: hidden;
+}
+.header__nav-menu-slide-loader-price::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 400px;
+  top: 0;
+  background-color: #F8F8F8;
+  filter: blur(5px);
+  transform: rotate(10deg) translateY(-20px);
+  animation-name: loader-animation;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-delay: 1s;
 }
 
 @media (max-width: 991px) {

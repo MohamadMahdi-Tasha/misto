@@ -1,15 +1,35 @@
 // Codes By Mahdi Tasha
 // Importing Part
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
-import sliderImage from '../../assets/img/header/img-nav-menu-slider.png';
 import HeaderNavMenuSwiperSlideComponent from './header-nav-menu-swiper-slide';
+import HeaderNavMenuSwiperSlideLoaderMenuComponent from './header-nav-menu-swiper-slide-loader';
 
 // Exporting Header Nav Menu Component Functional Component As Default
-export default function HeaderNavMenuComponent() {
+export default function HeaderNavMenuComponent({type}) {
+    // Setting State
+    const [fetchedItems, setFetchedItems] = useState([]);
+    const [isLoaded, setIsLoaded] = useState(false);
+
     // Using Use Swiper Custom Hook To Find Slider In This Component
     const navMenuSlider = useSwiper();
+
+    // Using 'useEffect' Hook To Call Api
+    useEffect(() => {
+        let apiURLToFetch;
+
+        (type === 'men')
+            ? apiURLToFetch = `https://fakestoreapi.com/products/category/men's%20clothing`
+            : apiURLToFetch = `https://fakestoreapi.com/products/category/women's%20clothing`
+
+        fetch(apiURLToFetch)
+            .then(data => data.json())
+            .then(data => {
+                setFetchedItems(data);
+                setIsLoaded(true);
+            })
+    }, [])
 
     // Returning JSX
     return (
@@ -56,16 +76,20 @@ export default function HeaderNavMenuComponent() {
                             </div>
                         </div>
                         <Swiper spaceBetween={50} slidesPerView={3} className="header__nav-menu-swiper">
-                            <SwiperSlide><HeaderNavMenuSwiperSlideComponent img={sliderImage} name="Women's tracksuit Q109" price={2899}/></SwiperSlide>
-                            <SwiperSlide><HeaderNavMenuSwiperSlideComponent img={sliderImage} name="Women's tracksuit Q109" price={2899}/></SwiperSlide>
-                            <SwiperSlide><HeaderNavMenuSwiperSlideComponent img={sliderImage} name="Women's tracksuit Q109" price={2899}/></SwiperSlide>
-                            <SwiperSlide><HeaderNavMenuSwiperSlideComponent img={sliderImage} name="Women's tracksuit Q109" price={2899}/></SwiperSlide>
-                            <SwiperSlide><HeaderNavMenuSwiperSlideComponent img={sliderImage} name="Women's tracksuit Q109" price={2899}/></SwiperSlide>
-                            <SwiperSlide><HeaderNavMenuSwiperSlideComponent img={sliderImage} name="Women's tracksuit Q109" price={2899}/></SwiperSlide>
-                            <SwiperSlide><HeaderNavMenuSwiperSlideComponent img={sliderImage} name="Women's tracksuit Q109" price={2899}/></SwiperSlide>
-                            <SwiperSlide><HeaderNavMenuSwiperSlideComponent img={sliderImage} name="Women's tracksuit Q109" price={2899}/></SwiperSlide>
-                            <SwiperSlide><HeaderNavMenuSwiperSlideComponent img={sliderImage} name="Women's tracksuit Q109" price={2899}/></SwiperSlide>
-                            <SwiperSlide><HeaderNavMenuSwiperSlideComponent img={sliderImage} name="Women's tracksuit Q109" price={2899}/></SwiperSlide>
+                            {
+                                (isLoaded)
+                                    ? fetchedItems.map(item => <SwiperSlide><HeaderNavMenuSwiperSlideComponent id={item.id} img={item.image} name={item.title} price={Math.round(item.price)}/></SwiperSlide>)
+                                    : (
+                                        <>
+                                            <SwiperSlide><HeaderNavMenuSwiperSlideLoaderMenuComponent /></SwiperSlide>
+                                            <SwiperSlide><HeaderNavMenuSwiperSlideLoaderMenuComponent /></SwiperSlide>
+                                            <SwiperSlide><HeaderNavMenuSwiperSlideLoaderMenuComponent /></SwiperSlide>
+                                            <SwiperSlide><HeaderNavMenuSwiperSlideLoaderMenuComponent /></SwiperSlide>
+                                            <SwiperSlide><HeaderNavMenuSwiperSlideLoaderMenuComponent /></SwiperSlide>
+                                            <SwiperSlide><HeaderNavMenuSwiperSlideLoaderMenuComponent /></SwiperSlide>
+                                        </>
+                                    )
+                            }
                         </Swiper>
                     </div>
                 </div>

@@ -278,7 +278,6 @@
   &__nav-menu-slide-title {
     font-weight: 500;
     font-size: 11px;
-    line-height: 18px;
     color: rgba(18, 18, 18, .6);
     margin-bottom: 4px;
   }
@@ -286,7 +285,6 @@
   &__nav-menu-slide-price {
     font-weight: 700;
     font-size: 12px;
-    line-height: 13px;
     color: colors.$dark;
   }
 
@@ -747,6 +745,30 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+  }
+
+  // Header Nav Menu Loaders
+  &__nav-menu-slide-loader-img {
+    width: 160px;
+    height: 199px;
+    margin-bottom: 4px;
+    background-color: colors.$grey;
+    @include mixins.loader-styles;
+  }
+
+  &__nav-menu-slide-loader-title {
+    height: 11px;
+    width: 160px;
+    margin-bottom: 4px;
+    background-color: colors.$grey;
+    @include mixins.loader-styles;
+  }
+
+  &__nav-menu-slide-loader-price {
+    width: 160px;
+    height: 12px;
+    background-color: colors.$grey;
+    @include mixins.loader-styles;
   }
 }
 
