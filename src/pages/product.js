@@ -16,6 +16,7 @@ import StripeLogo from "../assets/img/footer/img-stripe.png";
 import PageProductsListComponent from "../components/pages/page-products-list";
 import AlertComponent from "../components/alert";
 import ReviewsComponent from "../components/pages/reviews";
+import {CardProducts, LikedProducts} from "../index";
 
 // Exporting Functional Component Of Products Page As Default
 export default function ProductPage() {
@@ -24,6 +25,8 @@ export default function ProductPage() {
     const [info, setInfo] = useState({});
     const [isShareButtonClicked, setClickedOfShareBtn] = useState(false);
     const [productTypesToFetch, setProductTypesToFetch] = useState('');
+    const [isProductAddedToCart, setProductAddToCart] = useState(false);
+    const [isLiked, setProductLiked] = useState(false);
 
     // Using 'useParams' Hook To Get Id Of Product From URL
     const { id } = useParams();
@@ -45,6 +48,28 @@ export default function ProductPage() {
                 setInterval(() => setLoadedOrNot(true), 5000);
             })
     }, [])
+
+    // Handling Clicks Of Buttons
+    function handleCLickOfAddToCartBtn() {
+        if (isProductAddedToCart) {
+            setProductAddToCart(false)
+            CardProducts.splice(CardProducts.indexOf(info))
+        } else {
+            setProductAddToCart(true)
+            CardProducts.push(info);
+        }
+
+    }
+
+    function handleClickOfLikeBtn() {
+        if (isLiked) {
+            setProductLiked(false)
+            LikedProducts.splice(LikedProducts.indexOf(info))
+        } else {
+            setProductLiked(true)
+            LikedProducts.push(info);
+        }
+    }
 
     // Returning JSX
     return(
@@ -99,8 +124,16 @@ export default function ProductPage() {
                                 ? <h6 className='page--product__product-price'>${Math.round(info.price).toLocaleString()}</h6>
                                 : <div className='page--product__product-price-loader'></div>
                         }
-                        <button className='page--product__product-add-btn'>ADD TO CARD</button>
-                        <button className='page--product__product-like-btn'><svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.31804 2.31804C1.90017 2.7359 1.5687 3.23198 1.34255 3.77795C1.1164 4.32392 1 4.90909 1 5.50004C1 6.09099 1.1164 6.67616 1.34255 7.22213C1.5687 7.7681 1.90017 8.26418 2.31804 8.68204L10 16.364L17.682 8.68204C18.526 7.83812 19.0001 6.69352 19.0001 5.50004C19.0001 4.30656 18.526 3.16196 17.682 2.31804C16.8381 1.47412 15.6935 1.00001 14.5 1.00001C13.3066 1.00001 12.162 1.47412 11.318 2.31804L10 3.63604L8.68204 2.31804C8.26417 1.90017 7.7681 1.5687 7.22213 1.34255C6.67616 1.1164 6.09099 1 5.50004 1C4.90909 1 4.32392 1.1164 3.77795 1.34255C3.23198 1.5687 2.7359 1.90017 2.31804 2.31804V2.31804Z" stroke="#121212" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <button onClick={handleCLickOfAddToCartBtn} className='page--product__product-add-btn'>
+                            {(isProductAddedToCart) ? 'ADDED TO CARD' : 'ADD TO CARD'}
+                        </button>
+                        <button onClick={handleClickOfLikeBtn} className='page--product__product-like-btn'>
+                            {
+                                (isLiked)
+                                    ? <svg width="20" height="17" viewBox="0 0 20 17" fill="#121212" xmlns="http://www.w3.org/2000/svg"><path d="M2.31804 2.31804C1.90017 2.7359 1.5687 3.23198 1.34255 3.77795C1.1164 4.32392 1 4.90909 1 5.50004C1 6.09099 1.1164 6.67616 1.34255 7.22213C1.5687 7.7681 1.90017 8.26418 2.31804 8.68204L10 16.364L17.682 8.68204C18.526 7.83812 19.0001 6.69352 19.0001 5.50004C19.0001 4.30656 18.526 3.16196 17.682 2.31804C16.8381 1.47412 15.6935 1.00001 14.5 1.00001C13.3066 1.00001 12.162 1.47412 11.318 2.31804L10 3.63604L8.68204 2.31804C8.26417 1.90017 7.7681 1.5687 7.22213 1.34255C6.67616 1.1164 6.09099 1 5.50004 1C4.90909 1 4.32392 1.1164 3.77795 1.34255C3.23198 1.5687 2.7359 1.90017 2.31804 2.31804V2.31804Z" stroke="#121212" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    : <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.31804 2.31804C1.90017 2.7359 1.5687 3.23198 1.34255 3.77795C1.1164 4.32392 1 4.90909 1 5.50004C1 6.09099 1.1164 6.67616 1.34255 7.22213C1.5687 7.7681 1.90017 8.26418 2.31804 8.68204L10 16.364L17.682 8.68204C18.526 7.83812 19.0001 6.69352 19.0001 5.50004C19.0001 4.30656 18.526 3.16196 17.682 2.31804C16.8381 1.47412 15.6935 1.00001 14.5 1.00001C13.3066 1.00001 12.162 1.47412 11.318 2.31804L10 3.63604L8.68204 2.31804C8.26417 1.90017 7.7681 1.5687 7.22213 1.34255C6.67616 1.1164 6.09099 1 5.50004 1C4.90909 1 4.32392 1.1164 3.77795 1.34255C3.23198 1.5687 2.7359 1.90017 2.31804 2.31804V2.31804Z" stroke="#121212" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            }
+                        </button>
                         <button className='page--product__product-idk-btn'><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 19H13M1 4L4 5L1 4ZM4 5L1 14C1.8657 14.649 2.91852 14.9999 4.0005 14.9999C5.08248 14.9999 6.1353 14.649 7.001 14L4 5ZM4 5L7 14L4 5ZM4 5L10 3L4 5ZM16 5L19 4L16 5ZM16 5L13 14C13.8657 14.649 14.9185 14.9999 16.0005 14.9999C17.0825 14.9999 18.1353 14.649 19.001 14L16 5ZM16 5L19 14L16 5ZM16 5L10 3L16 5ZM10 1V3V1ZM10 19V3V19ZM10 19H7H10Z" stroke="#121212" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
                     </div>
                     <div className='page--product__product-guaranteed-holder'>

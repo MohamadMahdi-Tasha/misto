@@ -1,14 +1,12 @@
 // Codes By Mahdi Tahsa
 // Importing Part
-import IMG from "../../assets/img/header/img-nav-menu-slider.png";
 import HeaderNavDropdownCartLiComponent from "./header-nav-dropdown-cart-li";
 import HeaderNavDropdownCollapseComponent from "./header-nav-dropdown-collapse";
 import HeaderNavDropdownInsprationItemComponent from "./header-nav-dropdown-inspration-item";
+import {CardProductsContext, LikedProductsContext} from "../../index";
 
 // Exporting Contents Of Each dropdown Component as Functional Component As Default
 export default function HeaderNavDropdownContentsComponent(props) {
-    const insprationsInLocalStoarge = localStorage.getItem('insprations');
-
     if (props.type === 'localization') {
         return (
             <>
@@ -111,24 +109,11 @@ export default function HeaderNavDropdownContentsComponent(props) {
                     </button>
                 </form>
                 <hr className='header__nav-dropdown-hr'/>
-                {
-                    (insprationsInLocalStoarge !== null)
-                        ?  (<div>
-                                <h6 className='header__nav-dropdown-title'>Need some inspiration?</h6>
-                                <div className='header__nav-dropdown-inspration-holder'>
-                                    <ul className='header__nav-dropdown-inspration-list'>
-                                        {
-                                            insprationsInLocalStoarge.map(inspration =>  <HeaderNavDropdownInsprationItemComponent
-                                                id={inspration.id}
-                                                img={inspration.img}
-                                                name={inspration.name}
-                                                price={inspration.price}/>)
-                                        }
-                                    </ul>
-                                </div>
-                            </div>)
-                        : false
-                }
+                <LikedProductsContext.Consumer>
+                    {
+                        value => value.map(item => <HeaderNavDropdownInsprationItemComponent img={item.image} name={item.title} subname={'Blue, S'} price={item.price}/>)
+                    }
+                </LikedProductsContext.Consumer>
             </>
         );
     } else if (props.type === 'login') {
@@ -167,8 +152,11 @@ export default function HeaderNavDropdownContentsComponent(props) {
             <>
                 <div className='header__nav-dropdown-cart-list-holder'>
                     <ul className='header__nav-dropdown-cart-list'>
-                        <HeaderNavDropdownCartLiComponent img={IMG} name={"Women's tracksuit Q109"} subname={'Blue, S'} price={37999}/>
-                        <HeaderNavDropdownCartLiComponent img={IMG} name={"Women's tracksuit Q109"} subname={'Blue, S'} price={37999}/>
+                        <CardProductsContext.Consumer>
+                            {
+                                value => value.map(item => <HeaderNavDropdownCartLiComponent img={item.image} name={item.title} subname={'Blue, S'} price={item.price}/>)
+                            }
+                        </CardProductsContext.Consumer>
                     </ul>
                 </div>
                 <div className='header__nav-dropdown-cart-total-holder'>
