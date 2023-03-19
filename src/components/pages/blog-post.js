@@ -13,7 +13,7 @@ export default function PageBlogPostComponent(props) {
                     </div>
                     <div className='page--home__sixth-sect__blog-post-bottom-side-content'>
                         <h6 className='page--home__sixth-sect__blog-post-bottom-side-date'>{props.date}</h6>
-                        <a className='page--home__sixth-sect__blog-post-bottom-side-link' href="#">Read More</a>
+                        <a tabIndex='-1' className='page--home__sixth-sect__blog-post-bottom-side-link' href="#">Read More</a>
                     </div>
                 </div>
             </a>

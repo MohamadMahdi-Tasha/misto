@@ -37,11 +37,11 @@ export default function PageCategoriesFilterComponent({isOpened}){
                 <h6 className='page__categories-filter-side-title'>Size</h6>
                 <div className='page__categories-filter-side-scroll-holder'>
                     <ul className='page__categories-filter-side-list'>
-                        <li className='page__categories-filter-side-chckbox-li'><label><input type="checkbox"/> XL</label></li>
-                        <li className='page__categories-filter-side-chckbox-li'><label><input type="checkbox"/> L</label></li>
-                        <li className='page__categories-filter-side-chckbox-li'><label><input type="checkbox"/> M</label></li>
-                        <li className='page__categories-filter-side-chckbox-li'><label><input type="checkbox"/> S</label></li>
-                        <li className='page__categories-filter-side-chckbox-li'><label><input type="checkbox"/> Xs</label></li>
+                        <li className='page__categories-filter-side-chckbox-li'><label><input tabIndex='-1' type="checkbox"/> XL</label></li>
+                        <li className='page__categories-filter-side-chckbox-li'><label><input tabIndex='-1' type="checkbox"/> L</label></li>
+                        <li className='page__categories-filter-side-chckbox-li'><label><input tabIndex='-1' type="checkbox"/> M</label></li>
+                        <li className='page__categories-filter-side-chckbox-li'><label><input tabIndex='-1' type="checkbox"/> S</label></li>
+                        <li className='page__categories-filter-side-chckbox-li'><label><input tabIndex='-1' type="checkbox"/> Xs</label></li>
                     </ul>
                 </div>
             </div>
@@ -49,12 +49,12 @@ export default function PageCategoriesFilterComponent({isOpened}){
                 <h6 className='page__categories-filter-side-title'>Brand</h6>
                 <div className='page__categories-filter-side-scroll-holder'>
                     <ul className='page__categories-filter-side-list'>
-                        <li className='page__categories-filter-side-chckbox-li'><label><input type="checkbox"/> Ck</label></li>
-                        <li className='page__categories-filter-side-chckbox-li'><label><input type="checkbox"/> H&M</label></li>
-                        <li className='page__categories-filter-side-chckbox-li'><label><input type="checkbox"/> Kalles</label></li>
-                        <li className='page__categories-filter-side-chckbox-li'><label><input type="checkbox"/> Levi's</label></li>
-                        <li className='page__categories-filter-side-chckbox-li'><label><input type="checkbox"/> Monki</label></li>
-                        <li className='page__categories-filter-side-chckbox-li'><label><input type="checkbox"/> Nike</label></li>
+                        <li className='page__categories-filter-side-chckbox-li'><label><input tabIndex='-1' type="checkbox"/> Ck</label></li>
+                        <li className='page__categories-filter-side-chckbox-li'><label><input tabIndex='-1' type="checkbox"/> H&M</label></li>
+                        <li className='page__categories-filter-side-chckbox-li'><label><input tabIndex='-1' type="checkbox"/> Kalles</label></li>
+                        <li className='page__categories-filter-side-chckbox-li'><label><input tabIndex='-1' type="checkbox"/> Levi's</label></li>
+                        <li className='page__categories-filter-side-chckbox-li'><label><input tabIndex='-1' type="checkbox"/> Monki</label></li>
+                        <li className='page__categories-filter-side-chckbox-li'><label><input tabIndex='-1' type="checkbox"/> Nike</label></li>
                     </ul>
                 </div>
             </div>
@@ -62,12 +62,12 @@ export default function PageCategoriesFilterComponent({isOpened}){
                 <h6 className='page__categories-filter-side-title'>Price</h6>
                 <div className='page__categories-filter-side-scroll-holder'>
                     <ul className='page__categories-filter-side-list'>
-                        <li className='page__categories-filter-side-chckbox-li'><label><input type="checkbox"/> $1200+</label></li>
-                        <li className='page__categories-filter-side-chckbox-li'><label><input type="checkbox"/> $600-$1200</label></li>
-                        <li className='page__categories-filter-side-chckbox-li'><label><input type="checkbox"/> $300-$600</label></li>
-                        <li className='page__categories-filter-side-chckbox-li'><label><input type="checkbox"/> $150-$300</label></li>
-                        <li className='page__categories-filter-side-chckbox-li'><label><input type="checkbox"/> $50-$150</label></li>
-                        <li className='page__categories-filter-side-chckbox-li'><label><input type="checkbox"/> $7-$50</label></li>
+                        <li className='page__categories-filter-side-chckbox-li'><label><input tabIndex='-1' type="checkbox"/> $1200+</label></li>
+                        <li className='page__categories-filter-side-chckbox-li'><label><input tabIndex='-1' type="checkbox"/> $600-$1200</label></li>
+                        <li className='page__categories-filter-side-chckbox-li'><label><input tabIndex='-1' type="checkbox"/> $300-$600</label></li>
+                        <li className='page__categories-filter-side-chckbox-li'><label><input tabIndex='-1' type="checkbox"/> $150-$300</label></li>
+                        <li className='page__categories-filter-side-chckbox-li'><label><input tabIndex='-1' type="checkbox"/> $50-$150</label></li>
+                        <li className='page__categories-filter-side-chckbox-li'><label><input tabIndex='-1' type="checkbox"/> $7-$50</label></li>
                     </ul>
                 </div>
             </div>

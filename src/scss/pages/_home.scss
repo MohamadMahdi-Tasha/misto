@@ -43,7 +43,7 @@
         transition: .3s;
         outline: 8px solid transparent;
 
-        &:hover {outline-color: rgba(256,256,256, .6);}
+        &:is(:hover, :focus) {outline-color: rgba(256,256,256, .6);}
         &__title {
           color: rgba(18, 18, 18, .4);
           margin-bottom: 14px;
@@ -87,7 +87,7 @@
         font-size: 14px;
         color: colors.$dark;
 
-        &:hover {outline-color: rgba(256,256,256, .6);}
+        &:is(:hover, :focus) {outline-color: rgba(256,256,256, .6);}
       }
     }
   }
@@ -394,7 +394,7 @@
       outline: 8px solid transparent;
       display: block;
 
-      &:hover {outline-color: rgba(256,256,256, .6);}
+      &:is(:hover, :focus) {outline-color: rgba(256,256,256, .6);}
     }
 
     &__banner__inner-link__title {

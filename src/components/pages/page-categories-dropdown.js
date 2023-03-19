@@ -31,6 +31,7 @@ export default function PageCategoriesDropdownComponenet({list, activeIndex}) {
                 {
                     list.map(item => <li key={list.indexOf(item)}>
                             <button
+                                tabIndex='-1'
                                 data-selected={(activeIndex === list.indexOf(item)) ? 'true' : 'false'}
                                 onClick={() => {
                                     const currentOfList = listRefrence.current;

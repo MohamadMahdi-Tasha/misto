@@ -13,7 +13,7 @@ export default function HeaderNavDropdownsComponent(props) {
                 <h6 className='header__nav-dropdown-top-title'>
                     {(props.type.toUpperCase() === 'MOBILE-MENU') ? 'MENU' : props.type.toUpperCase()}
                 </h6>
-                <button onClick={props.closingFunction} className='header__nav-dropdown-top-close-btn'><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L13 13M1 13L13 1L1 13Z" stroke="white" strokeLinecap="round" strokeLinejoin="round"/></svg></button>
+                <button tabIndex='-1' onClick={props.closingFunction} className='header__nav-dropdown-top-close-btn'><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L13 13M1 13L13 1L1 13Z" stroke="white" strokeLinecap="round" strokeLinejoin="round"/></svg></button>
             </div>
         );
     }

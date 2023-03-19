@@ -1652,7 +1652,7 @@ template {
   transition: 0.3s;
   outline: 8px solid transparent;
 }
-.page--home__first-sect__banner__inner-link:hover {
+.page--home__first-sect__banner__inner-link:is(:hover, :focus) {
   outline-color: rgba(255, 255, 255, 0.6);
 }
 .page--home__first-sect__banner__inner-link__title {
@@ -1702,7 +1702,7 @@ template {
   font-size: 14px;
   color: #121212;
 }
-.page--home__first-sect__women__inner-link:hover, .page--home__first-sect__men__inner-link:hover, .page--home__first-sect__accessories__inner-link:hover {
+.page--home__first-sect__women__inner-link:is(:hover, :focus), .page--home__first-sect__men__inner-link:is(:hover, :focus), .page--home__first-sect__accessories__inner-link:is(:hover, :focus) {
   outline-color: rgba(255, 255, 255, 0.6);
 }
 .page--home__filter-btns-holder {
@@ -1992,7 +1992,7 @@ template {
   outline: 8px solid transparent;
   display: block;
 }
-.page--home__fourth-sect__banner__link:hover {
+.page--home__fourth-sect__banner__link:is(:hover, :focus) {
   outline-color: rgba(255, 255, 255, 0.6);
 }
 .page--home__fourth-sect__banner__inner-link__title {

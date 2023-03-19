@@ -46,6 +46,9 @@ export default function ProductPage() {
                 setInfo(data);
                 setProductTypesToFetch(productTypesToFetch);
                 setInterval(() => setLoadedOrNot(true), 5000);
+
+                if (`${CardProducts}`.includes(`${info}`)) {setProductAddToCart(true);}
+                if (`${LikedProducts}`.includes(`${info}`)) {setProductLiked(true);}
             })
     }, [])
 

@@ -8,7 +8,7 @@ export default function AlertComponent({title, children, isOpenedProp, onClickOf
         <div className='alert' data-opened={isOpenedProp}>
             <h6 className='alert__title'>{title}</h6>
             <p className='alert__txt'>{children}</p>
-            <button className='alert__close-btn' onClick={onClickOfCloseBtn}>Got It, Thanks!</button>
+            <button tabIndex='-1' className='alert__close-btn' onClick={onClickOfCloseBtn}>Got It, Thanks!</button>
         </div>
     );
 }
